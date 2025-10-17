@@ -1,0 +1,20 @@
+2025-10-16 08:28:56.005 +05:30 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Role] = N'Admin') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-16 08:28:56.674 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-16 08:28:57.171 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-16 08:28:58.349 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-16 08:28:58.356 +05:30 [INF] Hosting environment: Development
+2025-10-16 08:28:58.372 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-16 08:28:59.611 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-16 08:28:59.612 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-16 08:28:59.649 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 70.1881ms
+2025-10-16 08:29:00.128 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 550.789ms
+2025-10-16 08:29:00.223 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-16 08:29:00.366 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 101.4086 ms
+2025-10-16 08:29:00.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 159.8733ms

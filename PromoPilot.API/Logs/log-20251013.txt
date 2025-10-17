@@ -1,0 +1,2067 @@
+2025-10-13 09:42:52.535 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-13 09:42:53.155 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-13 09:42:54.742 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 09:42:54.748 +05:30 [INF] Hosting environment: Development
+2025-10-13 09:42:54.752 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-13 09:43:01.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-13 09:43:01.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-13 09:43:01.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 26.0665ms
+2025-10-13 09:43:02.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 324.4897ms
+2025-10-13 09:43:02.232 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-13 09:43:02.291 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 42.0122 ms
+2025-10-13 09:43:02.300 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 68.1109ms
+2025-10-13 09:43:30.220 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Blob/Upload - multipart/form-data; boundary=----WebKitFormBoundaryfQfqnQlykIsbWvMV 1067
+2025-10-13 09:43:30.297 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-13 09:43:30.304 +05:30 [INF] CORS policy execution successful.
+2025-10-13 09:43:30.314 +05:30 [INF] Processing request: /api/Blob/Upload
+2025-10-13 09:43:30.439 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Blob/Upload
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryfQfqnQlykIsbWvMV
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 1067
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 09:43:32.404 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BlobController.UploadCampaignReport (PromoPilot.API)'
+2025-10-13 09:43:32.449 +05:30 [INF] Route matched with {action = "UploadCampaignReport", controller = "Blob"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadCampaignReport(PromoPilot.Application.DTOs.FileUploadDto) on controller PromoPilot.API.Controllers.BlobController (PromoPilot.API).
+2025-10-13 09:43:34.772 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-13 09:43:34.787 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 09:43:34.810 +05:30 [INF] Executed action PromoPilot.API.Controllers.BlobController.UploadCampaignReport (PromoPilot.API) in 2342.0494ms
+2025-10-13 09:43:34.820 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BlobController.UploadCampaignReport (PromoPilot.API)'
+2025-10-13 09:43:34.832 +05:30 [INF] ResponseBody: {"fileName":"Campaigns.csv","downloadUrl":"http://localhost:5145/api/blob/download/Campaigns.csv"}
+2025-10-13 09:43:34.845 +05:30 [INF] Duration: 4402.0637ms
+2025-10-13 09:43:34.853 +05:30 [INF] Request processed successfully.
+2025-10-13 09:43:34.864 +05:30 [INF] HTTP POST /api/Blob/Upload responded 200 in 4631.8652 ms
+2025-10-13 09:43:34.887 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Blob/Upload - 200 null application/json; charset=utf-8 4674.1516ms
+2025-10-13 09:45:08.523 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Blob/Download/Campaigns.csv - null null
+2025-10-13 09:45:08.546 +05:30 [INF] Processing request: /api/Blob/Download/Campaigns.csv
+2025-10-13 09:45:08.555 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Blob/Download/Campaigns.csv
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 09:45:08.567 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BlobController.Download (PromoPilot.API)'
+2025-10-13 09:45:08.594 +05:30 [INF] Route matched with {action = "Download", controller = "Blob"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Download(System.String) on controller PromoPilot.API.Controllers.BlobController (PromoPilot.API).
+2025-10-13 09:45:09.161 +05:30 [INF] Executing FileStreamResult, sending file with download name 'Campaigns.csv' ...
+2025-10-13 09:45:09.202 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename=Campaigns.csv; filename*=UTF-8''Campaigns.csv
+2025-10-13 09:45:09.211 +05:30 [INF] Executed action PromoPilot.API.Controllers.BlobController.Download (PromoPilot.API) in 602.5645ms
+2025-10-13 09:45:09.218 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BlobController.Download (PromoPilot.API)'
+2025-10-13 09:45:09.226 +05:30 [INF] Duration: 670.9918ms
+2025-10-13 09:45:09.232 +05:30 [INF] Request processed successfully.
+2025-10-13 09:45:09.237 +05:30 [INF] HTTP GET /api/Blob/Download/Campaigns.csv responded 200 in 691.7593 ms
+2025-10-13 09:45:09.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Blob/Download/Campaigns.csv - 200 null application/octet-stream 727.7505ms
+2025-10-13 09:45:35.177 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Blob/List-Reports - null null
+2025-10-13 09:45:35.207 +05:30 [INF] Processing request: /api/Blob/List-Reports
+2025-10-13 09:45:35.213 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Blob/List-Reports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 09:45:35.227 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API)'
+2025-10-13 09:45:35.238 +05:30 [INF] Route matched with {action = "ListCampaignReports", controller = "Blob"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListCampaignReports() on controller PromoPilot.API.Controllers.BlobController (PromoPilot.API).
+2025-10-13 09:45:35.511 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-13 09:45:35.520 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 09:45:35.524 +05:30 [INF] Executed action PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API) in 271.1161ms
+2025-10-13 09:45:35.528 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API)'
+2025-10-13 09:45:35.533 +05:30 [INF] ResponseBody: ["Campaigns.csv","campaign_reports.pdf","engagements.xlsx"]
+2025-10-13 09:45:35.537 +05:30 [INF] Duration: 324.2203ms
+2025-10-13 09:45:35.540 +05:30 [INF] Request processed successfully.
+2025-10-13 09:45:35.542 +05:30 [INF] HTTP GET /api/Blob/List-Reports responded 200 in 336.1009 ms
+2025-10-13 09:45:35.546 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Blob/List-Reports - 200 null application/json; charset=utf-8 369.223ms
+2025-10-13 12:38:19.391 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-13 12:38:19.709 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-13 12:38:20.411 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 12:38:20.418 +05:30 [INF] Hosting environment: Development
+2025-10-13 12:38:20.421 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-13 12:38:21.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-13 12:38:21.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-13 12:38:21.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 20.4533ms
+2025-10-13 12:38:21.910 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 178.4727ms
+2025-10-13 12:38:21.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-13 12:38:22.028 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 41.2676 ms
+2025-10-13 12:38:22.036 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.6593ms
+2025-10-13 12:41:07.958 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/AuditLogs/GetAll - null null
+2025-10-13 12:41:08.019 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-13 12:41:08.028 +05:30 [INF] Processing request: /api/AuditLogs/GetAll
+2025-10-13 12:41:08.089 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/AuditLogs/GetAll
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:41:09.907 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API)'
+2025-10-13 12:41:09.969 +05:30 [INF] Route matched with {action = "GetAll", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.AuditLogsController (PromoPilot.API).
+2025-10-13 12:41:15.746 +05:30 [INF] Executed DbCommand (166ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[Changes], [a].[EntityId], [a].[EntityName], [a].[Timestamp], [a].[UserId]
+FROM [AuditLogs] AS [a]
+ORDER BY [a].[Timestamp] DESC
+2025-10-13 12:41:15.908 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Core.Entities.AuditLog, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:41:15.943 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:41:15.957 +05:30 [INF] Executed action PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API) in 5967.6397ms
+2025-10-13 12:41:15.962 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API)'
+2025-10-13 12:41:15.970 +05:30 [INF] ResponseBody: [{"id":8,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"6","changes":"{\"CampaignID\":6,\"Name\":\"Diwali Dhamaka\",\"StartDate\":\"2025-10-20T00:00:00\",\"EndDate\":\"2025-11-10T00:00:00\",\"TargetProducts\":\"Electronics,Home Appliances\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:12:08.89"},{"id":7,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"7","changes":"{\"CampaignID\":7,\"Name\":\"Onam Offer\",\"StartDate\":\"2025-10-11T00:00:00\",\"EndDate\":\"2025-10-14T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:10:53.077"},{"id":6,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Create","entityName":"Engagement","entityId":"13","changes":"{\"EngagementId\":13,\"CampaignId\":6,\"CustomerId\":2,\"RedemptionCount\":2,\"PurchaseValue\":1500,\"Campaign\":null}","timestamp":"2025-10-10T11:58:44.89"},{"id":5,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Delete","entityName":"Campaign","entityId":"11","changes":"{\"Deleted\":true}","timestamp":"2025-10-08T03:42:35.577"},{"id":4,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Create","entityName":"Campaign","entityId":"26","changes":"{\"CampaignID\":0,\"Name\":\"Holi\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-09T00:00:00\",\"TargetProducts\":\"Electronics\",\"StoreList\":\"Hyderabad, Bnglr\"}","timestamp":"2025-10-07T12:01:46.763"},{"id":3,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Delete","entityName":"Campaign","entityId":"25","changes":"{\"Deleted\":true}","timestamp":"2025-10-07T10:26:22.363"},{"id":2,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Create","entityName":"Campaign","entityId":"25","changes":"{\"CampaignID\":0,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-08T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Andhra Pradesh\"}","timestamp":"2025-10-07T10:25:49.623"},{"id":1,"userId":"16ad91c1-0a32-4430-b186-855298527e1f","action":"Create","entityName":"Campaign","entityId":"24","changes":"{\"CampaignID\":0,\"Name\":\"Diwali Sale\",\"StartDate\":\"2025-10-10T00:00:00\",\"EndDate\":\"2025-10-20T00:00:00\",\"TargetProducts\":\"P001,P002\",\"StoreList\":\"Hyderabad,Bangalore\"}","timestamp":"2025-10-02T17:10:34.47"}]
+2025-10-13 12:41:15.984 +05:30 [INF] Duration: 7892.3688ms
+2025-10-13 12:41:15.991 +05:30 [INF] Request processed successfully.
+2025-10-13 12:41:15.997 +05:30 [INF] HTTP GET /api/AuditLogs/GetAll responded 200 in 8015.3201 ms
+2025-10-13 12:41:16.019 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/AuditLogs/GetAll - 200 null application/json; charset=utf-8 8061.5261ms
+2025-10-13 12:42:20.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Budget - null null
+2025-10-13 12:42:20.851 +05:30 [INF] Processing request: /api/AuditLogs/ByEntity/Budget
+2025-10-13 12:42:20.878 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/AuditLogs/ByEntity/Budget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:42:20.887 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:20.932 +05:30 [INF] Route matched with {action = "GetByEntity", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEntity(System.String) on controller PromoPilot.API.Controllers.AuditLogsController (PromoPilot.API).
+2025-10-13 12:42:21.414 +05:30 [INF] Executed DbCommand (285ms) [Parameters=[@__entityName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[Changes], [a].[EntityId], [a].[EntityName], [a].[Timestamp], [a].[UserId]
+FROM [AuditLogs] AS [a]
+WHERE [a].[EntityName] = @__entityName_0
+ORDER BY [a].[Timestamp] DESC
+2025-10-13 12:42:21.429 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Core.Entities.AuditLog, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:42:21.440 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:42:21.446 +05:30 [INF] Executed action PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API) in 502.6545ms
+2025-10-13 12:42:21.452 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:21.458 +05:30 [INF] ResponseBody: []
+2025-10-13 12:42:21.463 +05:30 [INF] Duration: 585.1638ms
+2025-10-13 12:42:21.469 +05:30 [INF] Request processed successfully.
+2025-10-13 12:42:21.473 +05:30 [INF] HTTP GET /api/AuditLogs/ByEntity/Budget responded 200 in 621.9844 ms
+2025-10-13 12:42:21.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Budget - 200 null application/json; charset=utf-8 639.8592ms
+2025-10-13 12:42:29.899 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Engagement - null null
+2025-10-13 12:42:29.914 +05:30 [INF] Processing request: /api/AuditLogs/ByEntity/Engagement
+2025-10-13 12:42:29.920 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/AuditLogs/ByEntity/Engagement
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:42:29.933 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:29.941 +05:30 [INF] Route matched with {action = "GetByEntity", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEntity(System.String) on controller PromoPilot.API.Controllers.AuditLogsController (PromoPilot.API).
+2025-10-13 12:42:30.064 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__entityName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[Changes], [a].[EntityId], [a].[EntityName], [a].[Timestamp], [a].[UserId]
+FROM [AuditLogs] AS [a]
+WHERE [a].[EntityName] = @__entityName_0
+ORDER BY [a].[Timestamp] DESC
+2025-10-13 12:42:30.084 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Core.Entities.AuditLog, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:42:30.092 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:42:30.098 +05:30 [INF] Executed action PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API) in 145.8276ms
+2025-10-13 12:42:30.109 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:30.117 +05:30 [INF] ResponseBody: [{"id":6,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Create","entityName":"Engagement","entityId":"13","changes":"{\"EngagementId\":13,\"CampaignId\":6,\"CustomerId\":2,\"RedemptionCount\":2,\"PurchaseValue\":1500,\"Campaign\":null}","timestamp":"2025-10-10T11:58:44.89"}]
+2025-10-13 12:42:30.124 +05:30 [INF] Duration: 203.8613ms
+2025-10-13 12:42:30.131 +05:30 [INF] Request processed successfully.
+2025-10-13 12:42:30.135 +05:30 [INF] HTTP GET /api/AuditLogs/ByEntity/Engagement responded 200 in 222.3228 ms
+2025-10-13 12:42:30.145 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Engagement - 200 null application/json; charset=utf-8 245.8377ms
+2025-10-13 12:42:39.495 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Campaign - null null
+2025-10-13 12:42:39.510 +05:30 [INF] Processing request: /api/AuditLogs/ByEntity/Campaign
+2025-10-13 12:42:39.520 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/AuditLogs/ByEntity/Campaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:42:39.529 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:39.540 +05:30 [INF] Route matched with {action = "GetByEntity", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetByEntity(System.String) on controller PromoPilot.API.Controllers.AuditLogsController (PromoPilot.API).
+2025-10-13 12:42:39.560 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__entityName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[Changes], [a].[EntityId], [a].[EntityName], [a].[Timestamp], [a].[UserId]
+FROM [AuditLogs] AS [a]
+WHERE [a].[EntityName] = @__entityName_0
+ORDER BY [a].[Timestamp] DESC
+2025-10-13 12:42:39.567 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Core.Entities.AuditLog, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:42:39.572 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:42:39.577 +05:30 [INF] Executed action PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API) in 25.9168ms
+2025-10-13 12:42:39.583 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetByEntity (PromoPilot.API)'
+2025-10-13 12:42:39.585 +05:30 [INF] ResponseBody: [{"id":8,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"6","changes":"{\"CampaignID\":6,\"Name\":\"Diwali Dhamaka\",\"StartDate\":\"2025-10-20T00:00:00\",\"EndDate\":\"2025-11-10T00:00:00\",\"TargetProducts\":\"Electronics,Home Appliances\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:12:08.89"},{"id":7,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"7","changes":"{\"CampaignID\":7,\"Name\":\"Onam Offer\",\"StartDate\":\"2025-10-11T00:00:00\",\"EndDate\":\"2025-10-14T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:10:53.077"},{"id":5,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Delete","entityName":"Campaign","entityId":"11","changes":"{\"Deleted\":true}","timestamp":"2025-10-08T03:42:35.577"},{"id":4,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Create","entityName":"Campaign","entityId":"26","changes":"{\"CampaignID\":0,\"Name\":\"Holi\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-09T00:00:00\",\"TargetProducts\":\"Electronics\",\"StoreList\":\"Hyderabad, Bnglr\"}","timestamp":"2025-10-07T12:01:46.763"},{"id":3,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Delete","entityName":"Campaign","entityId":"25","changes":"{\"Deleted\":true}","timestamp":"2025-10-07T10:26:22.363"},{"id":2,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Create","entityName":"Campaign","entityId":"25","changes":"{\"CampaignID\":0,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-08T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Andhra Pradesh\"}","timestamp":"2025-10-07T10:25:49.623"},{"id":1,"userId":"16ad91c1-0a32-4430-b186-855298527e1f","action":"Create","entityName":"Campaign","entityId":"24","changes":"{\"CampaignID\":0,\"Name\":\"Diwali Sale\",\"StartDate\":\"2025-10-10T00:00:00\",\"EndDate\":\"2025-10-20T00:00:00\",\"TargetProducts\":\"P001,P002\",\"StoreList\":\"Hyderabad,Bangalore\"}","timestamp":"2025-10-02T17:10:34.47"}]
+2025-10-13 12:42:39.591 +05:30 [INF] Duration: 70.6615ms
+2025-10-13 12:42:39.593 +05:30 [INF] Request processed successfully.
+2025-10-13 12:42:39.594 +05:30 [INF] HTTP GET /api/AuditLogs/ByEntity/Campaign responded 200 in 84.4810 ms
+2025-10-13 12:42:39.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/AuditLogs/ByEntity/Campaign - 200 null application/json; charset=utf-8 105.5871ms
+2025-10-13 12:43:31.799 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Blob/List-Reports - null null
+2025-10-13 12:43:31.839 +05:30 [INF] Processing request: /api/Blob/List-Reports
+2025-10-13 12:43:31.846 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Blob/List-Reports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:43:31.878 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API)'
+2025-10-13 12:43:31.889 +05:30 [INF] Route matched with {action = "ListCampaignReports", controller = "Blob"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ListCampaignReports() on controller PromoPilot.API.Controllers.BlobController (PromoPilot.API).
+2025-10-13 12:43:33.288 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-13 12:43:33.295 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:43:33.301 +05:30 [INF] Executed action PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API) in 1397.2105ms
+2025-10-13 12:43:33.308 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BlobController.ListCampaignReports (PromoPilot.API)'
+2025-10-13 12:43:33.313 +05:30 [INF] ResponseBody: ["Campaigns.csv","campaign_reports.pdf","engagements.xlsx"]
+2025-10-13 12:43:33.317 +05:30 [INF] Duration: 1470.4523ms
+2025-10-13 12:43:33.321 +05:30 [INF] Request processed successfully.
+2025-10-13 12:43:33.325 +05:30 [INF] HTTP GET /api/Blob/List-Reports responded 200 in 1489.2946 ms
+2025-10-13 12:43:33.331 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Blob/List-Reports - 200 null application/json; charset=utf-8 1532.0774ms
+2025-10-13 12:43:54.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=true - null null
+2025-10-13 12:43:54.265 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:43:54.275 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:43:54.303 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Finance)
+2025-10-13 12:43:54.327 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-13 12:43:54.335 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-13 12:43:54.341 +05:30 [INF] Duration: 66.5548ms
+2025-10-13 12:43:54.348 +05:30 [INF] Request processed successfully.
+2025-10-13 12:43:54.353 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 401 in 87.9234 ms
+2025-10-13 12:43:54.369 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=true - 401 0 null 145.0433ms
+2025-10-13 12:44:42.679 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 101
+2025-10-13 12:44:42.730 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:44:42.738 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-13 12:44:42.746 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 101
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:44:42.755 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-13 12:44:42.766 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-13 12:44:42.794 +05:30 [INF] RequestBody: {
+  "username": "Riya",
+  "email": "riya1@gmail.com",
+  "password": "Riya@123",
+  "role": "Finance"
+}
+2025-10-13 12:44:42.932 +05:30 [INF] Executed DbCommand (51ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-13 12:44:43.177 +05:30 [INF] Executed DbCommand (53ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-13 12:44:43.506 +05:30 [INF] Executed DbCommand (75ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-13 12:44:43.524 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PromoPilot.Application.DTOs.AuthResponse, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:44:43.546 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:44:43.557 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 779.2018ms
+2025-10-13 12:44:43.567 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-13 12:44:43.578 +05:30 [INF] ResponseBody: {"message":"User registered successfully with role 'Finance'.","data":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6Ijk4MTYxMzUwLTg5NDItNDJjMi1hMGViLWEwZjQxZWIyYTM4ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InJpeWExQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkZpbmFuY2UiLCJleHAiOjE3NjAzNDMyODMsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.DiSn5tp01HRFJTUQSw54r8Lp_PhQhoTq19Ax7FMlhCI","refreshToken":"AQrih6bDb4PpmirX8QFKYRA7CskFWeGfusiggyPAR8MYLqtWKNIEYBCa4Uwr8DK58Ksbw/K1JoUP6moEj4YJpw==","accessTokenExpiry":"2025-10-13T08:14:43.5238174Z","refreshTokenExpiry":"2025-10-20T07:14:43.3826203Z","role":"Finance","email":"riya1@gmail.com","username":"Riya"}}
+2025-10-13 12:44:43.591 +05:30 [INF] Duration: 845.5667ms
+2025-10-13 12:44:43.599 +05:30 [INF] Request processed successfully.
+2025-10-13 12:44:43.605 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 900.7670 ms
+2025-10-13 12:44:43.609 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 934.4368ms
+2025-10-13 12:45:15.618 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=true - null null
+2025-10-13 12:45:15.634 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:45:15.640 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:45:15.694 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:45:15.723 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:45:15.904 +05:30 [INF] Fetching all budgets.
+2025-10-13 12:45:15.968 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Budget] AS [b]
+2025-10-13 12:45:15.994 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+ORDER BY [b].[BudgetID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 12:45:16.044 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:45:16.061 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:45:16.064 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 320.613ms
+2025-10-13 12:45:16.069 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:45:16.072 +05:30 [INF] ResponseBody: {"items":[{"budgetID":12,"campaignID":7,"storeID":102,"allocatedAmount":2000.00,"spentAmount":1500.00},{"budgetID":13,"campaignID":9,"storeID":102,"allocatedAmount":45000.00,"spentAmount":34000.00},{"budgetID":33,"campaignID":22,"storeID":102,"allocatedAmount":30000.00,"spentAmount":40000.00},{"budgetID":34,"campaignID":22,"storeID":102,"allocatedAmount":40000.00,"spentAmount":50000.00},{"budgetID":37,"campaignID":7,"storeID":101,"allocatedAmount":1000.00,"spentAmount":800.00}],"totalCount":5,"pageNumber":1,"pageSize":5}
+2025-10-13 12:45:16.077 +05:30 [INF] Duration: 437.472ms
+2025-10-13 12:45:16.079 +05:30 [INF] Request processed successfully.
+2025-10-13 12:45:16.080 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 200 in 446.0816 ms
+2025-10-13 12:45:16.085 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=true - 200 null application/json; charset=utf-8 467.4426ms
+2025-10-13 12:45:29.476 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 12:45:29.483 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:45:29.487 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:45:29.496 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:45:29.499 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:45:29.509 +05:30 [INF] Fetching all budgets.
+2025-10-13 12:45:29.564 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Budget] AS [b]
+2025-10-13 12:45:29.587 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+ORDER BY [b].[BudgetID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 12:45:29.605 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:45:29.616 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:45:29.622 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 116.2397ms
+2025-10-13 12:45:29.632 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:45:29.641 +05:30 [INF] ResponseBody: {"items":[{"budgetID":12,"campaignID":7,"storeID":102,"allocatedAmount":2000.00,"spentAmount":1500.00},{"budgetID":13,"campaignID":9,"storeID":102,"allocatedAmount":45000.00,"spentAmount":34000.00},{"budgetID":33,"campaignID":22,"storeID":102,"allocatedAmount":30000.00,"spentAmount":40000.00},{"budgetID":34,"campaignID":22,"storeID":102,"allocatedAmount":40000.00,"spentAmount":50000.00},{"budgetID":37,"campaignID":7,"storeID":101,"allocatedAmount":1000.00,"spentAmount":800.00}],"totalCount":5,"pageNumber":1,"pageSize":5}
+2025-10-13 12:45:29.649 +05:30 [INF] Duration: 162.1906ms
+2025-10-13 12:45:29.657 +05:30 [INF] Request processed successfully.
+2025-10-13 12:45:29.663 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 200 in 180.0618 ms
+2025-10-13 12:45:29.686 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 209.4224ms
+2025-10-13 12:46:34.871 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=campaignID&sortDesc=false - null null
+2025-10-13 12:46:34.894 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:46:34.896 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:46:34.900 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:46:34.902 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:46:34.911 +05:30 [INF] Fetching all budgets.
+2025-10-13 12:46:35.520 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 612.8427ms
+2025-10-13 12:46:35.528 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:46:35.537 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:46:35.542 +05:30 [INF] Duration: 645.9675ms
+2025-10-13 12:46:35.614 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/ViewAllBudgets
+System.ArgumentException: Invalid sort field: campaignID. Allowed fields are: BudgetId, CampaignId, StoreId, AllocatedAmount, SpentAmount, Campaign
+   at PromoPilot.Application.Services.BudgetService.GetPagedAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 118
+   at PromoPilot.Application.Services.BudgetModule.GetPagedBudgetsAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 54
+   at PromoPilot.API.Controllers.BudgetController.ViewAllBudgets(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:46:35.752 +05:30 [ERR] HTTP GET /api/Budget/ViewAllBudgets responded 500 in 858.0366 ms
+2025-10-13 12:46:35.772 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=campaignID&sortDesc=false - 500 null application/problem+json 900.4702ms
+2025-10-13 12:46:47.660 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=CampaignID&sortDesc=false - null null
+2025-10-13 12:46:47.673 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:46:47.681 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:46:47.690 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:46:47.699 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:46:47.722 +05:30 [INF] Fetching all budgets.
+2025-10-13 12:46:48.011 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 289.9249ms
+2025-10-13 12:46:48.021 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:46:48.028 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:46:48.034 +05:30 [INF] Duration: 352.9612ms
+2025-10-13 12:46:48.113 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/ViewAllBudgets
+System.ArgumentException: Invalid sort field: CampaignID. Allowed fields are: BudgetId, CampaignId, StoreId, AllocatedAmount, SpentAmount, Campaign
+   at PromoPilot.Application.Services.BudgetService.GetPagedAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 118
+   at PromoPilot.Application.Services.BudgetModule.GetPagedBudgetsAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 54
+   at PromoPilot.API.Controllers.BudgetController.ViewAllBudgets(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 51
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:46:48.165 +05:30 [ERR] HTTP GET /api/Budget/ViewAllBudgets responded 500 in 491.8589 ms
+2025-10-13 12:46:48.171 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=CampaignID&sortDesc=false - 500 null application/problem+json 511.1443ms
+2025-10-13 12:47:03.139 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=CampaignId&sortDesc=false - null null
+2025-10-13 12:47:03.146 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-13 12:47:03.149 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:47:03.157 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:47:03.165 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:47:03.179 +05:30 [INF] Fetching all budgets.
+2025-10-13 12:47:03.218 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Budget] AS [b]
+2025-10-13 12:47:03.252 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+ORDER BY [b].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 12:47:03.279 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 12:47:03.301 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:47:03.313 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 133.6863ms
+2025-10-13 12:47:03.328 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-13 12:47:03.342 +05:30 [INF] ResponseBody: {"items":[{"budgetID":12,"campaignID":7,"storeID":102,"allocatedAmount":2000.00,"spentAmount":1500.00},{"budgetID":37,"campaignID":7,"storeID":101,"allocatedAmount":1000.00,"spentAmount":800.00},{"budgetID":13,"campaignID":9,"storeID":102,"allocatedAmount":45000.00,"spentAmount":34000.00},{"budgetID":33,"campaignID":22,"storeID":102,"allocatedAmount":30000.00,"spentAmount":40000.00},{"budgetID":34,"campaignID":22,"storeID":102,"allocatedAmount":40000.00,"spentAmount":50000.00}],"totalCount":5,"pageNumber":1,"pageSize":5}
+2025-10-13 12:47:03.357 +05:30 [INF] Duration: 207.2849ms
+2025-10-13 12:47:03.372 +05:30 [INF] Request processed successfully.
+2025-10-13 12:47:03.380 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 200 in 233.8831 ms
+2025-10-13 12:47:03.395 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortBy=CampaignId&sortDesc=false - 200 null application/json; charset=utf-8 255.6515ms
+2025-10-13 12:47:19.767 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewBudgetById/34 - null null
+2025-10-13 12:47:19.780 +05:30 [INF] Processing request: /api/Budget/ViewBudgetById/34
+2025-10-13 12:47:19.787 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewBudgetById/34
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:47:19.795 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewBudgetById (PromoPilot.API)'
+2025-10-13 12:47:19.807 +05:30 [INF] Route matched with {action = "ViewBudgetById", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewBudgetById(Int32) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:47:19.822 +05:30 [INF] Fetching budget with ID: 34
+2025-10-13 12:47:19.833 +05:30 [INF] Retrieving budget allocation for ID: 34
+2025-10-13 12:47:19.902 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+WHERE [b].[BudgetID] = @__p_0
+2025-10-13 12:47:19.935 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.BudgetDto'.
+2025-10-13 12:47:19.947 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 12:47:19.954 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewBudgetById (PromoPilot.API) in 133.1447ms
+2025-10-13 12:47:19.963 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewBudgetById (PromoPilot.API)'
+2025-10-13 12:47:19.971 +05:30 [INF] ResponseBody: {"budgetID":34,"campaignID":22,"storeID":102,"allocatedAmount":40000.00,"spentAmount":50000.00}
+2025-10-13 12:47:19.976 +05:30 [INF] Duration: 189.6077ms
+2025-10-13 12:47:19.981 +05:30 [INF] Request processed successfully.
+2025-10-13 12:47:19.988 +05:30 [INF] HTTP GET /api/Budget/ViewBudgetById/34 responded 200 in 208.2020 ms
+2025-10-13 12:47:19.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewBudgetById/34 - 200 null application/json; charset=utf-8 232.0711ms
+2025-10-13 12:47:58.603 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:47:58.613 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:47:58.615 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:47:58.622 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:47:58.636 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:47:58.646 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:47:58.664 +05:30 [INF] RequestBody: {
+  "campaignID": 2,
+  "storeID": 234,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:47:58.692 +05:30 [INF] Allocating new budget.
+2025-10-13 12:47:58.705 +05:30 [INF] Allocating budget for CampaignID: 2, StoreID: 234
+2025-10-13 12:47:58.786 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:47:58.844 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-13 12:47:59.651 +05:30 [ERR] Unexpected error during budget allocation.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+2025-10-13 12:47:59.868 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 1206.3146ms
+2025-10-13 12:47:59.874 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:47:59.883 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:47:59.886 +05:30 [INF] Duration: 1264.6606ms
+2025-10-13 12:48:00.207 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/AllocateBudget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:48:00.279 +05:30 [ERR] HTTP POST /api/Budget/AllocateBudget responded 500 in 1666.5370 ms
+2025-10-13 12:48:00.286 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 500 null application/problem+json 1683.6574ms
+2025-10-13 12:48:18.649 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:48:18.661 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:48:18.665 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:48:18.671 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:48:18.680 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:48:18.686 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:48:18.697 +05:30 [INF] RequestBody: {
+  "campaignID": 2,
+  "storeID": 102,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:48:18.700 +05:30 [INF] Allocating new budget.
+2025-10-13 12:48:18.703 +05:30 [INF] Allocating budget for CampaignID: 2, StoreID: 102
+2025-10-13 12:48:18.712 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:48:18.723 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-13 12:48:19.356 +05:30 [ERR] Unexpected error during budget allocation.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+2025-10-13 12:48:19.499 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 802.2782ms
+2025-10-13 12:48:19.506 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:48:19.510 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:48:19.514 +05:30 [INF] Duration: 842.9916ms
+2025-10-13 12:48:19.759 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/AllocateBudget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e5d4f24f-2c5a-43ab-9235-ced284ef7d0a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:48:19.805 +05:30 [ERR] HTTP POST /api/Budget/AllocateBudget responded 500 in 1143.9961 ms
+2025-10-13 12:48:19.812 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 500 null application/problem+json 1163.7932ms
+2025-10-13 12:48:27.398 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:48:27.411 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:48:27.413 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:48:27.420 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:48:27.429 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:48:27.437 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:48:27.455 +05:30 [INF] RequestBody: {
+  "campaignID": 7,
+  "storeID": 102,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:48:27.463 +05:30 [INF] Allocating new budget.
+2025-10-13 12:48:27.470 +05:30 [INF] Allocating budget for CampaignID: 7, StoreID: 102
+2025-10-13 12:48:27.505 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:48:27.555 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-13 12:48:27.571 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.BudgetDto'.
+2025-10-13 12:48:27.593 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Budget/ViewBudgetById/40
+2025-10-13 12:48:27.599 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 145.2515ms
+2025-10-13 12:48:27.604 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:48:27.607 +05:30 [INF] ResponseBody: {"budgetID":40,"campaignID":7,"storeID":102,"allocatedAmount":25000,"spentAmount":20000}
+2025-10-13 12:48:27.609 +05:30 [INF] Duration: 188.8198ms
+2025-10-13 12:48:27.611 +05:30 [INF] Request processed successfully.
+2025-10-13 12:48:27.614 +05:30 [INF] HTTP POST /api/Budget/AllocateBudget responded 201 in 202.4575 ms
+2025-10-13 12:48:27.619 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 201 null application/json; charset=utf-8 220.7763ms
+2025-10-13 12:58:45.735 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:58:45.765 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:58:45.768 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:58:45.771 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:58:45.776 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:58:45.779 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:58:45.790 +05:30 [INF] RequestBody: {
+  "campaignID": 7,
+  "storeID": 234,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:58:45.794 +05:30 [INF] Allocating new budget.
+2025-10-13 12:58:45.797 +05:30 [INF] Allocating budget for CampaignID: 7, StoreID: 234
+2025-10-13 12:58:46.381 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:58:46.415 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-13 12:58:46.425 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.BudgetDto'.
+2025-10-13 12:58:46.432 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Budget/ViewBudgetById/41
+2025-10-13 12:58:46.438 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 649.5629ms
+2025-10-13 12:58:46.442 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:58:46.446 +05:30 [INF] ResponseBody: {"budgetID":41,"campaignID":7,"storeID":234,"allocatedAmount":25000,"spentAmount":20000}
+2025-10-13 12:58:46.450 +05:30 [INF] Duration: 678.7695ms
+2025-10-13 12:58:46.456 +05:30 [INF] Request processed successfully.
+2025-10-13 12:58:46.461 +05:30 [INF] HTTP POST /api/Budget/AllocateBudget responded 201 in 695.6156 ms
+2025-10-13 12:58:46.471 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 201 null application/json; charset=utf-8 735.3852ms
+2025-10-13 12:58:53.618 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:58:53.628 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:58:53.631 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:58:53.633 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:58:53.640 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:58:53.645 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:58:53.657 +05:30 [INF] RequestBody: {
+  "campaignID": 1,
+  "storeID": 234,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:58:53.663 +05:30 [INF] Allocating new budget.
+2025-10-13 12:58:53.667 +05:30 [INF] Allocating budget for CampaignID: 1, StoreID: 234
+2025-10-13 12:58:53.678 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:58:53.702 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-13 12:58:54.267 +05:30 [ERR] Unexpected error during budget allocation.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+2025-10-13 12:58:54.431 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 774.0672ms
+2025-10-13 12:58:54.441 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:58:54.455 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:58:54.460 +05:30 [INF] Duration: 826.3753ms
+2025-10-13 12:58:54.708 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/AllocateBudget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:58:54.745 +05:30 [ERR] HTTP POST /api/Budget/AllocateBudget responded 500 in 1117.0280 ms
+2025-10-13 12:58:54.750 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 500 null application/problem+json 1131.7452ms
+2025-10-13 12:59:29.295 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:59:29.307 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:59:29.312 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:59:29.317 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:59:29.324 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:59:29.331 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:59:29.339 +05:30 [INF] RequestBody: {
+  "campaignID": 2,
+  "storeID": 234,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:59:29.343 +05:30 [INF] Allocating new budget.
+2025-10-13 12:59:29.344 +05:30 [INF] Allocating budget for CampaignID: 2, StoreID: 234
+2025-10-13 12:59:29.353 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:59:29.372 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-13 12:59:29.949 +05:30 [ERR] Unexpected error during budget allocation.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+2025-10-13 12:59:30.112 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 773.1674ms
+2025-10-13 12:59:30.121 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:59:30.125 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-13 12:59:30.127 +05:30 [INF] Duration: 809.6764ms
+2025-10-13 12:59:30.373 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/AllocateBudget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:1193dc64-5135-40f6-b41b-9d07df288c24
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-13 12:59:30.479 +05:30 [ERR] HTTP POST /api/Budget/AllocateBudget responded 500 in 1171.9615 ms
+2025-10-13 12:59:30.497 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 500 null application/problem+json 1201.9636ms
+2025-10-13 12:59:37.678 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 91
+2025-10-13 12:59:37.692 +05:30 [INF] CORS policy execution successful.
+2025-10-13 12:59:37.697 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-13 12:59:37.702 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 91
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 12:59:37.709 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:59:37.717 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 12:59:37.729 +05:30 [INF] RequestBody: {
+  "campaignID": 6,
+  "storeID": 234,
+  "allocatedAmount": 25000,
+  "spentAmount": 20000
+}
+2025-10-13 12:59:37.735 +05:30 [INF] Allocating new budget.
+2025-10-13 12:59:37.740 +05:30 [INF] Allocating budget for CampaignID: 6, StoreID: 234
+2025-10-13 12:59:37.755 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-13 12:59:37.780 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-13 12:59:37.793 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.BudgetDto'.
+2025-10-13 12:59:37.797 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Budget/ViewBudgetById/44
+2025-10-13 12:59:37.801 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 72.3558ms
+2025-10-13 12:59:37.806 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-13 12:59:37.809 +05:30 [INF] ResponseBody: {"budgetID":44,"campaignID":6,"storeID":234,"allocatedAmount":25000,"spentAmount":20000}
+2025-10-13 12:59:37.812 +05:30 [INF] Duration: 109.8977ms
+2025-10-13 12:59:37.815 +05:30 [INF] Request processed successfully.
+2025-10-13 12:59:37.818 +05:30 [INF] HTTP POST /api/Budget/AllocateBudget responded 201 in 126.5204 ms
+2025-10-13 12:59:37.822 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 201 null application/json; charset=utf-8 144.2413ms
+2025-10-13 13:31:53.176 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/export/csv - null null
+2025-10-13 13:31:53.189 +05:30 [INF] Processing request: /api/Budget/export/csv
+2025-10-13 13:31:53.190 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/export/csv
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 13:31:53.193 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ExportCsv (PromoPilot.API)'
+2025-10-13 13:31:53.197 +05:30 [INF] Route matched with {action = "ExportCsv", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportCsv() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 13:31:53.200 +05:30 [INF] Retrieving all budget allocations.
+2025-10-13 13:31:53.217 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-10-13 13:31:53.225 +05:30 [INF] Executing FileContentResult, sending file with download name 'Budgets.csv' ...
+2025-10-13 13:31:53.242 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/csv
+Content-Length: 278
+Content-Disposition: attachment; filename=Budgets.csv; filename*=UTF-8''Budgets.csv
+2025-10-13 13:31:53.244 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ExportCsv (PromoPilot.API) in 45.22ms
+2025-10-13 13:31:53.247 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ExportCsv (PromoPilot.API)'
+2025-10-13 13:31:53.251 +05:30 [INF] ResponseBody: BudgetID,CampaignID,StoreID,AllocatedAmount,SpentAmount
+12,7,102,2000.00,1500.00
+13,9,102,45000.00,34000.00
+33,22,102,30000.00,40000.00
+34,22,102,40000.00,50000.00
+37,7,101,1000.00,800.00
+40,7,102,25000.00,20000.00
+41,7,234,25000.00,20000.00
+44,6,234,25000.00,20000.00
+
+2025-10-13 13:31:53.254 +05:30 [INF] Duration: 64.2296ms
+2025-10-13 13:31:53.258 +05:30 [INF] Request processed successfully.
+2025-10-13 13:31:53.261 +05:30 [INF] HTTP GET /api/Budget/export/csv responded 200 in 72.0670 ms
+2025-10-13 13:31:53.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/export/csv - 200 278 text/csv 91.6373ms
+2025-10-13 13:32:00.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/export/excel - null null
+2025-10-13 13:32:00.478 +05:30 [INF] Processing request: /api/Budget/export/excel
+2025-10-13 13:32:00.480 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/export/excel
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 13:32:00.481 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ExportExcel (PromoPilot.API)'
+2025-10-13 13:32:00.485 +05:30 [INF] Route matched with {action = "ExportExcel", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportExcel() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-13 13:32:00.488 +05:30 [INF] Retrieving all budget allocations.
+2025-10-13 13:32:00.493 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-10-13 13:32:03.682 +05:30 [INF] Executing FileContentResult, sending file with download name 'Budgets.xlsx' ...
+2025-10-13 13:32:03.689 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Length: 6555
+Content-Disposition: attachment; filename=Budgets.xlsx; filename*=UTF-8''Budgets.xlsx
+2025-10-13 13:32:03.691 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ExportExcel (PromoPilot.API) in 3204.5919ms
+2025-10-13 13:32:03.694 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ExportExcel (PromoPilot.API)'
+2025-10-13 13:32:03.696 +05:30 [INF] Duration: 3216.4717ms
+2025-10-13 13:32:03.698 +05:30 [INF] Request processed successfully.
+2025-10-13 13:32:03.700 +05:30 [INF] HTTP GET /api/Budget/export/excel responded 200 in 3222.0562 ms
+2025-10-13 13:32:03.703 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/export/excel - 200 6555 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 3229.6964ms
+2025-10-13 21:25:59.544 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-13 21:25:59.978 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-13 21:26:00.912 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-13 21:26:00.914 +05:30 [INF] Hosting environment: Development
+2025-10-13 21:26:00.916 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-13 21:26:02.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-13 21:26:02.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-13 21:26:02.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 32.4764ms
+2025-10-13 21:26:02.827 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 265.7692ms
+2025-10-13 21:26:02.888 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-13 21:26:02.950 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 40.0732 ms
+2025-10-13 21:26:02.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 65.5225ms
+2025-10-13 21:26:29.696 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 64
+2025-10-13 21:26:29.780 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-13 21:26:29.794 +05:30 [INF] CORS policy execution successful.
+2025-10-13 21:26:29.813 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-13 21:26:29.989 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:26:32.676 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-13 21:26:32.826 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-13 21:26:34.966 +05:30 [INF] RequestBody: {
+  "email": "mariyamm@gmail.com",
+  "password": "mariyaM@123"
+}
+2025-10-13 21:26:44.642 +05:30 [INF] Executed DbCommand (543ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-13 21:26:46.042 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-13 21:26:46.116 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-13 21:26:46.166 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:26:46.192 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 13343.6666ms
+2025-10-13 21:26:46.207 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-13 21:26:46.230 +05:30 [INF] ResponseBody: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImE1YjQxMjkyLTE1ZGYtNDRhOC1iOGUzLTM3NGNlOTI4OTE5NyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1hcml5YW1tQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6Ik1hcmtldGluZyIsImV4cCI6MTc2MDM3NDYwNSwiaXNzIjoiUHJvbW9QaWxvdElzc3VlciIsImF1ZCI6IlByb21vUGlsb3RBdWRpZW5jZSJ9.BLU2j-ZCPEM7A6iX5GKmv21P5mibic4DY1Pu_lhXq84","refreshToken":"4oKGtQPeMNGjWT7ug+krT50FiuS2m2UKEdpRAHmZrmhmijN4NSHy+Ebw3qdtDoecv1p+CQ6g8ILp89HzYeE1Ig==","accessTokenExpiry":"2025-10-13T16:56:46.0938683Z","refreshTokenExpiry":"2025-10-20T15:56:45.6748072Z","role":"Marketing","email":"mariyamm@gmail.com","username":"Mariyam"}
+2025-10-13 21:26:46.249 +05:30 [INF] Duration: 16260.0728ms
+2025-10-13 21:26:46.258 +05:30 [INF] Request processed successfully.
+2025-10-13 21:26:46.268 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 16550.2895 ms
+2025-10-13 21:26:46.305 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 16609.8732ms
+2025-10-13 21:27:17.576 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Sales/ViewAllSales?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:27:17.621 +05:30 [INF] Processing request: /api/Sales/ViewAllSales
+2025-10-13 21:27:17.634 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Sales/ViewAllSales
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:27:17.846 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.SalesController.ViewAllSales (PromoPilot.API)'
+2025-10-13 21:27:17.884 +05:30 [INF] Route matched with {action = "ViewAllSales", controller = "Sales"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllSales(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.SalesController (PromoPilot.API).
+2025-10-13 21:27:18.499 +05:30 [INF] Fetching all sales.
+2025-10-13 21:27:19.130 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Sales] AS [s]
+2025-10-13 21:27:19.203 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[SaleID], [s].[CampaignID], [s].[CustomerID], [s].[PaymentDate], [s].[PaymentMethod], [s].[PaymentStatus], [s].[ProductID], [s].[Quantity], [s].[SaleDate], [s].[StoreID], [s].[TotalAmount], [s].[TransactionId]
+FROM [Sales] AS [s]
+ORDER BY [s].[SaleID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:27:19.416 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.SaleDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:27:19.461 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:27:19.467 +05:30 [INF] Executed action PromoPilot.API.Controllers.SalesController.ViewAllSales (PromoPilot.API) in 1564.8243ms
+2025-10-13 21:27:19.473 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.SalesController.ViewAllSales (PromoPilot.API)'
+2025-10-13 21:27:19.481 +05:30 [INF] ResponseBody: {"items":[{"saleId":24,"customerId":1,"productId":1,"campaignId":7,"storeId":1,"quantity":2,"totalAmount":500.00,"saleDate":"2025-09-29T14:49:57.9466667","transactionId":"TXN001","paymentMethod":"Card","paymentStatus":"Completed","paymentDate":"2025-09-29T14:49:57.9466667"},{"saleId":25,"customerId":1,"productId":3,"campaignId":8,"storeId":1,"quantity":4,"totalAmount":1000.00,"saleDate":"2025-09-29T14:49:57.9466667","transactionId":"TXN002","paymentMethod":"UPI","paymentStatus":"Completed","paymentDate":"2025-09-29T14:49:57.9466667"},{"saleId":27,"customerId":2,"productId":1,"campaignId":9,"storeId":1,"quantity":5,"totalAmount":1250.00,"saleDate":"2025-09-29T14:49:57.9466667","transactionId":"TXN004","paymentMethod":"Card","paymentStatus":"Completed","paymentDate":"2025-09-29T14:49:57.9466667"},{"saleId":28,"customerId":2,"productId":3,"campaignId":10,"storeId":1,"quantity":1,"totalAmount":250.00,"saleDate":"2025-09-29T14:49:57.9466667","transactionId":"TXN005","paymentMethod":"UPI","paymentStatus":"Completed","paymentDate":"2025-09-29T14:49:57.9466667"},{"saleId":29,"customerId":1,"productId":1,"campaignId":7,"storeId":1,"quantity":2,"totalAmount":500.00,"saleDate":"2025-09-29T14:50:09.0733333","transactionId":"TXN001","paymentMethod":"Card","paymentStatus":"Completed","paymentDate":"2025-09-29T14:50:09.0733333"}],"totalCount":16,"pageNumber":1,"pageSize":5}
+2025-10-13 21:27:19.487 +05:30 [INF] Duration: 1853.1102ms
+2025-10-13 21:27:19.498 +05:30 [INF] Request processed successfully.
+2025-10-13 21:27:19.503 +05:30 [INF] HTTP GET /api/Sales/ViewAllSales responded 200 in 1885.0331 ms
+2025-10-13 21:27:19.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Sales/ViewAllSales?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 1942.3723ms
+2025-10-13 21:28:06.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/ExecutionStatus/ViewAllExecutionStatuses?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:28:06.703 +05:30 [INF] Processing request: /api/ExecutionStatus/ViewAllExecutionStatuses
+2025-10-13 21:28:06.715 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/ExecutionStatus/ViewAllExecutionStatuses
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:28:06.740 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (StoreManager)
+2025-10-13 21:28:06.762 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-13 21:28:06.769 +05:30 [INF] Response:
+StatusCode: 403
+2025-10-13 21:28:06.778 +05:30 [INF] Duration: 63.4162ms
+2025-10-13 21:28:06.795 +05:30 [INF] Request processed successfully.
+2025-10-13 21:28:06.804 +05:30 [INF] HTTP GET /api/ExecutionStatus/ViewAllExecutionStatuses responded 403 in 102.4452 ms
+2025-10-13 21:28:06.820 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/ExecutionStatus/ViewAllExecutionStatuses?pageNumber=1&pageSize=5&sortDesc=false - 403 0 null 168.0836ms
+2025-10-13 21:28:16.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Product/GetAllProducts?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:28:16.500 +05:30 [INF] Processing request: /api/Product/GetAllProducts
+2025-10-13 21:28:16.506 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Product/GetAllProducts
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:28:16.536 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.ProductController.GetAllProducts (PromoPilot.API)'
+2025-10-13 21:28:16.569 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllProducts(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.ProductController (PromoPilot.API).
+2025-10-13 21:28:16.590 +05:30 [INF] Fetching all products.
+2025-10-13 21:28:16.882 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Products] AS [p]
+2025-10-13 21:28:16.918 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductID], [p].[Category], [p].[Name], [p].[Price]
+FROM [Products] AS [p]
+ORDER BY [p].[ProductID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:28:16.996 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[ProductDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:28:17.015 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:28:17.020 +05:30 [INF] Executed action PromoPilot.API.Controllers.ProductController.GetAllProducts (PromoPilot.API) in 439.6897ms
+2025-10-13 21:28:17.032 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.ProductController.GetAllProducts (PromoPilot.API)'
+2025-10-13 21:28:17.036 +05:30 [INF] ResponseBody: {"items":[{"productID":1,"name":"Shampoo","category":"Personal Care","price":5.99},{"productID":2,"name":"Toothpaste","category":"Personal Care","price":3.49},{"productID":3,"name":"Coffee","category":"Beverages","price":7.99}],"totalCount":3,"pageNumber":1,"pageSize":5}
+2025-10-13 21:28:17.045 +05:30 [INF] Duration: 539.4326ms
+2025-10-13 21:28:17.050 +05:30 [INF] Request processed successfully.
+2025-10-13 21:28:17.054 +05:30 [INF] HTTP GET /api/Product/GetAllProducts responded 200 in 553.6805 ms
+2025-10-13 21:28:17.069 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Product/GetAllProducts?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 591.1516ms
+2025-10-13 21:28:37.258 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ViewAllEngagements?pageNumber=1&pageSize=10&sortDesc=false - null null
+2025-10-13 21:28:37.301 +05:30 [INF] Processing request: /api/Engagement/ViewAllEngagements
+2025-10-13 21:28:37.307 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ViewAllEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:28:37.343 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ViewAllEngagements (PromoPilot.API)'
+2025-10-13 21:28:37.377 +05:30 [INF] Route matched with {action = "ViewAllEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllEngagements(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-13 21:28:37.415 +05:30 [INF] Fetching all engagements.
+2025-10-13 21:28:37.520 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Engagement] AS [e]
+2025-10-13 21:28:37.568 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+ORDER BY [e].[EngagementID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:28:37.688 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[EngagementDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:28:37.709 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:28:37.713 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ViewAllEngagements (PromoPilot.API) in 316.9564ms
+2025-10-13 21:28:37.727 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ViewAllEngagements (PromoPilot.API)'
+2025-10-13 21:28:37.732 +05:30 [INF] ResponseBody: {"items":[{"engagementID":9,"campaignID":7,"customerID":1,"redemptionCount":3,"purchaseValue":250.75},{"engagementID":10,"campaignID":7,"customerID":201,"redemptionCount":1,"purchaseValue":500.00},{"engagementID":11,"campaignID":7,"customerID":202,"redemptionCount":1,"purchaseValue":300.00},{"engagementID":12,"campaignID":7,"customerID":203,"redemptionCount":1,"purchaseValue":250.00},{"engagementID":13,"campaignID":6,"customerID":2,"redemptionCount":2,"purchaseValue":1500.00}],"totalCount":5,"pageNumber":1,"pageSize":10}
+2025-10-13 21:28:37.739 +05:30 [INF] Duration: 432.3358ms
+2025-10-13 21:28:37.752 +05:30 [INF] Request processed successfully.
+2025-10-13 21:28:37.757 +05:30 [INF] HTTP GET /api/Engagement/ViewAllEngagements responded 200 in 456.4393 ms
+2025-10-13 21:28:37.771 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ViewAllEngagements?pageNumber=1&pageSize=10&sortDesc=false - 200 null application/json; charset=utf-8 512.7952ms
+2025-10-13 21:28:51.742 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Customer/ViewAllCustomers?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:28:51.769 +05:30 [INF] Processing request: /api/Customer/ViewAllCustomers
+2025-10-13 21:28:51.779 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Customer/ViewAllCustomers
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:28:51.791 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CustomerController.ViewAllCustomers (PromoPilot.API)'
+2025-10-13 21:28:51.822 +05:30 [INF] Route matched with {action = "ViewAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllCustomers(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CustomerController (PromoPilot.API).
+2025-10-13 21:28:51.843 +05:30 [INF] Fetching all customers.
+2025-10-13 21:28:51.882 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Customers] AS [c]
+2025-10-13 21:28:51.913 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerID], [c].[Email], [c].[Name]
+FROM [Customers] AS [c]
+ORDER BY [c].[CustomerID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:28:51.974 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[CustomerDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:28:51.992 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:28:52.000 +05:30 [INF] Executed action PromoPilot.API.Controllers.CustomerController.ViewAllCustomers (PromoPilot.API) in 164.1874ms
+2025-10-13 21:28:52.007 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CustomerController.ViewAllCustomers (PromoPilot.API)'
+2025-10-13 21:28:52.018 +05:30 [INF] ResponseBody: {"items":[{"customerID":1,"name":"Alice Smith","email":"alice@example.com"},{"customerID":2,"name":"Bob Johnson","email":"bob@example.com"},{"customerID":3,"name":"Charlie Lee","email":"charlie@example.com"}],"totalCount":3,"pageNumber":1,"pageSize":5}
+2025-10-13 21:28:52.022 +05:30 [INF] Duration: 243.7181ms
+2025-10-13 21:28:52.034 +05:30 [INF] Request processed successfully.
+2025-10-13 21:28:52.037 +05:30 [INF] HTTP GET /api/Customer/ViewAllCustomers responded 200 in 268.8122 ms
+2025-10-13 21:28:52.049 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Customer/ViewAllCustomers?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 306.886ms
+2025-10-13 21:29:01.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ViewAllCampaignReports?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:29:01.234 +05:30 [INF] Processing request: /api/CampaignReport/ViewAllCampaignReports
+2025-10-13 21:29:01.242 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ViewAllCampaignReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:29:01.254 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ViewAllCampaignReports (PromoPilot.API)'
+2025-10-13 21:29:01.280 +05:30 [INF] Route matched with {action = "ViewAllCampaignReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllCampaignReports(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-13 21:29:01.298 +05:30 [INF] Fetching all campaign reports with paging and sorting.
+2025-10-13 21:29:01.347 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [CampaignReport] AS [c]
+2025-10-13 21:29:01.381 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+ORDER BY [c].[ReportID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:29:01.454 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignReportDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:29:01.472 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:29:01.476 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ViewAllCampaignReports (PromoPilot.API) in 186.3854ms
+2025-10-13 21:29:01.488 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ViewAllCampaignReports (PromoPilot.API)'
+2025-10-13 21:29:01.498 +05:30 [INF] ResponseBody: {"items":[{"reportID":12,"campaignID":7,"roi":99.90,"reach":3000,"conversionRate":2.50,"generatedDate":"2025-09-28T09:12:02.65"},{"reportID":13,"campaignID":6,"roi":120.50,"reach":5000,"conversionRate":3.75,"generatedDate":"2025-09-28T09:13:07.178331"},{"reportID":15,"campaignID":6,"roi":120.50,"reach":5000,"conversionRate":3.75,"generatedDate":"2025-09-28T09:34:04.7983168"},{"reportID":16,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T08:59:47.2633029"},{"reportID":17,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:20:38.9041912"}],"totalCount":13,"pageNumber":1,"pageSize":5}
+2025-10-13 21:29:01.503 +05:30 [INF] Duration: 261.2146ms
+2025-10-13 21:29:01.508 +05:30 [INF] Request processed successfully.
+2025-10-13 21:29:01.521 +05:30 [INF] HTTP GET /api/CampaignReport/ViewAllCampaignReports responded 200 in 286.8346 ms
+2025-10-13 21:29:01.540 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ViewAllCampaignReports?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 324.009ms
+2025-10-13 21:29:35.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-13 21:29:35.602 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-13 21:29:35.614 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-13 21:29:35.637 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-13 21:29:35.658 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-13 21:29:35.684 +05:30 [INF] Fetching all campaigns.
+2025-10-13 21:29:35.722 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-13 21:29:35.754 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-13 21:29:35.840 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-13 21:29:35.857 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-13 21:29:35.866 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 190.0392ms
+2025-10-13 21:29:35.874 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-13 21:29:35.882 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"}],"totalCount":16,"pageNumber":1,"pageSize":5}
+2025-10-13 21:29:35.886 +05:30 [INF] Duration: 272.6557ms
+2025-10-13 21:29:35.890 +05:30 [INF] Request processed successfully.
+2025-10-13 21:29:35.899 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 296.9392 ms
+2025-10-13 21:29:35.907 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 355.2965ms

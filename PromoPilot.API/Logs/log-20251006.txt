@@ -1,0 +1,2425 @@
+2025-10-06 09:17:32.611 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 09:17:33.317 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 09:17:34.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 09:17:34.357 +05:30 [INF] Hosting environment: Development
+2025-10-06 09:17:34.360 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 09:17:36.651 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 09:17:37.434 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 265.9419 ms
+2025-10-06 09:17:37.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 09:17:37.474 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 09:17:37.500 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 851.2494ms
+2025-10-06 09:17:37.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 60.9701ms
+2025-10-06 09:17:37.675 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 200.6629ms
+2025-10-06 09:17:37.716 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 09:17:37.802 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 75.2441 ms
+2025-10-06 09:17:37.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 95.0034ms
+2025-10-06 09:19:32.111 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/ExecutionStatus/AddExecutionStatus - multipart/form-data; boundary=----WebKitFormBoundaryjwwa0FO1bDHmQ4fc 553
+2025-10-06 09:19:32.143 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 09:19:32.149 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 09:19:32.280 +05:30 [INF] Processing request: /api/ExecutionStatus/AddExecutionStatus
+2025-10-06 09:19:32.304 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/ExecutionStatus/AddExecutionStatus
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryjwwa0FO1bDHmQ4fc
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 553
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 09:19:35.080 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (StoreManager)
+2025-10-06 09:19:35.097 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-06 09:19:35.102 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-06 09:19:35.115 +05:30 [INF] Duration: 2810.1134ms
+2025-10-06 09:19:35.121 +05:30 [INF] Request processed successfully.
+2025-10-06 09:19:35.125 +05:30 [INF] HTTP POST /api/ExecutionStatus/AddExecutionStatus responded 401 in 2999.3458 ms
+2025-10-06 09:19:35.135 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/ExecutionStatus/AddExecutionStatus - 401 0 null 3024.0222ms
+2025-10-06 09:53:39.965 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 09:53:40.677 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 09:53:41.881 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 09:53:41.892 +05:30 [INF] Hosting environment: Development
+2025-10-06 09:53:41.897 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 09:53:43.293 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 09:53:43.820 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 202.7354 ms
+2025-10-06 09:53:43.837 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 557.2824ms
+2025-10-06 09:53:43.859 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 09:53:43.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 09:53:43.871 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.9758ms
+2025-10-06 09:53:43.943 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.1997ms
+2025-10-06 09:53:44.000 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 09:53:44.056 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 50.1388 ms
+2025-10-06 09:53:44.064 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.6833ms
+2025-10-06 09:58:36.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 09:58:36.348 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 09:58:36.506 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 09:58:36.561 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 09:58:39.280 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (StoreManager)
+2025-10-06 09:58:39.318 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-06 09:58:39.328 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-06 09:58:39.352 +05:30 [INF] Duration: 2788.2992ms
+2025-10-06 09:58:39.361 +05:30 [INF] Request processed successfully.
+2025-10-06 09:58:39.364 +05:30 [INF] HTTP GET /api/Engagement/ExportEngagements responded 401 in 3029.9627 ms
+2025-10-06 09:58:39.374 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 401 0 null 3104.9494ms
+2025-10-06 10:00:15.448 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 106
+2025-10-06 10:00:15.474 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:00:15.507 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 10:00:15.518 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 106
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:00:15.546 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 10:00:15.678 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:00:17.715 +05:30 [INF] RequestBody: {
+  "username": "Sree",
+  "email": "sree@gmail.com",
+  "password": "Sree@1234",
+  "role": "StoreManager"
+}
+2025-10-06 10:00:25.781 +05:30 [INF] Executed DbCommand (577ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 10:00:26.334 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 10:00:26.361 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:00:26.384 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 10680.3852ms
+2025-10-06 10:00:26.391 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 10:00:26.399 +05:30 [INF] ResponseBody: {"message":"This email is already registered."}
+2025-10-06 10:00:26.406 +05:30 [INF] Duration: 10888.4236ms
+2025-10-06 10:00:26.415 +05:30 [INF] Request processed successfully.
+2025-10-06 10:00:26.425 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 10957.4454 ms
+2025-10-06 10:00:26.460 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 11012.5705ms
+2025-10-06 10:00:37.852 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 111
+2025-10-06 10:00:37.860 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:00:37.866 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 10:00:37.874 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 111
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:00:37.884 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 10:00:37.890 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:00:37.907 +05:30 [INF] RequestBody: {
+  "username": "Sree",
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234",
+  "role": "StoreManager"
+}
+2025-10-06 10:00:38.039 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 10:00:38.742 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 10:00:39.292 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:00:39.313 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:00:39.353 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:00:39.358 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 1455.6718ms
+2025-10-06 10:00:39.367 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 10:00:39.373 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3Mjg2MzgsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.M-N7ltlIlTjqo_QMx3_Zz4bBpDysJScy-NeCroXl120","refreshToken":"jZcuatWf8AG+E3FfqonaDS/mW5CajuQRqOQNqVNlmkX2ePJLwQNuVpD0LwaCJ+HUigHpODG09NHo0chEoHvZeA==","accessTokenExpiry":"2025-10-06T05:30:39.3084972Z","refreshTokenExpiry":"2025-10-13T04:30:39.1209573Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:00:39.379 +05:30 [INF] Duration: 1505.3441ms
+2025-10-06 10:00:39.386 +05:30 [INF] Request processed successfully.
+2025-10-06 10:00:39.392 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 1532.4417 ms
+2025-10-06 10:00:39.403 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 1551.2588ms
+2025-10-06 10:01:05.582 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 63
+2025-10-06 10:01:05.640 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:01:05.646 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 10:01:05.660 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:01:05.674 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:01:05.709 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:01:05.734 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234"
+}
+2025-10-06 10:01:06.567 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 10:01:06.662 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:01:06.674 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:01:06.680 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:01:06.685 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 962.82ms
+2025-10-06 10:01:06.691 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:01:06.697 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3Mjg2NjYsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.NhOA5l4otfbvxwVj-UVwq4h73M0LtGSnS2R-v4FVOxk","refreshToken":"22vTYTBK1w0IosQ1YSiIaJuUpOsiaE6JsQnaJRXXaLkb2JzBznmqta7vdQl8rBMmtYY+wewMwRZEuBOVIbNBqA==","accessTokenExpiry":"2025-10-06T05:31:06.67348Z","refreshTokenExpiry":"2025-10-13T04:31:06.6501056Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:01:06.706 +05:30 [INF] Duration: 1046.2247ms
+2025-10-06 10:01:06.712 +05:30 [INF] Request processed successfully.
+2025-10-06 10:01:06.718 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 1078.8437 ms
+2025-10-06 10:01:06.728 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 1145.553ms
+2025-10-06 10:01:15.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:01:15.278 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:01:15.286 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:01:15.296 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (StoreManager)
+2025-10-06 10:01:15.304 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-06 10:01:15.310 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-06 10:01:15.317 +05:30 [INF] Duration: 30.6427ms
+2025-10-06 10:01:15.323 +05:30 [INF] Request processed successfully.
+2025-10-06 10:01:15.327 +05:30 [INF] HTTP GET /api/Engagement/ExportEngagements responded 401 in 54.9941 ms
+2025-10-06 10:01:15.336 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 401 0 null 84.755ms
+2025-10-06 10:01:18.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:01:18.487 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:01:18.490 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:01:18.527 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (StoreManager)
+2025-10-06 10:01:18.543 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-06 10:01:18.548 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-06 10:01:18.602 +05:30 [INF] Duration: 112.1084ms
+2025-10-06 10:01:18.607 +05:30 [INF] Request processed successfully.
+2025-10-06 10:01:18.615 +05:30 [INF] HTTP GET /api/Engagement/ExportEngagements responded 401 in 128.4500 ms
+2025-10-06 10:01:18.630 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 401 0 null 177.0466ms
+2025-10-06 10:01:57.175 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:01:57.254 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:01:57.260 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:01:57.454 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:01:57.482 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:01:58.010 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:01:58.019 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:01:58.510 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:02:00.707 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 3212.169ms
+2025-10-06 10:02:00.716 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:02:00.724 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 10:02:00.728 +05:30 [INF] Duration: 3468.7382ms
+2025-10-06 10:02:01.067 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/ExportEngagements
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at PromoPilot.API.Controllers.EngagementController.GenerateExcel(IEnumerable`1 dtos) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 158
+   at PromoPilot.API.Controllers.EngagementController.ExportEngagements(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 135
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 10:02:01.296 +05:30 [ERR] HTTP GET /api/Engagement/ExportEngagements responded 500 in 4042.1377 ms
+2025-10-06 10:02:01.318 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 500 null application/json 4143.3252ms
+2025-10-06 10:02:34.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=csv - null null
+2025-10-06 10:02:34.745 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:02:34.752 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:02:34.761 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:02:34.771 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:02:34.810 +05:30 [INF] Exporting engagements in format: csv
+2025-10-06 10:02:34.819 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:02:34.866 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:02:34.900 +05:30 [INF] Executing FileContentResult, sending file with download name 'engagements.csv' ...
+2025-10-06 10:02:34.943 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/csv
+Content-Length: 139
+Content-Disposition: attachment; filename=engagements.csv; filename*=UTF-8''engagements.csv
+2025-10-06 10:02:34.956 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 166.8387ms
+2025-10-06 10:02:34.966 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:02:34.973 +05:30 [INF] ResponseBody: EngagementID,CampaignID,CustomerID,RedemptionCount,PurchaseValue
+9,7,1,3,250.75
+10,7,201,1,500.00
+11,7,202,1,300.00
+12,7,203,1,250.00
+
+2025-10-06 10:02:34.975 +05:30 [INF] Duration: 223.8718ms
+2025-10-06 10:02:34.982 +05:30 [INF] Request processed successfully.
+2025-10-06 10:02:34.988 +05:30 [INF] HTTP GET /api/Engagement/ExportEngagements responded 200 in 242.6535 ms
+2025-10-06 10:02:34.996 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=csv - 200 139 text/csv 264.4832ms
+2025-10-06 10:02:57.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:02:57.447 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:02:57.455 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:02:57.464 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:02:57.472 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:02:57.507 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:02:57.515 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:02:57.555 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:02:57.704 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 220.7774ms
+2025-10-06 10:02:57.713 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:02:57.721 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 10:02:57.724 +05:30 [INF] Duration: 269.4936ms
+2025-10-06 10:02:57.922 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/ExportEngagements
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at PromoPilot.API.Controllers.EngagementController.GenerateExcel(IEnumerable`1 dtos) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 158
+   at PromoPilot.API.Controllers.EngagementController.ExportEngagements(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 135
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 10:02:57.969 +05:30 [ERR] HTTP GET /api/Engagement/ExportEngagements responded 500 in 521.9715 ms
+2025-10-06 10:02:57.981 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 500 null application/json 561.905ms
+2025-10-06 10:04:16.426 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 10:04:16.927 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 10:04:18.068 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 10:04:18.331 +05:30 [INF] Hosting environment: Development
+2025-10-06 10:04:18.334 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 10:04:18.750 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 10:04:19.379 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 249.1257 ms
+2025-10-06 10:04:19.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 10:04:19.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 10:04:19.461 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 718.8184ms
+2025-10-06 10:04:19.541 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 140.4705ms
+2025-10-06 10:04:19.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.5364ms
+2025-10-06 10:04:19.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 10:04:19.765 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 89.4950 ms
+2025-10-06 10:04:19.772 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.774ms
+2025-10-06 10:05:13.181 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 63
+2025-10-06 10:05:13.208 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 10:05:13.215 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:05:13.350 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 10:05:13.372 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:05:16.306 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:05:16.421 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:05:18.562 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234"
+}
+2025-10-06 10:05:26.909 +05:30 [INF] Executed DbCommand (479ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 10:05:28.094 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:05:28.167 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:05:28.208 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:05:28.230 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 11787.4838ms
+2025-10-06 10:05:28.242 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:05:28.258 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3Mjg5MjcsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.i4KoTG9zhiFFMwQQC27Qj0ui7AJWZE2iuG8vbdZPiwE","refreshToken":"M8oOqssjOkFASe4iAxhTN0s8ZSARdKMFfrTBJOBlid321YDfZyqwhz5+zCyOdQytzBSqyfNUTyu11fbR4UcYoA==","accessTokenExpiry":"2025-10-06T05:35:28.1483267Z","refreshTokenExpiry":"2025-10-13T04:35:27.7728235Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:05:28.276 +05:30 [INF] Duration: 14900.9724ms
+2025-10-06 10:05:28.284 +05:30 [INF] Request processed successfully.
+2025-10-06 10:05:28.293 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 15098.0907 ms
+2025-10-06 10:05:28.317 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 15135.6675ms
+2025-10-06 10:06:15.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:06:15.276 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:06:15.282 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:06:15.488 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:06:15.519 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:06:16.178 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:06:16.189 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:06:16.783 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:06:18.951 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 3418.3203ms
+2025-10-06 10:06:18.966 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:06:18.975 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 10:06:18.979 +05:30 [INF] Duration: 3696.6631ms
+2025-10-06 10:06:19.362 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/ExportEngagements
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at PromoPilot.API.Controllers.EngagementController.GenerateExcel(IEnumerable`1 dtos) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 158
+   at PromoPilot.API.Controllers.EngagementController.ExportEngagements(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 135
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 10:06:19.505 +05:30 [ERR] HTTP GET /api/Engagement/ExportEngagements responded 500 in 4237.7945 ms
+2025-10-06 10:06:19.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 500 null application/json 4285.8717ms
+2025-10-06 10:06:31.816 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:06:31.822 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:06:31.824 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:06:31.831 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:06:31.833 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:06:31.839 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:06:31.840 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:06:31.926 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:06:31.974 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 138.2443ms
+2025-10-06 10:06:31.977 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:06:31.979 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 10:06:31.981 +05:30 [INF] Duration: 156.706ms
+2025-10-06 10:06:32.049 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/ExportEngagements
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at PromoPilot.API.Controllers.EngagementController.GenerateExcel(IEnumerable`1 dtos) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 158
+   at PromoPilot.API.Controllers.EngagementController.ExportEngagements(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 135
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 10:06:32.058 +05:30 [ERR] HTTP GET /api/Engagement/ExportEngagements responded 500 in 237.4000 ms
+2025-10-06 10:06:32.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 500 null application/json 244.6924ms
+2025-10-06 10:11:58.614 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 10:11:59.000 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 10:11:59.770 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 10:11:59.784 +05:30 [INF] Hosting environment: Development
+2025-10-06 10:11:59.787 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 10:12:01.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 10:12:01.431 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 112.5286 ms
+2025-10-06 10:12:01.458 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 10:12:01.458 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 10:12:01.472 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 399.7574ms
+2025-10-06 10:12:01.493 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 35.2841ms
+2025-10-06 10:12:01.547 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.2492ms
+2025-10-06 10:12:01.605 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 10:12:01.658 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 45.9769 ms
+2025-10-06 10:12:01.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.6437ms
+2025-10-06 10:12:49.042 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 63
+2025-10-06 10:12:49.067 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 10:12:49.076 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:12:49.156 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 10:12:49.168 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:12:51.160 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:12:51.201 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:12:52.456 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234"
+}
+2025-10-06 10:12:56.218 +05:30 [INF] Executed DbCommand (290ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 10:12:56.632 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:12:56.652 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:12:56.662 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:12:56.669 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 5460.6581ms
+2025-10-06 10:12:56.671 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:12:56.674 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3MjkzNzYsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.fRMwhg_zxqwSUOf_WC1hXJY6--HbBigCYmIFy2O7HyA","refreshToken":"AWmkrpk3UvlGPh4Fu8sRTLxPqyRN4Ty2aohVzaT+pWSbx16/ShqW9ivjYpOUTAcaNIADfmgMPXMERpym/QLmYA==","accessTokenExpiry":"2025-10-06T05:42:56.6456986Z","refreshTokenExpiry":"2025-10-13T04:42:56.5349414Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:12:56.680 +05:30 [INF] Duration: 7512.565ms
+2025-10-06 10:12:56.681 +05:30 [INF] Request processed successfully.
+2025-10-06 10:12:56.684 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 7628.1485 ms
+2025-10-06 10:12:56.692 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 7650.3369ms
+2025-10-06 10:13:37.520 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:13:37.544 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:13:37.546 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:13:37.607 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:13:37.618 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:13:37.816 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:13:37.818 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:13:37.955 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:13:38.794 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 1169.7644ms
+2025-10-06 10:13:38.799 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:13:38.803 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 10:13:38.804 +05:30 [INF] Duration: 1258.7967ms
+2025-10-06 10:13:38.937 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/ExportEngagements
+OfficeOpenXml.LicenseContextPropertyObsoleteException: Please use the static 'ExcelPackage.License' property to set the required license information from EPPlus 8 and later versions. For more info see http://epplussoftware.com/developers/licensenotsetexception.
+   at OfficeOpenXml.ExcelPackage.set_LicenseContext(Nullable`1 value)
+   at PromoPilot.API.Controllers.EngagementController.GenerateExcel(IEnumerable`1 dtos) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 158
+   at PromoPilot.API.Controllers.EngagementController.ExportEngagements(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\EngagementController.cs:line 135
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 10:13:38.999 +05:30 [ERR] HTTP GET /api/Engagement/ExportEngagements responded 500 in 1463.1585 ms
+2025-10-06 10:13:39.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 500 null application/json 1481.4873ms
+2025-10-06 10:18:17.452 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 10:18:17.833 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 10:18:18.433 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 10:18:18.444 +05:30 [INF] Hosting environment: Development
+2025-10-06 10:18:18.445 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 10:18:19.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 10:18:19.560 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 103.9561 ms
+2025-10-06 10:18:19.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 10:18:19.572 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 363.9976ms
+2025-10-06 10:18:19.581 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.3114ms
+2025-10-06 10:18:19.588 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 10:18:19.641 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.1871ms
+2025-10-06 10:18:19.715 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 10:18:19.763 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 41.8554 ms
+2025-10-06 10:18:19.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.3868ms
+2025-10-06 10:18:58.255 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 63
+2025-10-06 10:18:58.273 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 10:18:58.278 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:18:58.332 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 10:18:58.343 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:19:00.291 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:19:00.328 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:19:01.466 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234"
+}
+2025-10-06 10:19:05.330 +05:30 [INF] Executed DbCommand (232ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 10:19:05.786 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:19:05.810 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:19:05.825 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:19:05.833 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 5496.21ms
+2025-10-06 10:19:05.836 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:19:05.839 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3Mjk3NDUsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.TwFzsF0agoAUAyD71Md8UkDqXq3A9qfvCPcWEUT7X8Y","refreshToken":"i9yDElbomUXl4Wod39KcB34Vsmcpk/n0PxU4rvlkkY0GQMTccHqGfC/taq5D0WN91SMJKfLwfdiM4lhliPry2g==","accessTokenExpiry":"2025-10-06T05:49:05.804121Z","refreshTokenExpiry":"2025-10-13T04:49:05.6528688Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:19:05.844 +05:30 [INF] Duration: 7501.8547ms
+2025-10-06 10:19:05.846 +05:30 [INF] Request processed successfully.
+2025-10-06 10:19:05.848 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 7583.4324 ms
+2025-10-06 10:19:05.856 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 7601.2119ms
+2025-10-06 10:19:48.288 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - null null
+2025-10-06 10:19:48.301 +05:30 [INF] Processing request: /api/Engagement/ExportEngagements
+2025-10-06 10:19:48.314 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Engagement/ExportEngagements
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:19:48.397 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:19:48.412 +05:30 [INF] Route matched with {action = "ExportEngagements", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportEngagements(System.String) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-10-06 10:19:48.653 +05:30 [INF] Exporting engagements in format: excel
+2025-10-06 10:19:48.659 +05:30 [INF] Fetching all engagements.
+2025-10-06 10:19:48.858 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-10-06 10:19:50.627 +05:30 [INF] Executing FileContentResult, sending file with download name 'engagements.xlsx' ...
+2025-10-06 10:19:50.645 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Length: 4365
+Content-Disposition: attachment; filename=engagements.xlsx; filename*=UTF-8''engagements.xlsx
+2025-10-06 10:19:50.650 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API) in 2231.8804ms
+2025-10-06 10:19:50.655 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.ExportEngagements (PromoPilot.API)'
+2025-10-06 10:19:50.659 +05:30 [INF] Duration: 2345.0661ms
+2025-10-06 10:19:50.661 +05:30 [INF] Request processed successfully.
+2025-10-06 10:19:50.663 +05:30 [INF] HTTP GET /api/Engagement/ExportEngagements responded 200 in 2367.4680 ms
+2025-10-06 10:19:50.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/ExportEngagements?format=excel - 200 4365 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 2378.5114ms
+2025-10-06 10:57:43.653 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 10:57:43.967 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 10:57:44.563 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 10:57:44.574 +05:30 [INF] Hosting environment: Development
+2025-10-06 10:57:44.576 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 10:57:45.458 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 10:57:45.797 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 102.6515 ms
+2025-10-06 10:57:45.817 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 10:57:45.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 10:57:45.842 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 386.5243ms
+2025-10-06 10:57:45.847 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 31.456ms
+2025-10-06 10:57:45.903 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.7698ms
+2025-10-06 10:57:45.956 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 10:57:45.996 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 34.2521 ms
+2025-10-06 10:57:46.000 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.4039ms
+2025-10-06 10:57:59.141 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - null null
+2025-10-06 10:57:59.164 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 10:57:59.204 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 10:57:59.215 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:58:00.970 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Finance)
+2025-10-06 10:58:00.983 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-06 10:58:00.989 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-06 10:58:00.998 +05:30 [INF] Duration: 1778.9773ms
+2025-10-06 10:58:01.004 +05:30 [INF] Request processed successfully.
+2025-10-06 10:58:01.007 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 401 in 1847.6683 ms
+2025-10-06 10:58:01.013 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - 401 0 null 1871.7031ms
+2025-10-06 10:58:40.587 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 63
+2025-10-06 10:58:40.602 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 10:58:40.610 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 10:58:40.612 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 63
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:58:40.621 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:58:40.671 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 10:58:41.898 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi@gmail.com",
+  "password": "Sree@1234"
+}
+2025-10-06 10:58:45.744 +05:30 [INF] Executed DbCommand (283ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 10:58:46.213 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 10:58:46.240 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 10:58:46.254 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 10:58:46.260 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 5579.2154ms
+2025-10-06 10:58:46.262 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 10:58:46.265 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjBhMDMyODkwLTY1NmQtNDdiYy05MTRlLWYyZmEwYWQ3YmE5ZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NTk3MzIxMjUsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.XLC0biuWOl-CPmR4Lg_-jHMzqalV_BtrY7F79bDhIOg","refreshToken":"VtMRcRMMJYVEW2bjunLKHaW6IUxGSyZXQfggJrTsI+NkMK+KTGG60CckmLkzsGp1FVrWFuFuFr0ZPTW8HWpEJQ==","accessTokenExpiry":"2025-10-06T06:28:46.2329526Z","refreshTokenExpiry":"2025-10-13T05:28:46.0848474Z","role":"StoreManager","email":"sreemukhi@gmail.com","username":"Sree"}
+2025-10-06 10:58:46.268 +05:30 [INF] Duration: 5656.2793ms
+2025-10-06 10:58:46.269 +05:30 [INF] Request processed successfully.
+2025-10-06 10:58:46.271 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 5670.3519 ms
+2025-10-06 10:58:46.282 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 5694.7372ms
+2025-10-06 10:59:18.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - null null
+2025-10-06 10:59:18.659 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 10:59:18.664 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:59:18.740 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Finance)
+2025-10-06 10:59:18.749 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-06 10:59:18.753 +05:30 [INF] Response:
+StatusCode: 403
+2025-10-06 10:59:18.756 +05:30 [INF] Duration: 92.6179ms
+2025-10-06 10:59:18.759 +05:30 [INF] Request processed successfully.
+2025-10-06 10:59:18.761 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 403 in 104.6972 ms
+2025-10-06 10:59:18.764 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - 403 0 null 116.9128ms
+2025-10-06 10:59:29.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - null null
+2025-10-06 10:59:29.664 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 10:59:29.667 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:59:29.674 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Finance)
+2025-10-06 10:59:29.676 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-06 10:59:29.678 +05:30 [INF] Response:
+StatusCode: 403
+2025-10-06 10:59:29.679 +05:30 [INF] Duration: 11.4802ms
+2025-10-06 10:59:29.680 +05:30 [INF] Request processed successfully.
+2025-10-06 10:59:29.681 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 403 in 17.5835 ms
+2025-10-06 10:59:29.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - 403 0 null 39.387ms
+2025-10-06 10:59:34.928 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - null null
+2025-10-06 10:59:34.934 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 10:59:34.936 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 10:59:34.940 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Finance)
+2025-10-06 10:59:34.941 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-06 10:59:34.945 +05:30 [INF] Response:
+StatusCode: 403
+2025-10-06 10:59:34.947 +05:30 [INF] Duration: 10.9992ms
+2025-10-06 10:59:34.951 +05:30 [INF] Request processed successfully.
+2025-10-06 10:59:34.953 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 403 in 18.1441 ms
+2025-10-06 10:59:34.955 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - 403 0 null 26.635ms
+2025-10-06 11:01:14.075 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 112
+2025-10-06 11:01:14.084 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 11:01:14.087 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 11:01:14.090 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 112
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:01:14.092 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 11:01:14.100 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 11:01:14.113 +05:30 [INF] RequestBody: {
+  "username": "Sreemukhi",
+  "email": "sreemukhi22@gmail.com",
+  "password": "Sree@123",
+  "role": "Finance"
+}
+2025-10-06 11:01:14.199 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 11:01:14.221 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 11:01:14.243 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 11:01:14.252 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 11:01:14.256 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 11:01:14.257 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 153.4646ms
+2025-10-06 11:01:14.260 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 11:01:14.262 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjczM2Q4ZWExLWIyMzctNGIxNS05MTI5LTk0ZWRjZDZkYmNlZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaTIyQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkZpbmFuY2UiLCJleHAiOjE3NTk3MzIyNzQsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.Z2nlAGcX_W5D-4PrYpvtChsTX3JiMN-1ejogMpT9Mrk","refreshToken":"1F9/15pbB9GljD51y61lnsvXMuPG46za6JZj0StQF4RRrE7Qz2j26TYfDsnVJLvdEMNm9Qh+xLD27zzXhA0X4g==","accessTokenExpiry":"2025-10-06T06:31:14.2513624Z","refreshTokenExpiry":"2025-10-13T05:31:14.2328659Z","role":"Finance","email":"sreemukhi22@gmail.com","username":"Sreemukhi"}
+2025-10-06 11:01:14.264 +05:30 [INF] Duration: 174.0778ms
+2025-10-06 11:01:14.267 +05:30 [INF] Request processed successfully.
+2025-10-06 11:01:14.268 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 183.8336 ms
+2025-10-06 11:01:14.270 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 195.3164ms
+2025-10-06 11:01:39.790 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - null null
+2025-10-06 11:01:39.805 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:01:39.807 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:01:39.810 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:01:39.817 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:01:40.149 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:01:40.193 +05:30 [INF] Executing FileContentResult, sending file with download name 'campaign_reports.pdf' ...
+2025-10-06 11:01:40.201 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/pdf
+Content-Length: 1330
+Content-Disposition: attachment; filename=campaign_reports.pdf; filename*=UTF-8''campaign_reports.pdf
+2025-10-06 11:01:40.203 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 382.4351ms
+2025-10-06 11:01:40.204 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:01:40.206 +05:30 [INF] Duration: 399.5377ms
+2025-10-06 11:01:40.208 +05:30 [INF] Request processed successfully.
+2025-10-06 11:01:40.210 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 200 in 404.6674 ms
+2025-10-06 11:01:40.212 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - 200 1330 application/pdf 421.4661ms
+2025-10-06 11:02:03.016 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - null null
+2025-10-06 11:02:03.033 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:02:03.034 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:02:03.040 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:02:03.043 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:02:03.076 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:02:04.614 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 1562.4802ms
+2025-10-06 11:02:04.619 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:02:04.622 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-06 11:02:04.623 +05:30 [INF] Duration: 1589.3887ms
+2025-10-06 11:02:04.723 +05:30 [ERR] Unhandled exception occurred while processing request: /api/CampaignReport/ExportReports
+OfficeOpenXml.LicenseNotSetException: Please set the license using one of the methods on the static property ExcelPackage.License. See https://epplussoftware.com/developers/licensenotsetexception for more information
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor()
+   at PromoPilot.API.Controllers.CampaignReportController.GenerateExcel(IEnumerable`1 reports) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\CampaignReportController.cs:line 95
+   at PromoPilot.API.Controllers.CampaignReportController.ExportReports(String format) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Controllers\CampaignReportController.cs:line 69
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-10-06 11:02:04.765 +05:30 [ERR] HTTP GET /api/CampaignReport/ExportReports responded 500 in 1732.4202 ms
+2025-10-06 11:02:04.769 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - 500 null application/json 1752.795ms
+2025-10-06 11:05:07.252 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 11:05:07.628 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 11:05:08.303 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 11:05:08.307 +05:30 [INF] Hosting environment: Development
+2025-10-06 11:05:08.308 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 11:05:09.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 11:05:09.589 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 119.7250 ms
+2025-10-06 11:05:09.623 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 11:05:09.623 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 11:05:09.653 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 463.8175ms
+2025-10-06 11:05:09.660 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 38.2515ms
+2025-10-06 11:05:09.714 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.6468ms
+2025-10-06 11:05:09.770 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 11:05:09.812 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 37.3462 ms
+2025-10-06 11:05:09.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.5773ms
+2025-10-06 11:14:00.239 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 64
+2025-10-06 11:14:00.258 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 11:14:00.265 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 11:14:00.326 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-06 11:14:00.335 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 64
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:14:02.458 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 11:14:02.498 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 11:14:03.817 +05:30 [INF] RequestBody: {
+  "email": "sreemukhi22@gmail.com",
+  "password": "Sree@123"
+}
+2025-10-06 11:14:07.748 +05:30 [INF] Executed DbCommand (305ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-06 11:14:08.317 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 11:14:08.355 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-06 11:14:08.393 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 11:14:08.404 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 5897.8881ms
+2025-10-06 11:14:08.411 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-06 11:14:08.415 +05:30 [INF] ResponseBody: {"message":null,"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjczM2Q4ZWExLWIyMzctNGIxNS05MTI5LTk0ZWRjZDZkYmNlZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNyZWVtdWtoaTIyQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IkZpbmFuY2UiLCJleHAiOjE3NTk3MzMwNDgsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.zEI4o-wqcu-rV0EFD-7-jyu4-nB5YcYJcWwbfjHv2oc","refreshToken":"3nJsAWtF1aoq1r5/cnVMlAzzg+g3/ZS7hF6737KLsJnHpjUcxaiRIlrngYET4Tlng0FTNk6q3pokJxTX2BOpGA==","accessTokenExpiry":"2025-10-06T06:44:08.3477607Z","refreshTokenExpiry":"2025-10-13T05:44:08.1968708Z","role":"Finance","email":"sreemukhi22@gmail.com","username":"Sreemukhi"}
+2025-10-06 11:14:08.422 +05:30 [INF] Duration: 8084.7466ms
+2025-10-06 11:14:08.427 +05:30 [INF] Request processed successfully.
+2025-10-06 11:14:08.433 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 8183.8537 ms
+2025-10-06 11:14:08.451 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 8211.7858ms
+2025-10-06 11:14:55.113 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - null null
+2025-10-06 11:14:55.136 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:14:55.138 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:14:55.191 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:14:55.202 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:14:55.596 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:14:55.646 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignReportDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-06 11:14:55.665 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-06 11:14:55.668 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 459.794ms
+2025-10-06 11:14:55.672 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:14:55.673 +05:30 [INF] ResponseBody: [{"reportID":12,"campaignID":7,"roi":99.90,"reach":3000,"conversionRate":2.50,"generatedDate":"2025-09-28T09:12:02.65"},{"reportID":13,"campaignID":6,"roi":120.50,"reach":5000,"conversionRate":3.75,"generatedDate":"2025-09-28T09:13:07.178331"},{"reportID":15,"campaignID":6,"roi":120.50,"reach":5000,"conversionRate":3.75,"generatedDate":"2025-09-28T09:34:04.7983168"},{"reportID":16,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T08:59:47.2633029"},{"reportID":17,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:20:38.9041912"},{"reportID":18,"campaignID":8,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:20:49.4491226"},{"reportID":19,"campaignID":9,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:20:54.1629061"},{"reportID":20,"campaignID":22,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:20:58.7715454"},{"reportID":21,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:22:15.0173453"},{"reportID":22,"campaignID":7,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:24:03.7641625"},{"reportID":23,"campaignID":9,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:24:08.9851016"},{"reportID":24,"campaignID":22,"roi":0.00,"reach":0,"conversionRate":0.00,"generatedDate":"2025-09-29T09:24:14.3914114"}]
+2025-10-06 11:14:55.675 +05:30 [INF] Duration: 537.3698ms
+2025-10-06 11:14:55.676 +05:30 [INF] Request processed successfully.
+2025-10-06 11:14:55.677 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 200 in 547.5676 ms
+2025-10-06 11:14:55.680 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=json - 200 null application/json; charset=utf-8 567.4248ms
+2025-10-06 11:15:03.875 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=xml - null null
+2025-10-06 11:15:03.884 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:15:03.889 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:15:03.901 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:03.906 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:15:04.026 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:15:04.105 +05:30 [INF] Executing FileContentResult, sending file with download name 'campaign_reports.xml' ...
+2025-10-06 11:15:04.117 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/xml
+Content-Length: 3301
+Content-Disposition: attachment; filename=campaign_reports.xml; filename*=UTF-8''campaign_reports.xml
+2025-10-06 11:15:04.123 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 214.2323ms
+2025-10-06 11:15:04.125 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:04.127 +05:30 [INF] ResponseBody: <?xml version="1.0" encoding="utf-16"?>
+<ArrayOfCampaignReportDto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CampaignReportDto>
+    <ReportID>12</ReportID>
+    <CampaignID>7</CampaignID>
+    <ROI>99.90</ROI>
+    <Reach>3000</Reach>
+    <ConversionRate>2.50</ConversionRate>
+    <GeneratedDate>2025-09-28T09:12:02.65</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>13</ReportID>
+    <CampaignID>6</CampaignID>
+    <ROI>120.50</ROI>
+    <Reach>5000</Reach>
+    <ConversionRate>3.75</ConversionRate>
+    <GeneratedDate>2025-09-28T09:13:07.178331</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>15</ReportID>
+    <CampaignID>6</CampaignID>
+    <ROI>120.50</ROI>
+    <Reach>5000</Reach>
+    <ConversionRate>3.75</ConversionRate>
+    <GeneratedDate>2025-09-28T09:34:04.7983168</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>16</ReportID>
+    <CampaignID>7</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T08:59:47.2633029</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>17</ReportID>
+    <CampaignID>7</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:20:38.9041912</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>18</ReportID>
+    <CampaignID>8</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:20:49.4491226</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>19</ReportID>
+    <CampaignID>9</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:20:54.1629061</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>20</ReportID>
+    <CampaignID>22</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:20:58.7715454</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>21</ReportID>
+    <CampaignID>7</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:22:15.0173453</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>22</ReportID>
+    <CampaignID>7</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:24:03.7641625</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>23</ReportID>
+    <CampaignID>9</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:24:08.9851016</GeneratedDate>
+  </CampaignReportDto>
+  <CampaignReportDto>
+    <ReportID>24</ReportID>
+    <CampaignID>22</CampaignID>
+    <ROI>0.00</ROI>
+    <Reach>0</Reach>
+    <ConversionRate>0.00</ConversionRate>
+    <GeneratedDate>2025-09-29T09:24:14.3914114</GeneratedDate>
+  </CampaignReportDto>
+</ArrayOfCampaignReportDto>
+2025-10-06 11:15:04.131 +05:30 [INF] Duration: 241.7956ms
+2025-10-06 11:15:04.132 +05:30 [INF] Request processed successfully.
+2025-10-06 11:15:04.133 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 200 in 251.3395 ms
+2025-10-06 11:15:04.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=xml - 200 3301 application/xml 262.2847ms
+2025-10-06 11:15:11.065 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - null null
+2025-10-06 11:15:11.071 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:15:11.073 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:15:11.078 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:11.080 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:15:11.091 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:15:11.098 +05:30 [INF] Executing FileContentResult, sending file with download name 'campaign_reports.pdf' ...
+2025-10-06 11:15:11.101 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/pdf
+Content-Length: 1330
+Content-Disposition: attachment; filename=campaign_reports.pdf; filename*=UTF-8''campaign_reports.pdf
+2025-10-06 11:15:11.104 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 20.7007ms
+2025-10-06 11:15:11.108 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:11.111 +05:30 [INF] Duration: 38.5459ms
+2025-10-06 11:15:11.114 +05:30 [INF] Request processed successfully.
+2025-10-06 11:15:11.115 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 200 in 43.8119 ms
+2025-10-06 11:15:11.119 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=pdf - 200 1330 application/pdf 53.3688ms
+2025-10-06 11:15:17.749 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - null null
+2025-10-06 11:15:17.755 +05:30 [INF] Processing request: /api/CampaignReport/ExportReports
+2025-10-06 11:15:17.757 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/CampaignReport/ExportReports
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:15:17.759 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:17.761 +05:30 [INF] Route matched with {action = "ExportReports", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportReports(System.String) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-10-06 11:15:17.767 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-10-06 11:15:18.684 +05:30 [INF] Executing FileContentResult, sending file with download name 'campaign_reports.xlsx' ...
+2025-10-06 11:15:18.691 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+Content-Length: 4674
+Content-Disposition: attachment; filename=campaign_reports.xlsx; filename*=UTF-8''campaign_reports.xlsx
+2025-10-06 11:15:18.693 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API) in 930.7224ms
+2025-10-06 11:15:18.698 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.ExportReports (PromoPilot.API)'
+2025-10-06 11:15:18.701 +05:30 [INF] Duration: 943.5261ms
+2025-10-06 11:15:18.704 +05:30 [INF] Request processed successfully.
+2025-10-06 11:15:18.707 +05:30 [INF] HTTP GET /api/CampaignReport/ExportReports responded 200 in 951.6956 ms
+2025-10-06 11:15:18.712 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/ExportReports?format=excel - 200 4674 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 963.669ms
+2025-10-06 11:54:45.009 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 11:54:45.615 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 11:54:46.942 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 11:54:46.955 +05:30 [INF] Hosting environment: Development
+2025-10-06 11:54:46.958 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 11:54:48.229 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 11:54:49.132 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 303.8142 ms
+2025-10-06 11:54:49.169 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 11:54:49.169 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 11:54:49.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 981.3799ms
+2025-10-06 11:54:49.200 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 31.1748ms
+2025-10-06 11:54:49.339 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 171.1541ms
+2025-10-06 11:54:49.414 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 11:54:49.533 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 102.1527 ms
+2025-10-06 11:54:49.545 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.2427ms
+2025-10-06 11:55:36.828 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 125
+2025-10-06 11:55:36.860 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 11:55:36.869 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 11:55:36.973 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 11:55:36.990 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 125
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 11:55:39.599 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 11:55:39.700 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 11:55:41.532 +05:30 [INF] RequestBody: {
+  "username": "Mariyamunnisa",
+  "email": "mariyam630480@gmail.com",
+  "password": "Mariya@123",
+  "role": "StoreManager"
+}
+2025-10-06 11:55:48.246 +05:30 [INF] Executed DbCommand (381ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 11:55:48.909 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 11:55:49.369 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 11:56:12.528 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 11:56:12.560 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 11:56:12.587 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 32861.9301ms
+2025-10-06 11:56:12.598 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 11:56:12.608 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 11:56:12.622 +05:30 [INF] Duration: 35628.0138ms
+2025-10-06 11:56:12.626 +05:30 [INF] Request processed successfully.
+2025-10-06 11:56:12.633 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 35784.1158 ms
+2025-10-06 11:56:12.666 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 35838.4465ms
+2025-10-06 12:08:30.116 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 12:08:30.723 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 12:08:31.934 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 12:08:31.937 +05:30 [INF] Hosting environment: Development
+2025-10-06 12:08:31.941 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 12:08:32.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 12:08:33.441 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 220.8050 ms
+2025-10-06 12:08:33.476 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 12:08:33.476 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 12:08:33.481 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 712.9039ms
+2025-10-06 12:08:33.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 21.5786ms
+2025-10-06 12:08:33.560 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.8291ms
+2025-10-06 12:08:33.631 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 12:08:33.702 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 63.0328 ms
+2025-10-06 12:08:33.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.0091ms
+2025-10-06 12:09:08.551 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 119
+2025-10-06 12:09:08.586 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 12:09:08.596 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:09:08.740 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:09:08.760 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 119
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:09:11.640 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:09:11.744 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:09:13.819 +05:30 [INF] RequestBody: {
+  "username": "Mariyam",
+  "email": "mariyam630480@gmail.com",
+  "password": "Mariya@123",
+  "role": "StoreManager"
+}
+2025-10-06 12:09:21.879 +05:30 [INF] Executed DbCommand (469ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:09:22.452 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:09:22.477 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:09:22.498 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 10734.2047ms
+2025-10-06 12:09:22.512 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:09:22.529 +05:30 [INF] ResponseBody: {"message":"This email is already registered."}
+2025-10-06 12:09:22.551 +05:30 [INF] Duration: 13784.7253ms
+2025-10-06 12:09:22.559 +05:30 [INF] Request processed successfully.
+2025-10-06 12:09:22.570 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 13994.9623 ms
+2025-10-06 12:09:22.604 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 14053.1265ms
+2025-10-06 12:09:36.091 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 121
+2025-10-06 12:09:36.114 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:09:36.129 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:09:36.133 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 121
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:09:36.150 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:09:36.159 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:09:36.184 +05:30 [INF] RequestBody: {
+  "username": "Mariyam",
+  "email": "mariyamunnisa72@gmail.com",
+  "password": "Mariya@123",
+  "role": "StoreManager"
+}
+2025-10-06 12:09:36.286 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:09:36.978 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 12:09:37.498 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 12:10:00.597 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:10:00.611 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:10:00.618 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 24440.4956ms
+2025-10-06 12:10:00.627 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:10:00.635 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 12:10:00.641 +05:30 [INF] Duration: 24507.9489ms
+2025-10-06 12:10:00.650 +05:30 [INF] Request processed successfully.
+2025-10-06 12:10:00.655 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 24542.6907 ms
+2025-10-06 12:10:00.665 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 24574.3041ms
+2025-10-06 12:20:36.848 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 12:20:37.334 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 12:20:38.261 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 12:20:38.266 +05:30 [INF] Hosting environment: Development
+2025-10-06 12:20:38.271 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 12:20:39.407 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 12:20:39.950 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 209.3180 ms
+2025-10-06 12:20:39.972 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 572.7779ms
+2025-10-06 12:20:39.992 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 12:20:39.992 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 12:20:40.010 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 22.6633ms
+2025-10-06 12:20:40.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.4966ms
+2025-10-06 12:20:40.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 12:20:40.216 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 67.1602 ms
+2025-10-06 12:20:40.222 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.8289ms
+2025-10-06 12:22:10.581 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 121
+2025-10-06 12:22:10.608 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 12:22:10.618 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:22:10.748 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:22:10.768 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 121
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:22:13.651 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:22:13.756 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:22:15.820 +05:30 [INF] RequestBody: {
+  "username": "Mariyam",
+  "email": "mariyamunnisa72@gmail.com",
+  "password": "Mariya@123",
+  "role": "StoreManager"
+}
+2025-10-06 12:22:23.684 +05:30 [INF] Executed DbCommand (448ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:22:24.182 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:22:24.221 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:22:24.248 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 10468.1649ms
+2025-10-06 12:22:24.259 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:22:24.284 +05:30 [INF] ResponseBody: {"message":"This email is already registered."}
+2025-10-06 12:22:24.310 +05:30 [INF] Duration: 13538.9777ms
+2025-10-06 12:22:24.315 +05:30 [INF] Request processed successfully.
+2025-10-06 12:22:24.321 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 13727.3824 ms
+2025-10-06 12:22:24.347 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 13766.2889ms
+2025-10-06 12:23:42.397 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 119
+2025-10-06 12:23:42.413 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:23:42.450 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:23:42.454 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 119
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:23:42.465 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:23:42.475 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:23:42.495 +05:30 [INF] RequestBody: {
+  "username": "Mariyam",
+  "email": "advikatanneru@gmail.com",
+  "password": "Mariya@123",
+  "role": "StoreManager"
+}
+2025-10-06 12:23:42.663 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:23:43.327 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 12:23:43.853 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 12:24:07.223 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:24:07.236 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:24:07.244 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 24754.4121ms
+2025-10-06 12:24:07.251 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:24:07.257 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 12:24:07.262 +05:30 [INF] Duration: 24808.592ms
+2025-10-06 12:24:07.267 +05:30 [INF] Request processed successfully.
+2025-10-06 12:24:07.272 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 24859.5532 ms
+2025-10-06 12:24:07.282 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 24884.9941ms
+2025-10-06 12:26:06.631 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 12:26:07.106 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 12:26:08.047 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 12:26:08.051 +05:30 [INF] Hosting environment: Development
+2025-10-06 12:26:08.068 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 12:26:08.865 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 12:26:09.548 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 250.2390 ms
+2025-10-06 12:26:09.578 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 12:26:09.581 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 12:26:09.637 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 781.1535ms
+2025-10-06 12:26:09.658 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 95.2154ms
+2025-10-06 12:26:09.725 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.198ms
+2025-10-06 12:26:09.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 12:26:09.905 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 109.7421 ms
+2025-10-06 12:26:09.912 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 124.4116ms
+2025-10-06 12:26:44.993 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 117
+2025-10-06 12:26:45.022 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 12:26:45.029 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:26:45.143 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:26:45.192 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 117
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:26:47.810 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:26:47.904 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:26:49.913 +05:30 [INF] RequestBody: {
+  "username": "Advika",
+  "email": "advikatanneru@gmail.com",
+  "password": "mahh@3299",
+  "role": "StoreManager"
+}
+2025-10-06 12:26:50.020 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-06 12:26:50.136 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+2025-10-06 12:26:50.153 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 2225.6067ms
+2025-10-06 12:26:50.157 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:26:50.166 +05:30 [INF] ResponseBody: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"Password":["Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character."]},"traceId":"00-731268dd1c0ffaa3ae26b5dd25f7bc64-1502d9809fcafca3-00"}
+2025-10-06 12:26:50.184 +05:30 [INF] Duration: 4992.721ms
+2025-10-06 12:26:50.195 +05:30 [INF] Request processed successfully.
+2025-10-06 12:26:50.199 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 5187.0552 ms
+2025-10-06 12:26:50.210 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/problem+json; charset=utf-8 5216.3188ms
+2025-10-06 12:27:00.883 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 117
+2025-10-06 12:27:00.902 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:27:00.917 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:27:00.927 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 117
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:27:00.940 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:27:00.949 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:27:01.001 +05:30 [INF] RequestBody: {
+  "username": "Advika",
+  "email": "advikatanneru@gmail.com",
+  "password": "Mahh@3299",
+  "role": "StoreManager"
+}
+2025-10-06 12:27:08.553 +05:30 [INF] Executed DbCommand (493ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:27:09.055 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:27:09.080 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:27:09.089 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 8119.9495ms
+2025-10-06 12:27:09.102 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:27:09.114 +05:30 [INF] ResponseBody: {"message":"This email is already registered."}
+2025-10-06 12:27:09.118 +05:30 [INF] Duration: 8191.3104ms
+2025-10-06 12:27:09.122 +05:30 [INF] Request processed successfully.
+2025-10-06 12:27:09.143 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 8243.1892 ms
+2025-10-06 12:27:09.190 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 8307.2742ms
+2025-10-06 12:28:14.947 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 118
+2025-10-06 12:28:14.974 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 12:28:14.981 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 12:28:14.988 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 118
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 12:28:15.003 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:28:15.013 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 12:28:15.034 +05:30 [INF] RequestBody: {
+  "username": "Advika",
+  "email": "advikatanneru0@gmail.com",
+  "password": "Mahh@3299",
+  "role": "StoreManager"
+}
+2025-10-06 12:28:15.192 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 12:28:15.900 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 12:28:16.441 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 12:28:39.807 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 12:28:39.825 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 12:28:39.830 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 24804.0137ms
+2025-10-06 12:28:39.837 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 12:28:39.844 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 12:28:39.848 +05:30 [INF] Duration: 24860.5816ms
+2025-10-06 12:28:39.852 +05:30 [INF] Request processed successfully.
+2025-10-06 12:28:39.855 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 24882.4507 ms
+2025-10-06 12:28:39.866 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 24918.5168ms
+2025-10-06 17:01:28.841 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 17:01:29.279 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 17:01:30.391 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 17:01:30.395 +05:30 [INF] Hosting environment: Development
+2025-10-06 17:01:30.399 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 17:01:31.242 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 17:01:31.784 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 176.3859 ms
+2025-10-06 17:01:31.812 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 575.9142ms
+2025-10-06 17:01:31.843 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 17:01:31.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 17:01:31.879 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 29.3087ms
+2025-10-06 17:01:31.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 103.6817ms
+2025-10-06 17:01:32.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 17:01:32.094 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 71.0318 ms
+2025-10-06 17:01:32.101 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.7525ms
+2025-10-06 17:02:41.288 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 117
+2025-10-06 17:02:41.323 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 17:02:41.332 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 17:02:41.470 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 17:02:41.491 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 117
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 17:02:44.228 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:02:44.336 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 17:02:46.319 +05:30 [INF] RequestBody: {
+  "username": "Avinash",
+  "email": "d.avinashkumar22@gmail.com",
+  "password": "Avi@123",
+  "role": "Markerting"
+}
+2025-10-06 17:02:46.423 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-06 17:02:46.526 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+2025-10-06 17:02:46.545 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 2187.4422ms
+2025-10-06 17:02:46.562 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:02:46.577 +05:30 [INF] ResponseBody: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"Role":["Role must be one of: Marketing, Finance, StoreManager."],"Password":["Password must be at least 6 characters.","Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character."]},"traceId":"00-8d8db1085b70d3a86c1ae97e96290b73-47a5851995e434b9-00"}
+2025-10-06 17:02:46.598 +05:30 [INF] Duration: 5107.216ms
+2025-10-06 17:02:46.622 +05:30 [INF] Request processed successfully.
+2025-10-06 17:02:46.634 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 5323.5041 ms
+2025-10-06 17:02:46.666 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/problem+json; charset=utf-8 5378.5536ms
+2025-10-06 17:02:55.940 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 116
+2025-10-06 17:02:55.950 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 17:02:55.967 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 17:02:55.977 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 116
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 17:02:56.006 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:02:56.014 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 17:02:56.057 +05:30 [INF] RequestBody: {
+  "username": "Avinash",
+  "email": "d.avinashkumar22@gmail.com",
+  "password": "Avi@123",
+  "role": "Marketing"
+}
+2025-10-06 17:02:56.073 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-06 17:02:56.083 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/problem+json; charset=utf-8
+2025-10-06 17:02:56.092 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 59.8174ms
+2025-10-06 17:02:56.106 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:02:56.113 +05:30 [INF] ResponseBody: {"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1","title":"One or more validation errors occurred.","status":400,"errors":{"Password":["Password must be at least 6 characters.","Password must contain at least one uppercase letter, one lowercase letter, one digit, and one special character."]},"traceId":"00-8c3a689c23717cb88ea507b901f9a9b3-bd515b294d67901b-00"}
+2025-10-06 17:02:56.126 +05:30 [INF] Duration: 148.588ms
+2025-10-06 17:02:56.137 +05:30 [INF] Request processed successfully.
+2025-10-06 17:02:56.140 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 191.0558 ms
+2025-10-06 17:02:56.147 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/problem+json; charset=utf-8 206.7245ms
+2025-10-06 17:03:04.774 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 120
+2025-10-06 17:03:04.795 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 17:03:04.806 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 17:03:04.814 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 120
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 17:03:04.840 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:03:04.849 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 17:03:04.883 +05:30 [INF] RequestBody: {
+  "username": "Avinash",
+  "email": "d.avinashkumar22@gmail.com",
+  "password": "Avinash@123",
+  "role": "Marketing"
+}
+2025-10-06 17:03:12.381 +05:30 [INF] Executed DbCommand (501ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 17:03:13.183 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 17:03:13.746 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 17:03:36.799 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 17:03:36.819 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 17:03:36.831 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 31955.6104ms
+2025-10-06 17:03:36.846 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:03:36.856 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 17:03:36.862 +05:30 [INF] Duration: 32048.9715ms
+2025-10-06 17:03:36.867 +05:30 [INF] Request processed successfully.
+2025-10-06 17:03:36.880 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 32086.4075 ms
+2025-10-06 17:03:36.913 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 32138.7079ms
+2025-10-06 17:06:32.125 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 17:06:32.347 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 17:06:32.941 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 17:06:32.944 +05:30 [INF] Hosting environment: Development
+2025-10-06 17:06:32.948 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 17:06:34.358 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 17:06:34.729 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 83.9062 ms
+2025-10-06 17:06:34.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 17:06:34.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 393.2054ms
+2025-10-06 17:06:34.763 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 28.6132ms
+2025-10-06 17:06:34.783 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 17:06:34.845 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 61.4522ms
+2025-10-06 17:06:34.903 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 17:06:34.947 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 37.7742 ms
+2025-10-06 17:06:34.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.2075ms
+2025-10-06 17:07:07.467 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 120
+2025-10-06 17:07:07.512 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 17:07:07.518 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 17:07:07.674 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 17:07:07.699 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 120
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 17:07:07.908 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:07:08.031 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 17:07:08.677 +05:30 [INF] RequestBody: {
+  "username": "Avinash",
+  "email": "d.avinashkumar22@gmail.com",
+  "password": "Avinash@123",
+  "role": "Marketing"
+}
+2025-10-06 17:07:16.309 +05:30 [INF] Executed DbCommand (403ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 17:07:16.875 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 17:07:16.912 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-06 17:07:16.942 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 8882.4779ms
+2025-10-06 17:07:16.954 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 17:07:16.968 +05:30 [INF] ResponseBody: {"message":"This email is already registered."}
+2025-10-06 17:07:16.984 +05:30 [INF] Duration: 9281.719ms
+2025-10-06 17:07:16.996 +05:30 [INF] Request processed successfully.
+2025-10-06 17:07:17.006 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 9507.8851 ms
+2025-10-06 17:07:17.039 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 9572.212ms
+2025-10-06 18:17:06.164 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-06 18:17:06.410 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-06 18:17:06.924 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-06 18:17:06.927 +05:30 [INF] Hosting environment: Development
+2025-10-06 18:17:06.929 +05:30 [INF] Content root path: C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.API
+2025-10-06 18:17:08.434 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-10-06 18:17:08.833 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 81.2983 ms
+2025-10-06 18:17:08.853 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-06 18:17:08.856 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 423.5664ms
+2025-10-06 18:17:08.866 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 13.9961ms
+2025-10-06 18:17:08.873 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-06 18:17:08.930 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.8912ms
+2025-10-06 18:17:08.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-06 18:17:09.012 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 31.5174 ms
+2025-10-06 18:17:09.017 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.5442ms
+2025-10-06 18:17:46.216 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 103
+2025-10-06 18:17:46.249 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-06 18:17:46.261 +05:30 [INF] No CORS policy found for the specified request.
+2025-10-06 18:17:46.390 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-06 18:17:46.411 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 103
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-06 18:17:46.636 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 18:17:46.768 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-06 18:17:47.436 +05:30 [INF] RequestBody: {
+  "username": "Ben",
+  "email": "ben22@gmail.com",
+  "password": "BenTe@123",
+  "role": "Marketing"
+}
+2025-10-06 18:17:52.379 +05:30 [INF] Executed DbCommand (230ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-06 18:17:53.222 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-06 18:17:53.638 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-06 18:18:15.912 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-06 18:18:15.946 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-06 18:18:15.968 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 29162.8118ms
+2025-10-06 18:18:15.981 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-06 18:18:15.992 +05:30 [INF] ResponseBody: {"message":"An unexpected error occurred.","details":"A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+2025-10-06 18:18:16.014 +05:30 [INF] Duration: 29599.373ms
+2025-10-06 18:18:16.028 +05:30 [INF] Request processed successfully.
+2025-10-06 18:18:16.045 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 29810.7939 ms
+2025-10-06 18:18:16.101 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 29885.1482ms

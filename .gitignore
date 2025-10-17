@@ -1,0 +1,33 @@
+# Ignore Visual Studio temporary files, user-specific files, and build results
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+out/
+
+# ASP.NET Core secrets
+secrets.json
+
+# Publish output
+publish/
+
+# Logs
+*.log
+
+# Rider IDE
+.idea/
+
+# Database files
+*.mdf
+*.ldf
+
+# Others
+*.db
+*.sqlite
+*.bak
+*.tmp

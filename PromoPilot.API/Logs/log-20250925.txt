@@ -1,0 +1,778 @@
+2025-09-25 11:26:15.447 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 11:26:15.921 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 11:26:15.926 +05:30 [INF] Hosting environment: Development
+2025-09-25 11:26:15.929 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 11:26:18.505 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 11:26:18.998 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 140.8556 ms
+2025-09-25 11:26:19.012 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 514.6118ms
+2025-09-25 11:26:19.054 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 11:26:19.058 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 11:26:19.071 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 16.6488ms
+2025-09-25 11:26:19.150 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.8361ms
+2025-09-25 11:26:19.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 11:26:19.250 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 37.1930 ms
+2025-09-25 11:26:19.255 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 51.4628ms
+2025-09-25 11:26:24.876 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget - null null
+2025-09-25 11:26:24.891 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 11:26:24.991 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 11:26:25.013 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 11:26:25.084 +05:30 [INF] Route matched with {action = "GetAll", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 11:26:26.631 +05:30 [INF] Fetching all budgets.
+2025-09-25 11:26:26.635 +05:30 [INF] Fetching all budgets.
+2025-09-25 11:26:32.186 +05:30 [INF] Executed DbCommand (185ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-09-25 11:26:32.408 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 11:26:32.465 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API) in 7366.1364ms
+2025-09-25 11:26:32.475 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 11:26:32.481 +05:30 [INF] Request processed successfully.
+2025-09-25 11:26:32.488 +05:30 [INF] HTTP GET /api/Budget responded 200 in 7603.2555 ms
+2025-09-25 11:26:32.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget - 200 null application/json; charset=utf-8 7635.6246ms
+2025-09-25 16:35:14.624 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 16:35:14.954 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 16:35:14.958 +05:30 [INF] Hosting environment: Development
+2025-09-25 16:35:14.963 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 16:35:17.079 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 16:35:17.969 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 262.7415 ms
+2025-09-25 16:35:17.993 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 16:35:18.012 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 16:35:18.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 947.4918ms
+2025-09-25 16:35:18.038 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 48.5971ms
+2025-09-25 16:35:18.188 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.1708ms
+2025-09-25 16:35:18.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 16:35:18.361 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 82.1191 ms
+2025-09-25 16:35:18.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.5744ms
+2025-09-25 16:35:24.487 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget - null null
+2025-09-25 16:35:24.522 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 16:35:24.609 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 16:35:24.622 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 16:35:24.733 +05:30 [INF] Route matched with {action = "GetAll", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 16:35:27.751 +05:30 [INF] Fetching all budgets.
+2025-09-25 16:35:36.389 +05:30 [INF] Executed DbCommand (156ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-09-25 16:35:36.726 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 16:35:36.774 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API) in 12025.8213ms
+2025-09-25 16:35:36.782 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 16:35:36.790 +05:30 [INF] Request processed successfully.
+2025-09-25 16:35:36.797 +05:30 [INF] HTTP GET /api/Budget responded 200 in 12286.6842 ms
+2025-09-25 16:35:36.824 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget - 200 null application/json; charset=utf-8 12337.0813ms
+2025-09-25 17:31:40.189 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 17:31:40.380 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 17:31:40.384 +05:30 [INF] Hosting environment: Development
+2025-09-25 17:31:40.386 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 17:31:42.026 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 17:31:42.470 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 61.8071 ms
+2025-09-25 17:31:42.477 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 17:31:42.477 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 17:31:42.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 488.6266ms
+2025-09-25 17:31:42.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 48.4755ms
+2025-09-25 17:31:42.550 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.3898ms
+2025-09-25 17:31:42.602 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 17:31:42.632 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.1913 ms
+2025-09-25 17:31:42.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 33.7086ms
+2025-09-25 17:31:50.082 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 17:31:50.089 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 17:31:50.106 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 17:31:50.109 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 17:31:50.124 +05:30 [INF] Route matched with {action = "GetAll", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 17:31:50.132 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API) in 2.6489ms
+2025-09-25 17:31:50.134 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 17:31:50.238 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Campaign
+System.InvalidOperationException: Unable to resolve service for type 'PromoPilot.Application.UseCases.Campaigns.ICampaignUseCase' while attempting to activate 'PromoPilot.API.Controllers.CampaignController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-25 17:31:50.284 +05:30 [ERR] HTTP GET /api/Campaign responded 500 in 196.3319 ms
+2025-09-25 17:31:50.287 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 500 null application/json 204.3603ms
+2025-09-25 17:32:50.321 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget - null null
+2025-09-25 17:32:50.362 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 17:32:50.364 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:32:50.369 +05:30 [INF] Route matched with {action = "GetAll", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 17:32:51.429 +05:30 [INF] Fetching all budgets.
+2025-09-25 17:32:53.624 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-09-25 17:32:53.681 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 17:32:53.687 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API) in 3313.2433ms
+2025-09-25 17:32:53.689 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:32:53.691 +05:30 [INF] Request processed successfully.
+2025-09-25 17:32:53.692 +05:30 [INF] HTTP GET /api/Budget responded 200 in 3331.3090 ms
+2025-09-25 17:32:53.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget - 200 null application/json; charset=utf-8 3384.5699ms
+2025-09-25 17:38:00.182 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 17:38:00.593 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 17:38:00.598 +05:30 [INF] Hosting environment: Development
+2025-09-25 17:38:00.600 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 17:38:01.326 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 17:38:01.641 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 82.7553 ms
+2025-09-25 17:38:01.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 332.771ms
+2025-09-25 17:38:01.659 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 17:38:01.661 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 17:38:01.673 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 11.873ms
+2025-09-25 17:38:01.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.5377ms
+2025-09-25 17:38:01.764 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 17:38:01.793 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 23.3585 ms
+2025-09-25 17:38:01.798 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 34.3225ms
+2025-09-25 17:38:06.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget - null null
+2025-09-25 17:38:06.076 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 17:38:06.122 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 17:38:06.135 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:38:06.165 +05:30 [INF] Route matched with {action = "GetAll", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 17:38:07.811 +05:30 [INF] Fetching all budgets.
+2025-09-25 17:38:10.705 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-09-25 17:38:10.913 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 17:38:10.938 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API) in 4764.5028ms
+2025-09-25 17:38:10.940 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:38:10.943 +05:30 [INF] Request processed successfully.
+2025-09-25 17:38:10.945 +05:30 [INF] HTTP GET /api/Budget responded 200 in 4879.0257 ms
+2025-09-25 17:38:10.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget - 200 null application/json; charset=utf-8 4902.8449ms
+2025-09-25 17:38:20.890 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget - null null
+2025-09-25 17:38:20.898 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 17:38:20.901 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:38:20.903 +05:30 [INF] Route matched with {action = "GetAll", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 17:38:20.910 +05:30 [INF] Fetching all budgets.
+2025-09-25 17:38:20.942 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+2025-09-25 17:38:20.951 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 17:38:20.956 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API) in 49.2318ms
+2025-09-25 17:38:20.960 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.GetAll (PromoPilot.API)'
+2025-09-25 17:38:20.962 +05:30 [INF] Request processed successfully.
+2025-09-25 17:38:20.964 +05:30 [INF] HTTP GET /api/Budget responded 200 in 68.9762 ms
+2025-09-25 17:38:20.968 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget - 200 null application/json; charset=utf-8 78.3953ms
+2025-09-25 17:38:56.844 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget - application/json 107
+2025-09-25 17:38:56.853 +05:30 [INF] CORS policy execution successful.
+2025-09-25 17:38:56.856 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 17:38:56.858 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API)'
+2025-09-25 17:38:56.877 +05:30 [INF] Route matched with {action = "Add", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 17:38:56.971 +05:30 [INF] Adding new budget.
+2025-09-25 17:38:57.455 +05:30 [ERR] Failed executing DbCommand (247ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([BudgetID], [AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-25 17:38:57.496 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-25 17:38:57.858 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API) in 975.0893ms
+2025-09-25 17:38:57.863 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API)'
+2025-09-25 17:38:57.997 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 23
+   at BudgetService.AddAsync(Budget budget) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\BudgetService.cs:line 32
+   at PromoPilot.Application.UseCases.Budgets.CreateBudgetUseCase.ExecuteAsync(BudgetDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\Budgets\CreateBudgetUseCase.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.Add(BudgetDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\BudgetController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-25 17:38:58.132 +05:30 [ERR] HTTP POST /api/Budget responded 500 in 1280.8436 ms
+2025-09-25 17:38:58.138 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget - 500 null application/json 1293.7524ms
+2025-09-25 17:38:59.732 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget - application/json 107
+2025-09-25 17:38:59.741 +05:30 [INF] CORS policy execution successful.
+2025-09-25 17:38:59.756 +05:30 [INF] Processing request: /api/Budget
+2025-09-25 17:38:59.833 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API)'
+2025-09-25 17:38:59.853 +05:30 [INF] Route matched with {action = "Add", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-09-25 17:38:59.861 +05:30 [INF] Adding new budget.
+2025-09-25 17:38:59.891 +05:30 [ERR] Failed executing DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = Int32), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([BudgetID], [AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-25 17:38:59.902 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-25 17:39:00.238 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API) in 380.4313ms
+2025-09-25 17:39:00.242 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.Add (PromoPilot.API)'
+2025-09-25 17:39:00.366 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Budget' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:90a1130a-1f14-45a4-a80f-b6eb8387ed72
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 23
+   at BudgetService.AddAsync(Budget budget) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\BudgetService.cs:line 32
+   at PromoPilot.Application.UseCases.Budgets.CreateBudgetUseCase.ExecuteAsync(BudgetDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\Budgets\CreateBudgetUseCase.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.Add(BudgetDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\BudgetController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-25 17:39:00.414 +05:30 [ERR] HTTP POST /api/Budget responded 500 in 673.1804 ms
+2025-09-25 17:39:00.421 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget - 500 null application/json 689.4434ms
+2025-09-25 17:49:22.262 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 17:49:22.446 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 17:49:22.448 +05:30 [INF] Hosting environment: Development
+2025-09-25 17:49:22.450 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 17:49:23.662 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 17:49:24.129 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 137.9316 ms
+2025-09-25 17:49:24.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 17:49:24.151 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 17:49:24.165 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 502.6345ms
+2025-09-25 17:49:24.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 49.665ms
+2025-09-25 17:49:24.262 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 110.6124ms
+2025-09-25 17:49:24.305 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 17:49:24.369 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 55.3530 ms
+2025-09-25 17:49:24.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 74.5723ms
+2025-09-25 18:26:58.818 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 18:26:59.314 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 18:26:59.317 +05:30 [INF] Hosting environment: Development
+2025-09-25 18:26:59.322 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 18:27:00.569 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 18:27:00.899 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 82.9444 ms
+2025-09-25 18:27:00.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 18:27:00.913 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 347.6738ms
+2025-09-25 18:27:00.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.3318ms
+2025-09-25 18:27:00.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 18:27:00.974 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.2804ms
+2025-09-25 18:27:01.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 18:27:01.044 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.7695 ms
+2025-09-25 18:27:01.048 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.6085ms
+2025-09-25 18:27:08.704 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 18:27:08.711 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 18:27:08.734 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 18:27:08.744 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:27:08.776 +05:30 [INF] Route matched with {action = "GetAll", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 18:27:08.797 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API) in 9.8434ms
+2025-09-25 18:27:08.805 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:27:08.918 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Campaign
+System.InvalidOperationException: Unable to resolve service for type 'PromoPilot.Application.UseCases.Campaigns.ICampaignUseCase' while attempting to activate 'PromoPilot.API.Controllers.CampaignController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-25 18:27:08.988 +05:30 [ERR] HTTP GET /api/Campaign responded 500 in 280.9194 ms
+2025-09-25 18:27:08.994 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 500 null application/json 290.0721ms
+2025-09-25 18:27:14.159 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 18:27:14.172 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 18:27:14.175 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:27:14.178 +05:30 [INF] Route matched with {action = "GetAll", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 18:27:14.184 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API) in 1.2339ms
+2025-09-25 18:27:14.187 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:27:14.231 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Campaign
+System.InvalidOperationException: Unable to resolve service for type 'PromoPilot.Application.UseCases.Campaigns.ICampaignUseCase' while attempting to activate 'PromoPilot.API.Controllers.CampaignController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-25 18:27:14.244 +05:30 [ERR] HTTP GET /api/Campaign responded 500 in 75.9077 ms
+2025-09-25 18:27:14.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 500 null application/json 87.3172ms
+2025-09-25 18:28:28.565 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 18:28:28.781 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 18:28:28.784 +05:30 [INF] Hosting environment: Development
+2025-09-25 18:28:28.785 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 18:28:30.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 18:28:30.343 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 86.4287 ms
+2025-09-25 18:28:30.380 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 18:28:30.380 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 18:28:30.383 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 321.6166ms
+2025-09-25 18:28:30.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 14.5212ms
+2025-09-25 18:28:30.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.1725ms
+2025-09-25 18:28:30.461 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 18:28:30.494 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 28.2800 ms
+2025-09-25 18:28:30.498 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.0086ms
+2025-09-25 18:28:36.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 18:28:36.528 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 18:28:36.560 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 18:28:36.564 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:28:36.601 +05:30 [INF] Route matched with {action = "GetAll", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 18:28:42.155 +05:30 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+2025-09-25 18:28:42.334 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 18:28:42.360 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API) in 5749.1757ms
+2025-09-25 18:28:42.363 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAll (PromoPilot.API)'
+2025-09-25 18:28:42.365 +05:30 [INF] Request processed successfully.
+2025-09-25 18:28:42.369 +05:30 [INF] HTTP GET /api/Campaign responded 200 in 5847.6754 ms
+2025-09-25 18:28:42.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 200 null application/json; charset=utf-8 5865.165ms
+2025-09-25 21:41:14.072 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 21:41:14.485 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 21:41:14.492 +05:30 [INF] Hosting environment: Development
+2025-09-25 21:41:14.494 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 21:41:15.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 21:41:16.522 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 233.1720 ms
+2025-09-25 21:41:16.541 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 678.2505ms
+2025-09-25 21:41:16.559 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 21:41:16.570 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 21:41:16.571 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 13.7731ms
+2025-09-25 21:41:16.670 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 100.4284ms
+2025-09-25 21:41:16.977 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 21:41:17.070 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 76.3307 ms
+2025-09-25 21:41:17.080 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.2968ms
+2025-09-25 21:41:59.973 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/plan - application/json 185
+2025-09-25 21:41:59.999 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 21:42:00.033 +05:30 [INF] CORS policy execution successful.
+2025-09-25 21:42:00.161 +05:30 [INF] Processing request: /api/Campaign/plan
+2025-09-25 21:42:00.176 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-09-25 21:42:00.307 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:42:10.393 +05:30 [INF] Executed DbCommand (470ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Campaign] ([EndDate], [Name], [StartDate], [StoreList], [TargetProducts])
+OUTPUT INSERTED.[CampaignID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-25 21:42:10.598 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 21:42:10.679 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 10344.4896ms
+2025-09-25 21:42:10.707 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-09-25 21:42:10.712 +05:30 [INF] Request processed successfully.
+2025-09-25 21:42:10.719 +05:30 [INF] HTTP POST /api/Campaign/plan responded 201 in 10730.7632 ms
+2025-09-25 21:42:10.751 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/plan - 201 null application/json; charset=utf-8 10778.0502ms
+2025-09-25 21:42:58.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 21:42:59.006 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 21:42:59.010 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-09-25 21:42:59.028 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:43:00.096 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+2025-09-25 21:43:00.204 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 21:43:00.220 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 1185.2607ms
+2025-09-25 21:43:00.229 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-09-25 21:43:00.234 +05:30 [INF] Request processed successfully.
+2025-09-25 21:43:00.239 +05:30 [INF] HTTP GET /api/Campaign responded 200 in 1242.1571 ms
+2025-09-25 21:43:00.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 200 null application/json; charset=utf-8 1289.3925ms
+2025-09-25 21:43:44.611 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - null null
+2025-09-25 21:43:44.664 +05:30 [INF] Processing request: /api/Campaign/12
+2025-09-25 21:43:44.672 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:43:44.700 +05:30 [INF] Route matched with {action = "GetCampaignById", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCampaignById(Int32) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:43:45.220 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 21:43:45.244 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 21:43:45.258 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API) in 540.9688ms
+2025-09-25 21:43:45.265 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:43:45.274 +05:30 [INF] Request processed successfully.
+2025-09-25 21:43:45.279 +05:30 [INF] HTTP GET /api/Campaign/12 responded 200 in 618.8741 ms
+2025-09-25 21:43:45.294 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - 200 null application/json; charset=utf-8 682.1582ms
+2025-09-25 21:44:35.893 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/12 - application/json 16
+2025-09-25 21:44:35.914 +05:30 [INF] CORS policy execution successful.
+2025-09-25 21:44:35.920 +05:30 [INF] Processing request: /api/Campaign/schedule/12
+2025-09-25 21:44:35.928 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 21:44:35.948 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:44:36.003 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 21:44:36.073 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Campaign] ([EndDate], [Name], [StartDate], [StoreList], [TargetProducts])
+OUTPUT INSERTED.[CampaignID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-25 21:44:36.085 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 21:44:36.089 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 129.5583ms
+2025-09-25 21:44:36.096 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 21:44:36.099 +05:30 [INF] Request processed successfully.
+2025-09-25 21:44:36.102 +05:30 [INF] HTTP PUT /api/Campaign/schedule/12 responded 200 in 188.5849 ms
+2025-09-25 21:44:36.107 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/12 - 200 null application/json; charset=utf-8 213.9944ms
+2025-09-25 21:45:30.265 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5145/api/Campaign/12 - null null
+2025-09-25 21:45:30.297 +05:30 [INF] CORS policy execution successful.
+2025-09-25 21:45:30.304 +05:30 [INF] Processing request: /api/Campaign/12
+2025-09-25 21:45:30.313 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.CancelCampaign (PromoPilot.API)'
+2025-09-25 21:45:30.329 +05:30 [INF] Route matched with {action = "CancelCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CancelCampaign(Int32) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:45:30.361 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 21:45:30.509 +05:30 [INF] Executed DbCommand (74ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Campaign]
+OUTPUT 1
+WHERE [CampaignID] = @p0;
+2025-09-25 21:45:30.551 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-09-25 21:45:30.558 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.CancelCampaign (PromoPilot.API) in 214.7485ms
+2025-09-25 21:45:30.563 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.CancelCampaign (PromoPilot.API)'
+2025-09-25 21:45:30.568 +05:30 [INF] Request processed successfully.
+2025-09-25 21:45:30.576 +05:30 [INF] HTTP DELETE /api/Campaign/12 responded 204 in 279.3340 ms
+2025-09-25 21:45:30.582 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5145/api/Campaign/12 - 204 null null 316.572ms
+2025-09-25 21:46:24.558 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - null null
+2025-09-25 21:46:24.596 +05:30 [INF] Processing request: /api/Campaign/12
+2025-09-25 21:46:24.601 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:46:24.608 +05:30 [INF] Route matched with {action = "GetCampaignById", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCampaignById(Int32) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:46:24.639 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 21:46:24.697 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-25 21:46:24.781 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API) in 163.0862ms
+2025-09-25 21:46:24.789 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:46:24.795 +05:30 [INF] Request processed successfully.
+2025-09-25 21:46:24.800 +05:30 [INF] HTTP GET /api/Campaign/12 responded 404 in 204.2922 ms
+2025-09-25 21:46:24.812 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - 404 null application/problem+json; charset=utf-8 253.3954ms
+2025-09-25 21:46:30.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - null null
+2025-09-25 21:46:30.614 +05:30 [INF] Processing request: /api/Campaign/12
+2025-09-25 21:46:30.623 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:46:30.630 +05:30 [INF] Route matched with {action = "GetCampaignById", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCampaignById(Int32) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:46:30.648 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 21:46:30.665 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-25 21:46:30.671 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API) in 31.5523ms
+2025-09-25 21:46:30.678 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 21:46:30.681 +05:30 [INF] Request processed successfully.
+2025-09-25 21:46:30.684 +05:30 [INF] HTTP GET /api/Campaign/12 responded 404 in 69.8064 ms
+2025-09-25 21:46:30.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/12 - 404 null application/problem+json; charset=utf-8 98.309ms
+2025-09-25 21:47:21.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign - null null
+2025-09-25 21:47:21.430 +05:30 [INF] Processing request: /api/Campaign
+2025-09-25 21:47:21.437 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-09-25 21:47:21.445 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 21:47:21.473 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+2025-09-25 21:47:21.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-25 21:47:21.504 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 46.1377ms
+2025-09-25 21:47:21.515 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-09-25 21:47:21.527 +05:30 [INF] Request processed successfully.
+2025-09-25 21:47:21.533 +05:30 [INF] HTTP GET /api/Campaign responded 200 in 103.7592 ms
+2025-09-25 21:47:21.548 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign - 200 null application/json; charset=utf-8 191.6255ms
+2025-09-25 22:10:19.815 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 22:10:20.279 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 22:10:20.284 +05:30 [INF] Hosting environment: Development
+2025-09-25 22:10:20.288 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 22:10:21.892 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 22:10:22.746 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 268.2259 ms
+2025-09-25 22:10:22.773 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 884.5368ms
+2025-09-25 22:10:22.821 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 22:10:22.836 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 17.2114ms
+2025-09-25 22:10:22.877 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 22:10:22.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.8632ms
+2025-09-25 22:10:23.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 22:10:23.245 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 69.2019 ms
+2025-09-25 22:10:23.254 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 90.1633ms
+2025-09-25 22:11:00.828 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/13 - application/json 11
+2025-09-25 22:11:00.866 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 22:11:00.876 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:11:01.033 +05:30 [INF] Processing request: /api/Campaign/schedule/13
+2025-09-25 22:11:01.047 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:11:01.168 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:11:04.380 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 22:11:04.488 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 3295.6908ms
+2025-09-25 22:11:04.493 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:11:04.497 +05:30 [INF] Request processed successfully.
+2025-09-25 22:11:04.501 +05:30 [INF] HTTP PUT /api/Campaign/schedule/13 responded 400 in 3648.4392 ms
+2025-09-25 22:11:04.513 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/13 - 400 null application/problem+json; charset=utf-8 3684.9255ms
+2025-09-25 22:12:46.737 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/plan - application/json 201
+2025-09-25 22:12:46.764 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:12:46.809 +05:30 [INF] Processing request: /api/Campaign/plan
+2025-09-25 22:12:46.818 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-09-25 22:12:46.846 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:12:56.688 +05:30 [INF] Executed DbCommand (502ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Campaign] ([EndDate], [Name], [StartDate], [StoreList], [TargetProducts])
+OUTPUT INSERTED.[CampaignID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-25 22:12:56.965 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 22:12:57.045 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 10191.6399ms
+2025-09-25 22:12:57.055 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-09-25 22:12:57.064 +05:30 [INF] Request processed successfully.
+2025-09-25 22:12:57.072 +05:30 [INF] HTTP POST /api/Campaign/plan responded 201 in 10310.4323 ms
+2025-09-25 22:12:57.098 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/plan - 201 null application/json; charset=utf-8 10361.4534ms
+2025-09-25 22:13:09.149 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - application/json 11
+2025-09-25 22:13:09.164 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:13:09.170 +05:30 [INF] Processing request: /api/Campaign/schedule/14
+2025-09-25 22:13:09.179 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:13:09.185 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:13:09.237 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 22:13:09.251 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 48.2408ms
+2025-09-25 22:13:09.261 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:13:09.271 +05:30 [INF] Request processed successfully.
+2025-09-25 22:13:09.277 +05:30 [INF] HTTP PUT /api/Campaign/schedule/14 responded 400 in 113.7270 ms
+2025-09-25 22:13:09.290 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - 400 null application/problem+json; charset=utf-8 141.1189ms
+2025-09-25 22:13:49.818 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/14 - application/json 201
+2025-09-25 22:13:49.840 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:13:49.848 +05:30 [INF] Processing request: /api/Campaign/14
+2025-09-25 22:13:49.853 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.UpdateCampaign (PromoPilot.API)'
+2025-09-25 22:13:49.872 +05:30 [INF] Route matched with {action = "UpdateCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCampaign(Int32, PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:13:51.351 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 22:13:51.410 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 22:13:51.417 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.UpdateCampaign (PromoPilot.API) in 1533.6949ms
+2025-09-25 22:13:51.424 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.UpdateCampaign (PromoPilot.API)'
+2025-09-25 22:13:51.429 +05:30 [INF] Request processed successfully.
+2025-09-25 22:13:51.433 +05:30 [INF] HTTP PUT /api/Campaign/14 responded 200 in 1592.9517 ms
+2025-09-25 22:13:51.441 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/14 - 200 null application/json; charset=utf-8 1622.7362ms
+2025-09-25 22:14:13.572 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - application/json 11
+2025-09-25 22:14:13.606 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:14:13.612 +05:30 [INF] Processing request: /api/Campaign/schedule/14
+2025-09-25 22:14:13.620 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:14:13.627 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:14:13.648 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 22:14:13.662 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 19.445ms
+2025-09-25 22:14:13.697 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:14:13.706 +05:30 [INF] Request processed successfully.
+2025-09-25 22:14:13.714 +05:30 [INF] HTTP PUT /api/Campaign/schedule/14 responded 400 in 108.5221 ms
+2025-09-25 22:14:13.725 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - 400 null application/problem+json; charset=utf-8 153.55ms
+2025-09-25 22:14:21.094 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - application/json 11
+2025-09-25 22:14:21.104 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:14:21.107 +05:30 [INF] Processing request: /api/Campaign/schedule/14
+2025-09-25 22:14:21.111 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:14:21.115 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:14:21.127 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 22:14:21.132 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 9.9488ms
+2025-09-25 22:14:21.137 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:14:21.143 +05:30 [INF] Request processed successfully.
+2025-09-25 22:14:21.147 +05:30 [INF] HTTP PUT /api/Campaign/schedule/14 responded 400 in 42.8836 ms
+2025-09-25 22:14:21.157 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - 400 null application/problem+json; charset=utf-8 63.4656ms
+2025-09-25 22:15:07.332 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/14 - null null
+2025-09-25 22:15:07.369 +05:30 [INF] Processing request: /api/Campaign/14
+2025-09-25 22:15:07.375 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 22:15:07.391 +05:30 [INF] Route matched with {action = "GetCampaignById", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCampaignById(Int32) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:15:07.522 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 22:15:07.543 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 22:15:07.554 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API) in 151.3102ms
+2025-09-25 22:15:07.565 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetCampaignById (PromoPilot.API)'
+2025-09-25 22:15:07.573 +05:30 [INF] Request processed successfully.
+2025-09-25 22:15:07.580 +05:30 [INF] HTTP GET /api/Campaign/14 responded 200 in 212.4211 ms
+2025-09-25 22:15:07.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/14 - 200 null application/json; charset=utf-8 257.6032ms
+2025-09-25 22:15:27.079 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - application/json 11
+2025-09-25 22:15:27.097 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:15:27.102 +05:30 [INF] Processing request: /api/Campaign/schedule/14
+2025-09-25 22:15:27.109 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:15:27.116 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:15:27.131 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-25 22:15:27.140 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 14.0128ms
+2025-09-25 22:15:27.149 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:15:27.157 +05:30 [INF] Request processed successfully.
+2025-09-25 22:15:27.162 +05:30 [INF] HTTP PUT /api/Campaign/schedule/14 responded 400 in 64.2291 ms
+2025-09-25 22:15:27.173 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - 400 null application/problem+json; charset=utf-8 93.664ms
+2025-09-25 22:17:12.911 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 22:17:13.042 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 22:17:13.047 +05:30 [INF] Hosting environment: Development
+2025-09-25 22:17:13.053 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 22:17:15.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 22:17:15.734 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 133.5756 ms
+2025-09-25 22:17:15.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 22:17:15.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 22:17:15.764 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 746.9518ms
+2025-09-25 22:17:15.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 40.0884ms
+2025-09-25 22:17:15.857 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.2311ms
+2025-09-25 22:17:15.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 22:17:16.043 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 60.4597 ms
+2025-09-25 22:17:16.060 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.2982ms
+2025-09-25 22:17:29.280 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - application/json 8
+2025-09-25 22:17:29.311 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-25 22:17:29.320 +05:30 [INF] CORS policy execution successful.
+2025-09-25 22:17:29.405 +05:30 [INF] Processing request: /api/Campaign/schedule/14
+2025-09-25 22:17:29.419 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:17:29.516 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-09-25 22:17:35.760 +05:30 [INF] Executed DbCommand (221ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 22:17:36.214 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-25 22:17:36.260 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-09-25 22:17:36.320 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 6776.3114ms
+2025-09-25 22:17:36.330 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-09-25 22:17:36.339 +05:30 [INF] Request processed successfully.
+2025-09-25 22:17:36.348 +05:30 [INF] HTTP PUT /api/Campaign/schedule/14 responded 200 in 7050.6856 ms
+2025-09-25 22:17:36.381 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/schedule/14 - 200 null application/json; charset=utf-8 7101.265ms
+2025-09-25 22:37:27.626 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-25 22:37:28.118 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-25 22:37:28.125 +05:30 [INF] Hosting environment: Development
+2025-09-25 22:37:28.129 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-25 22:37:29.447 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-25 22:37:30.103 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 234.3185 ms
+2025-09-25 22:37:30.126 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 684.4076ms
+2025-09-25 22:37:30.152 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-25 22:37:30.152 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-25 22:37:30.180 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 29.7587ms
+2025-09-25 22:37:30.277 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.3789ms
+2025-09-25 22:37:30.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-25 22:37:30.417 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 58.0786 ms
+2025-09-25 22:37:30.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.8473ms

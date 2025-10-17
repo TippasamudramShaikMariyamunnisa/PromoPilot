@@ -1,0 +1,73 @@
+2025-10-12 22:12:03.957 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 22:12:04.487 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-12 22:12:05.240 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 22:12:05.244 +05:30 [INF] Hosting environment: Development
+2025-10-12 22:12:05.246 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-12 22:12:08.098 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-12 22:12:08.098 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-12 22:12:08.129 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 33.8085ms
+2025-10-12 22:12:08.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 308.2247ms
+2025-10-12 22:12:08.463 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-12 22:12:08.570 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 66.6948 ms
+2025-10-12 22:12:08.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 157.3231ms
+2025-10-12 22:17:38.201 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 22:17:38.451 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-12 22:17:39.333 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 22:17:39.339 +05:30 [INF] Hosting environment: Development
+2025-10-12 22:17:39.343 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-12 22:17:40.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-12 22:17:40.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-12 22:17:40.893 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 25.4731ms
+2025-10-12 22:17:41.053 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.7935ms
+2025-10-12 22:17:41.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-12 22:17:41.210 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 65.1057 ms
+2025-10-12 22:17:41.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 110.9932ms
+2025-10-12 22:18:01.111 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-12 22:18:01.358 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-12 22:18:01.991 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-12 22:18:01.993 +05:30 [INF] Hosting environment: Development
+2025-10-12 22:18:01.995 +05:30 [INF] Content root path: C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-12 22:18:03.034 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-12 22:18:03.035 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-12 22:18:03.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 23.4555ms
+2025-10-12 22:18:03.193 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 163.072ms
+2025-10-12 22:18:03.262 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-12 22:18:03.341 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 57.1852 ms
+2025-10-12 22:18:03.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.3521ms
+2025-10-12 22:18:25.649 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - application/json 133
+2025-10-12 22:18:25.700 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-12 22:18:25.708 +05:30 [INF] CORS policy execution successful.
+2025-10-12 22:18:25.720 +05:30 [INF] Processing request: /api/Campaign/PlanCampaign
+2025-10-12 22:18:25.839 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Campaign/PlanCampaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 133
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-12 22:18:28.626 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Marketing)
+2025-10-12 22:18:28.646 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-12 22:18:28.665 +05:30 [INF] RequestBody: [Not consumed by app]
+2025-10-12 22:18:28.673 +05:30 [INF] Response:
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+2025-10-12 22:18:28.687 +05:30 [INF] Duration: 2845.5872ms
+2025-10-12 22:18:28.693 +05:30 [INF] Request processed successfully.
+2025-10-12 22:18:28.696 +05:30 [INF] HTTP POST /api/Campaign/PlanCampaign responded 401 in 3032.8635 ms
+2025-10-12 22:18:28.707 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - 401 0 null 3062.6111ms

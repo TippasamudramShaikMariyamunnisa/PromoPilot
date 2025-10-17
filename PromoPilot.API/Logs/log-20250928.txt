@@ -1,0 +1,1170 @@
+2025-09-28 12:45:38.469 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-28 12:45:38.810 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 12:45:38.814 +05:30 [INF] Hosting environment: Development
+2025-09-28 12:45:38.818 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-28 12:45:44.534 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-28 12:45:45.275 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 233.7261 ms
+2025-09-28 12:45:45.332 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 12:45:45.333 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-28 12:45:45.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 823.6894ms
+2025-09-28 12:45:45.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 139.7911ms
+2025-09-28 12:45:45.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 377.0832ms
+2025-09-28 12:45:45.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-28 12:45:45.862 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 64.9074 ms
+2025-09-28 12:45:45.873 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.6381ms
+2025-09-28 12:45:53.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement - null null
+2025-09-28 12:45:53.613 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-28 12:45:53.672 +05:30 [INF] Processing request: /api/Engagement
+2025-09-28 12:45:53.682 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API)'
+2025-09-28 12:45:53.740 +05:30 [INF] Route matched with {action = "GetAll", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:45:55.354 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:45:55.360 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:45:59.416 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-09-28 12:45:59.570 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EngagementDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:45:59.597 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API) in 5841.0034ms
+2025-09-28 12:45:59.602 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API)'
+2025-09-28 12:45:59.605 +05:30 [INF] Request processed successfully.
+2025-09-28 12:45:59.609 +05:30 [INF] HTTP GET /api/Engagement responded 200 in 6007.1941 ms
+2025-09-28 12:45:59.619 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement - 200 null application/json; charset=utf-8 6035.7212ms
+2025-09-28 12:46:57.184 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/1 - null null
+2025-09-28 12:46:57.201 +05:30 [INF] Processing request: /api/Engagement/1
+2025-09-28 12:46:57.205 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:46:57.227 +05:30 [INF] Route matched with {action = "GetById", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:46:57.262 +05:30 [INF] Fetching engagement with ID: 1
+2025-09-28 12:46:57.268 +05:30 [INF] Fetching engagement with ID: 1
+2025-09-28 12:46:57.691 +05:30 [INF] Executed DbCommand (231ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:46:57.704 +05:30 [WRN] Engagement with ID 1 not found.
+2025-09-28 12:46:57.712 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-28 12:46:57.753 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API) in 520.6231ms
+2025-09-28 12:46:57.756 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:46:57.758 +05:30 [INF] Request processed successfully.
+2025-09-28 12:46:57.759 +05:30 [INF] HTTP GET /api/Engagement/1 responded 404 in 561.3211 ms
+2025-09-28 12:46:57.763 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/1 - 404 null application/problem+json; charset=utf-8 579.3366ms
+2025-09-28 12:47:03.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/4 - null null
+2025-09-28 12:47:03.293 +05:30 [INF] Processing request: /api/Engagement/4
+2025-09-28 12:47:03.298 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:03.303 +05:30 [INF] Route matched with {action = "GetById", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:47:03.327 +05:30 [INF] Fetching engagement with ID: 4
+2025-09-28 12:47:03.332 +05:30 [INF] Fetching engagement with ID: 4
+2025-09-28 12:47:03.413 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:47:03.420 +05:30 [INF] Executing OkObjectResult, writing value of type 'EngagementDto'.
+2025-09-28 12:47:03.422 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API) in 110.6325ms
+2025-09-28 12:47:03.424 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:03.427 +05:30 [INF] Request processed successfully.
+2025-09-28 12:47:03.428 +05:30 [INF] HTTP GET /api/Engagement/4 responded 200 in 136.5902 ms
+2025-09-28 12:47:03.430 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/4 - 200 null application/json; charset=utf-8 147.3108ms
+2025-09-28 12:47:08.526 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/5 - null null
+2025-09-28 12:47:08.535 +05:30 [INF] Processing request: /api/Engagement/5
+2025-09-28 12:47:08.537 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:08.538 +05:30 [INF] Route matched with {action = "GetById", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:47:08.541 +05:30 [INF] Fetching engagement with ID: 5
+2025-09-28 12:47:08.543 +05:30 [INF] Fetching engagement with ID: 5
+2025-09-28 12:47:08.548 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:47:08.552 +05:30 [INF] Executing OkObjectResult, writing value of type 'EngagementDto'.
+2025-09-28 12:47:08.554 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API) in 13.4739ms
+2025-09-28 12:47:08.556 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:08.557 +05:30 [INF] Request processed successfully.
+2025-09-28 12:47:08.559 +05:30 [INF] HTTP GET /api/Engagement/5 responded 200 in 24.0376 ms
+2025-09-28 12:47:08.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/5 - 200 null application/json; charset=utf-8 34.9054ms
+2025-09-28 12:47:13.589 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/6 - null null
+2025-09-28 12:47:13.591 +05:30 [INF] Processing request: /api/Engagement/6
+2025-09-28 12:47:13.594 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:13.595 +05:30 [INF] Route matched with {action = "GetById", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:47:13.600 +05:30 [INF] Fetching engagement with ID: 6
+2025-09-28 12:47:13.603 +05:30 [INF] Fetching engagement with ID: 6
+2025-09-28 12:47:13.610 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:47:13.616 +05:30 [INF] Executing OkObjectResult, writing value of type 'EngagementDto'.
+2025-09-28 12:47:13.618 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API) in 18.8965ms
+2025-09-28 12:47:13.620 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetById (PromoPilot.API)'
+2025-09-28 12:47:13.621 +05:30 [INF] Request processed successfully.
+2025-09-28 12:47:13.622 +05:30 [INF] HTTP GET /api/Engagement/6 responded 200 in 30.7764 ms
+2025-09-28 12:47:13.624 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/6 - 200 null application/json; charset=utf-8 34.5816ms
+2025-09-28 12:47:47.839 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Engagement - application/json 95
+2025-09-28 12:47:47.850 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:47:47.854 +05:30 [INF] Processing request: /api/Engagement
+2025-09-28 12:47:47.856 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API)'
+2025-09-28 12:47:47.864 +05:30 [INF] Route matched with {action = "Add", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:47:47.913 +05:30 [INF] Creating new engagement.
+2025-09-28 12:47:47.919 +05:30 [INF] Adding new engagement.
+2025-09-28 12:47:48.115 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Engagement] ([CampaignID], [CustomerID], [PurchaseValue], [RedemptionCount])
+OUTPUT INSERTED.[EngagementID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-28 12:47:48.168 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Engagement_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6f1500d0-1bb4-4d8c-b207-4d54a27e4c4b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Engagement_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6f1500d0-1bb4-4d8c-b207-4d54a27e4c4b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-28 12:47:48.475 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API) in 607.9632ms
+2025-09-28 12:47:48.480 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API)'
+2025-09-28 12:47:48.622 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Engagement_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6f1500d0-1bb4-4d8c-b207-4d54a27e4c4b
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.EngagementRepository.AddAsync(Engagement engagement) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\EngagementRepository.cs:line 23
+   at PromoPilot.Application.Services.EngagementService.AddAsync(Engagement engagement) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\EngagementService.cs:line 34
+   at PromoPilot.Application.UseCases.Engagements.TrackEngagementUseCase.ExecuteAsync(EngagementDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\Engagements\TrackEngagementUseCase.cs:line 28
+   at PromoPilot.API.Controllers.EngagementController.Add(EngagementDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\EngagementController.cs:line 78
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 12:47:48.740 +05:30 [ERR] HTTP POST /api/Engagement responded 500 in 893.7571 ms
+2025-09-28 12:47:48.745 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Engagement - 500 null application/json 906.5918ms
+2025-09-28 12:48:07.224 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Engagement - application/json 95
+2025-09-28 12:48:07.231 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:48:07.232 +05:30 [INF] Processing request: /api/Engagement
+2025-09-28 12:48:07.234 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API)'
+2025-09-28 12:48:07.235 +05:30 [INF] Route matched with {action = "Add", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:48:07.239 +05:30 [INF] Creating new engagement.
+2025-09-28 12:48:07.241 +05:30 [INF] Adding new engagement.
+2025-09-28 12:48:07.270 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Engagement] ([CampaignID], [CustomerID], [PurchaseValue], [RedemptionCount])
+OUTPUT INSERTED.[EngagementID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-28 12:48:07.295 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'EngagementDto'.
+2025-09-28 12:48:07.319 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API) in 80.7262ms
+2025-09-28 12:48:07.322 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Add (PromoPilot.API)'
+2025-09-28 12:48:07.325 +05:30 [INF] Request processed successfully.
+2025-09-28 12:48:07.327 +05:30 [INF] HTTP POST /api/Engagement responded 201 in 96.2939 ms
+2025-09-28 12:48:07.330 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Engagement - 201 null application/json; charset=utf-8 105.7245ms
+2025-09-28 12:49:25.495 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - application/json 116
+2025-09-28 12:49:25.514 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:49:25.516 +05:30 [INF] Processing request: /api/Engagement/8
+2025-09-28 12:49:25.519 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:25.524 +05:30 [INF] Route matched with {action = "Update", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:49:25.532 +05:30 [INF] Updating engagement with ID: 8
+2025-09-28 12:49:25.535 +05:30 [INF] Fetching engagement with ID: 8
+2025-09-28 12:49:25.561 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:49:25.574 +05:30 [INF] Updating engagement with ID: 8
+2025-09-28 12:49:25.601 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Engagement] SET [CampaignID] = @p0, [CustomerID] = @p1, [PurchaseValue] = @p2, [RedemptionCount] = @p3
+OUTPUT 1
+WHERE [EngagementID] = @p4;
+2025-09-28 12:49:25.613 +05:30 [INF] Executing OkObjectResult, writing value of type 'EngagementDto'.
+2025-09-28 12:49:25.618 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API) in 88.7188ms
+2025-09-28 12:49:25.622 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:25.624 +05:30 [INF] Request processed successfully.
+2025-09-28 12:49:25.626 +05:30 [INF] HTTP PUT /api/Engagement/8 responded 200 in 111.9666 ms
+2025-09-28 12:49:25.629 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - 200 null application/json; charset=utf-8 134.6397ms
+2025-09-28 12:49:45.730 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Engagement/7 - application/json 116
+2025-09-28 12:49:45.740 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:49:45.743 +05:30 [INF] Processing request: /api/Engagement/7
+2025-09-28 12:49:45.745 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:45.747 +05:30 [INF] Route matched with {action = "Update", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:49:45.754 +05:30 [INF] Updating engagement with ID: 7
+2025-09-28 12:49:45.756 +05:30 [INF] Fetching engagement with ID: 7
+2025-09-28 12:49:45.771 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:49:45.789 +05:30 [WRN] Engagement with ID 7 not found for update.
+2025-09-28 12:49:45.792 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-28 12:49:45.795 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API) in 42.3758ms
+2025-09-28 12:49:45.798 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:45.800 +05:30 [INF] Request processed successfully.
+2025-09-28 12:49:45.801 +05:30 [INF] HTTP PUT /api/Engagement/7 responded 404 in 61.5214 ms
+2025-09-28 12:49:45.805 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Engagement/7 - 404 null application/problem+json; charset=utf-8 75.1235ms
+2025-09-28 12:49:54.385 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - application/json 116
+2025-09-28 12:49:54.390 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:49:54.393 +05:30 [INF] Processing request: /api/Engagement/8
+2025-09-28 12:49:54.394 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:54.396 +05:30 [INF] Route matched with {action = "Update", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:49:54.400 +05:30 [INF] Updating engagement with ID: 8
+2025-09-28 12:49:54.402 +05:30 [INF] Fetching engagement with ID: 8
+2025-09-28 12:49:54.410 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:49:54.427 +05:30 [INF] Updating engagement with ID: 7
+2025-09-28 12:49:54.688 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API) in 288.3218ms
+2025-09-28 12:49:54.696 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:49:54.752 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Engagement/8
+System.InvalidOperationException: The property 'Engagement.EngagementId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetPropertyModified(IProperty property, Boolean changeState, Boolean isModified, Boolean isConceptualNull, Boolean acceptChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectValueChange(InternalEntityEntry entry, IProperty property)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.EngagementRepository.UpdateAsync(Engagement engagement) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\EngagementRepository.cs:line 28
+   at PromoPilot.Application.Services.EngagementService.UpdateAsync(Engagement engagement) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\EngagementService.cs:line 40
+   at PromoPilot.Application.UseCases.Engagements.UpdateEngagementUseCase.ExecuteAsync(Int32 id, EngagementDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\Engagements\TrackEngagementUseCase.cs:line 73
+   at PromoPilot.API.Controllers.EngagementController.Update(Int32 id, EngagementDto dto) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\EngagementController.cs:line 87
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 12:49:54.766 +05:30 [ERR] HTTP PUT /api/Engagement/8 responded 500 in 375.2956 ms
+2025-09-28 12:49:54.768 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - 500 null application/json 383.5986ms
+2025-09-28 12:50:02.586 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - application/json 116
+2025-09-28 12:50:02.593 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:50:02.594 +05:30 [INF] Processing request: /api/Engagement/8
+2025-09-28 12:50:02.595 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:50:02.596 +05:30 [INF] Route matched with {action = "Update", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, EngagementDto) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:50:02.600 +05:30 [INF] Updating engagement with ID: 8
+2025-09-28 12:50:02.603 +05:30 [INF] Fetching engagement with ID: 8
+2025-09-28 12:50:02.614 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:50:02.618 +05:30 [INF] Updating engagement with ID: 8
+2025-09-28 12:50:02.621 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Engagement] SET [CampaignID] = @p0, [CustomerID] = @p1, [PurchaseValue] = @p2, [RedemptionCount] = @p3
+OUTPUT 1
+WHERE [EngagementID] = @p4;
+2025-09-28 12:50:02.624 +05:30 [INF] Executing OkObjectResult, writing value of type 'EngagementDto'.
+2025-09-28 12:50:02.627 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API) in 27.6043ms
+2025-09-28 12:50:02.629 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Update (PromoPilot.API)'
+2025-09-28 12:50:02.631 +05:30 [INF] Request processed successfully.
+2025-09-28 12:50:02.632 +05:30 [INF] HTTP PUT /api/Engagement/8 responded 200 in 39.0287 ms
+2025-09-28 12:50:02.634 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Engagement/8 - 200 null application/json; charset=utf-8 47.8342ms
+2025-09-28 12:50:13.160 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement - null null
+2025-09-28 12:50:13.164 +05:30 [INF] Processing request: /api/Engagement
+2025-09-28 12:50:13.165 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API)'
+2025-09-28 12:50:13.169 +05:30 [INF] Route matched with {action = "GetAll", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:50:13.172 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:50:13.174 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:50:13.191 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-09-28 12:50:13.196 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[EngagementDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:50:13.200 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API) in 28.2823ms
+2025-09-28 12:50:13.203 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetAll (PromoPilot.API)'
+2025-09-28 12:50:13.206 +05:30 [INF] Request processed successfully.
+2025-09-28 12:50:13.210 +05:30 [INF] HTTP GET /api/Engagement responded 200 in 45.7637 ms
+2025-09-28 12:50:13.216 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement - 200 null application/json; charset=utf-8 56.4878ms
+2025-09-28 12:50:49.438 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5145/api/Engagement/7 - null null
+2025-09-28 12:50:49.454 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:50:49.458 +05:30 [INF] Processing request: /api/Engagement/7
+2025-09-28 12:50:49.460 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API)'
+2025-09-28 12:50:49.466 +05:30 [INF] Route matched with {action = "Delete", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:50:49.472 +05:30 [INF] Deleting engagement with ID: 7
+2025-09-28 12:50:49.475 +05:30 [INF] Fetching engagement with ID: 7
+2025-09-28 12:50:49.482 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:50:49.498 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-28 12:50:49.502 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API) in 31.0668ms
+2025-09-28 12:50:49.505 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API)'
+2025-09-28 12:50:49.508 +05:30 [INF] Request processed successfully.
+2025-09-28 12:50:49.509 +05:30 [INF] HTTP DELETE /api/Engagement/7 responded 404 in 54.9106 ms
+2025-09-28 12:50:49.511 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5145/api/Engagement/7 - 404 null application/problem+json; charset=utf-8 72.8967ms
+2025-09-28 12:50:54.824 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5145/api/Engagement/6 - null null
+2025-09-28 12:50:54.829 +05:30 [INF] CORS policy execution successful.
+2025-09-28 12:50:54.831 +05:30 [INF] Processing request: /api/Engagement/6
+2025-09-28 12:50:54.833 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API)'
+2025-09-28 12:50:54.835 +05:30 [INF] Route matched with {action = "Delete", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:50:54.838 +05:30 [INF] Deleting engagement with ID: 6
+2025-09-28 12:50:54.840 +05:30 [INF] Fetching engagement with ID: 6
+2025-09-28 12:50:54.847 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+WHERE [e].[EngagementID] = @__p_0
+2025-09-28 12:50:54.857 +05:30 [INF] Deleting engagement with ID: 6
+2025-09-28 12:50:54.878 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Engagement]
+OUTPUT 1
+WHERE [EngagementID] = @p0;
+2025-09-28 12:50:54.890 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-09-28 12:50:54.893 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API) in 55.4434ms
+2025-09-28 12:50:54.894 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.Delete (PromoPilot.API)'
+2025-09-28 12:50:54.896 +05:30 [INF] Request processed successfully.
+2025-09-28 12:50:54.898 +05:30 [INF] HTTP DELETE /api/Engagement/6 responded 204 in 68.3950 ms
+2025-09-28 12:50:54.903 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5145/api/Engagement/6 - 204 null null 79.2295ms
+2025-09-28 12:51:27.331 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/CustomerStats - null null
+2025-09-28 12:51:27.350 +05:30 [INF] Processing request: /api/Engagement/CustomerStats
+2025-09-28 12:51:27.353 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API)'
+2025-09-28 12:51:27.360 +05:30 [INF] Route matched with {action = "GetCustomerStats", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerStats() on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:51:27.366 +05:30 [INF] Fetching customer engagement statistics.
+2025-09-28 12:51:27.368 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:51:27.383 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-09-28 12:51:27.390 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectEnumerableIterator`2[[System.Linq.IGrouping`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[PromoPilot.Core.Entities.Engagement, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[PromoPilot.Application.DTOs.CustomerEngagementStatsDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:51:27.407 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API) in 42.5239ms
+2025-09-28 12:51:27.411 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API)'
+2025-09-28 12:51:27.412 +05:30 [INF] Request processed successfully.
+2025-09-28 12:51:27.413 +05:30 [INF] HTTP GET /api/Engagement/CustomerStats responded 200 in 63.7311 ms
+2025-09-28 12:51:27.416 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/CustomerStats - 200 null application/json; charset=utf-8 85.2414ms
+2025-09-28 12:55:08.055 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-28 12:55:08.211 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 12:55:08.213 +05:30 [INF] Hosting environment: Development
+2025-09-28 12:55:08.215 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-28 12:55:09.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-28 12:55:09.836 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 93.1768 ms
+2025-09-28 12:55:09.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 434.2991ms
+2025-09-28 12:55:09.870 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 12:55:09.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-28 12:55:09.884 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 14.4221ms
+2025-09-28 12:55:09.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.7339ms
+2025-09-28 12:55:09.975 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-28 12:55:10.010 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.6451 ms
+2025-09-28 12:55:10.016 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.7803ms
+2025-09-28 12:55:17.886 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Engagement/CustomerStats - null null
+2025-09-28 12:55:17.901 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-28 12:55:17.940 +05:30 [INF] Processing request: /api/Engagement/CustomerStats
+2025-09-28 12:55:17.948 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API)'
+2025-09-28 12:55:17.988 +05:30 [INF] Route matched with {action = "GetCustomerStats", controller = "Engagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerStats() on controller PromoPilot.API.Controllers.EngagementController (PromoPilot.API).
+2025-09-28 12:55:19.705 +05:30 [INF] Fetching customer engagement statistics.
+2025-09-28 12:55:19.712 +05:30 [INF] Fetching all engagements.
+2025-09-28 12:55:23.364 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[EngagementID], [e].[CampaignID], [e].[CustomerID], [e].[PurchaseValue], [e].[RedemptionCount]
+FROM [Engagement] AS [e]
+2025-09-28 12:55:23.490 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectEnumerableIterator`2[[System.Linq.IGrouping`2[[<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PromoPilot.Core.Entities.Engagement, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[PromoPilot.Application.DTOs.CustomerEngagementStatsDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 12:55:23.516 +05:30 [INF] Executed action PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API) in 5513.0635ms
+2025-09-28 12:55:23.521 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.EngagementController.GetCustomerStats (PromoPilot.API)'
+2025-09-28 12:55:23.530 +05:30 [INF] Request processed successfully.
+2025-09-28 12:55:23.535 +05:30 [INF] HTTP GET /api/Engagement/CustomerStats responded 200 in 5641.6077 ms
+2025-09-28 12:55:23.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Engagement/CustomerStats - 200 null application/json; charset=utf-8 5672.1218ms
+2025-09-28 14:08:31.968 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-28 14:08:32.579 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 14:08:32.586 +05:30 [INF] Hosting environment: Development
+2025-09-28 14:08:32.591 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-28 14:08:34.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-28 14:08:35.470 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 324.8302 ms
+2025-09-28 14:08:35.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 976.7399ms
+2025-09-28 14:08:35.528 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 14:08:35.537 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-28 14:08:35.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 57.4499ms
+2025-09-28 14:08:35.682 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 159.1239ms
+2025-09-28 14:08:35.754 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-28 14:08:35.855 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 83.9927 ms
+2025-09-28 14:08:35.868 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 113.588ms
+2025-09-28 14:08:53.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport - null null
+2025-09-28 14:08:53.786 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-28 14:08:53.877 +05:30 [INF] Processing request: /api/CampaignReport
+2025-09-28 14:08:53.891 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:08:53.994 +05:30 [INF] Route matched with {action = "GetAll", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:09:06.101 +05:30 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-09-28 14:09:06.539 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignReportDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:09:06.618 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API) in 12603.5005ms
+2025-09-28 14:09:06.626 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:09:06.636 +05:30 [INF] Request processed successfully.
+2025-09-28 14:09:06.647 +05:30 [INF] HTTP GET /api/CampaignReport responded 200 in 12874.0016 ms
+2025-09-28 14:09:06.690 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport - 200 null application/json; charset=utf-8 12932.7974ms
+2025-09-28 14:12:04.129 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/2 - null null
+2025-09-28 14:12:04.187 +05:30 [INF] Processing request: /api/CampaignReport/2
+2025-09-28 14:12:04.197 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API)'
+2025-09-28 14:12:04.261 +05:30 [INF] Route matched with {action = "GetById", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:12:05.390 +05:30 [INF] Executed DbCommand (489ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+WHERE [c].[ReportID] = @__p_0
+2025-09-28 14:12:05.422 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignReportDto'.
+2025-09-28 14:12:05.429 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API) in 1157.4171ms
+2025-09-28 14:12:05.438 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API)'
+2025-09-28 14:12:05.444 +05:30 [INF] Request processed successfully.
+2025-09-28 14:12:05.453 +05:30 [INF] HTTP GET /api/CampaignReport/2 responded 200 in 1301.9501 ms
+2025-09-28 14:12:05.468 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/2 - 200 null application/json; charset=utf-8 1339.1988ms
+2025-09-28 14:12:14.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/1 - null null
+2025-09-28 14:12:14.089 +05:30 [INF] Processing request: /api/CampaignReport/1
+2025-09-28 14:12:14.097 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API)'
+2025-09-28 14:12:14.107 +05:30 [INF] Route matched with {action = "GetById", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:12:14.411 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+WHERE [c].[ReportID] = @__p_0
+2025-09-28 14:12:14.441 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-09-28 14:12:14.556 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API) in 435.1603ms
+2025-09-28 14:12:14.566 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetById (PromoPilot.API)'
+2025-09-28 14:12:14.575 +05:30 [INF] Request processed successfully.
+2025-09-28 14:12:14.579 +05:30 [INF] HTTP GET /api/CampaignReport/1 responded 404 in 494.5191 ms
+2025-09-28 14:12:14.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/1 - 404 null application/problem+json; charset=utf-8 526.7527ms
+2025-09-28 14:12:47.873 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - null 0
+2025-09-28 14:12:47.898 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:12:47.911 +05:30 [INF] Processing request: /api/CampaignReport/generate/2
+2025-09-28 14:12:47.919 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:12:47.938 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:12:48.478 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:12:48.627 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignReportDto'.
+2025-09-28 14:12:48.642 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 691.0478ms
+2025-09-28 14:12:48.655 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:12:48.665 +05:30 [INF] Request processed successfully.
+2025-09-28 14:12:48.674 +05:30 [INF] HTTP POST /api/CampaignReport/generate/2 responded 200 in 782.0896 ms
+2025-09-28 14:12:48.686 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - 200 null application/json; charset=utf-8 812.8223ms
+2025-09-28 14:13:03.518 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/1 - null 0
+2025-09-28 14:13:03.539 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:13:03.544 +05:30 [INF] Processing request: /api/CampaignReport/generate/1
+2025-09-28 14:13:03.550 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:13:03.560 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:13:03.600 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:13:03.742 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-28 14:13:04.787 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 1212.4502ms
+2025-09-28 14:13:04.802 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:13:05.179 +05:30 [ERR] Unhandled exception occurred while processing request: /api/CampaignReport/generate/1
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.CampaignReportRepository.AddAsync(CampaignReport report) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\CampaignReportRepository.cs:line 32
+   at PromoPilot.Application.Services.CampaignReportService.GenerateReportAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\CampaignReportService.cs:line 56
+   at PromoPilot.Application.UseCases.CampaignReports.GenerateCampaignReportUseCase.ExecuteAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\CampaignReports\GenerateCampaignReportUseCase.cs:line 19
+   at PromoPilot.API.Controllers.CampaignReportController.Generate(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\CampaignReportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 14:13:05.443 +05:30 [ERR] HTTP POST /api/CampaignReport/generate/1 responded 500 in 1904.7510 ms
+2025-09-28 14:13:05.457 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/1 - 500 null application/json 1938.7286ms
+2025-09-28 14:13:41.318 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - null 0
+2025-09-28 14:13:41.384 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:13:41.389 +05:30 [INF] Processing request: /api/CampaignReport/generate/9999
+2025-09-28 14:13:41.394 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:13:41.401 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:13:41.452 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:13:41.480 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-28 14:13:42.191 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 781.2825ms
+2025-09-28 14:13:42.200 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:13:42.489 +05:30 [ERR] Unhandled exception occurred while processing request: /api/CampaignReport/generate/9999
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.CampaignReportRepository.AddAsync(CampaignReport report) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\CampaignReportRepository.cs:line 32
+   at PromoPilot.Application.Services.CampaignReportService.GenerateReportAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\CampaignReportService.cs:line 56
+   at PromoPilot.Application.UseCases.CampaignReports.GenerateCampaignReportUseCase.ExecuteAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\CampaignReports\GenerateCampaignReportUseCase.cs:line 19
+   at PromoPilot.API.Controllers.CampaignReportController.Generate(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\CampaignReportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 14:13:42.566 +05:30 [ERR] HTTP POST /api/CampaignReport/generate/9999 responded 500 in 1182.6222 ms
+2025-09-28 14:13:42.577 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - 500 null application/json 1264.2497ms
+2025-09-28 14:14:16.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - null null
+2025-09-28 14:14:16.219 +05:30 [INF] Processing request: /api/CampaignReport/CompareByRegion
+2025-09-28 14:14:16.226 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 14:14:16.251 +05:30 [INF] Route matched with {action = "CompareByRegion", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompareByRegion() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:14:16.523 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI], [c0].[CampaignID], [c0].[EndDate], [c0].[Name], [c0].[StartDate], [c0].[StoreList], [c0].[TargetProducts]
+FROM [CampaignReport] AS [c]
+INNER JOIN [Campaign] AS [c0] ON [c].[CampaignID] = [c0].[CampaignID]
+2025-09-28 14:14:16.645 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectEnumerableIterator`2[[System.Linq.IGrouping`2[[<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PromoPilot.Application.DTOs.CampaignReportWithRegionDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[PromoPilot.Application.DTOs.CampaignRegionPerformanceDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:14:16.700 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API) in 435.6228ms
+2025-09-28 14:14:16.708 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 14:14:16.715 +05:30 [INF] Request processed successfully.
+2025-09-28 14:14:16.719 +05:30 [INF] HTTP GET /api/CampaignReport/CompareByRegion responded 200 in 500.8738 ms
+2025-09-28 14:14:16.726 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - 200 null application/json; charset=utf-8 544.3961ms
+2025-09-28 14:16:16.213 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - null 0
+2025-09-28 14:16:16.243 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:16:16.247 +05:30 [INF] Processing request: /api/CampaignReport/generate/2
+2025-09-28 14:16:16.253 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:16:16.259 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:16:16.339 +05:30 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:16:16.358 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignReportDto'.
+2025-09-28 14:16:16.368 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 98.9747ms
+2025-09-28 14:16:16.376 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:16:16.385 +05:30 [INF] Request processed successfully.
+2025-09-28 14:16:16.389 +05:30 [INF] HTTP POST /api/CampaignReport/generate/2 responded 200 in 146.8867 ms
+2025-09-28 14:16:16.399 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - 200 null application/json; charset=utf-8 186.5116ms
+2025-09-28 14:17:11.882 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - null 0
+2025-09-28 14:17:11.910 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:17:11.915 +05:30 [INF] Processing request: /api/CampaignReport/generate/9999
+2025-09-28 14:17:11.918 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:17:11.921 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:17:11.997 +05:30 [INF] Executed DbCommand (65ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:17:12.026 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-28 14:17:12.706 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 778.4657ms
+2025-09-28 14:17:12.713 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:17:12.963 +05:30 [ERR] Unhandled exception occurred while processing request: /api/CampaignReport/generate/9999
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:e26ad966-627b-4090-a41d-2010aa87e721
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.CampaignReportRepository.AddAsync(CampaignReport report) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\CampaignReportRepository.cs:line 32
+   at PromoPilot.Application.Services.CampaignReportService.GenerateReportAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\CampaignReportService.cs:line 56
+   at PromoPilot.Application.UseCases.CampaignReports.GenerateCampaignReportUseCase.ExecuteAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\CampaignReports\GenerateCampaignReportUseCase.cs:line 19
+   at PromoPilot.API.Controllers.CampaignReportController.Generate(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\CampaignReportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 14:17:13.093 +05:30 [ERR] HTTP POST /api/CampaignReport/generate/9999 responded 500 in 1183.1371 ms
+2025-09-28 14:17:13.104 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - 500 null application/json 1222.0076ms
+2025-09-28 14:37:06.766 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-28 14:37:07.303 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 14:37:07.311 +05:30 [INF] Hosting environment: Development
+2025-09-28 14:37:07.316 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-28 14:37:09.158 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-28 14:37:10.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-28 14:37:10.041 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 270.4915 ms
+2025-09-28 14:37:10.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 14:37:10.138 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 988.4477ms
+2025-09-28 14:37:10.159 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 102.1654ms
+2025-09-28 14:37:10.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 185.3408ms
+2025-09-28 14:37:10.305 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-28 14:37:10.379 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 60.1973 ms
+2025-09-28 14:37:10.390 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.289ms
+2025-09-28 14:37:16.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport - null null
+2025-09-28 14:37:16.323 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-28 14:37:16.397 +05:30 [INF] Processing request: /api/CampaignReport
+2025-09-28 14:37:16.407 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:37:16.492 +05:30 [INF] Route matched with {action = "GetAll", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:37:26.638 +05:30 [INF] Executed DbCommand (110ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-09-28 14:37:26.805 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignReportDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:37:26.869 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API) in 10347.2148ms
+2025-09-28 14:37:26.879 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:37:26.889 +05:30 [INF] Request processed successfully.
+2025-09-28 14:37:26.898 +05:30 [INF] HTTP GET /api/CampaignReport responded 200 in 10586.9246 ms
+2025-09-28 14:37:26.947 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport - 200 null application/json; charset=utf-8 10660.905ms
+2025-09-28 14:42:47.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport - null null
+2025-09-28 14:42:47.959 +05:30 [INF] Processing request: /api/CampaignReport
+2025-09-28 14:42:47.965 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:42:47.975 +05:30 [INF] Route matched with {action = "GetAll", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:42:48.113 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI]
+FROM [CampaignReport] AS [c]
+2025-09-28 14:42:48.341 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignReportDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:42:48.366 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API) in 377.9592ms
+2025-09-28 14:42:48.374 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GetAll (PromoPilot.API)'
+2025-09-28 14:42:48.379 +05:30 [INF] Request processed successfully.
+2025-09-28 14:42:48.383 +05:30 [INF] HTTP GET /api/CampaignReport responded 200 in 432.4855 ms
+2025-09-28 14:42:48.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport - 200 null application/json; charset=utf-8 480.769ms
+2025-09-28 14:43:06.993 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/6 - null 0
+2025-09-28 14:43:07.012 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:43:07.023 +05:30 [INF] Processing request: /api/CampaignReport/generate/6
+2025-09-28 14:43:07.034 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:43:07.081 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:43:08.183 +05:30 [INF] Executed DbCommand (305ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:43:08.307 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignReportDto'.
+2025-09-28 14:43:08.317 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 1210.3255ms
+2025-09-28 14:43:08.323 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:43:08.329 +05:30 [INF] Request processed successfully.
+2025-09-28 14:43:08.333 +05:30 [INF] HTTP POST /api/CampaignReport/generate/6 responded 200 in 1325.0051 ms
+2025-09-28 14:43:08.340 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/6 - 200 null application/json; charset=utf-8 1346.4584ms
+2025-09-28 14:43:20.948 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - null 0
+2025-09-28 14:43:20.961 +05:30 [INF] CORS policy execution successful.
+2025-09-28 14:43:20.970 +05:30 [INF] Processing request: /api/CampaignReport/generate/9999
+2025-09-28 14:43:20.978 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:43:20.988 +05:30 [INF] Route matched with {action = "Generate", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Generate(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:43:21.026 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 14:43:21.131 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d7003627-2bf7-4802-b4b4-0d9dc4a7f634
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d7003627-2bf7-4802-b4b4-0d9dc4a7f634
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-09-28 14:43:22.024 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API) in 1021.3163ms
+2025-09-28 14:43:22.035 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.Generate (PromoPilot.API)'
+2025-09-28 14:43:22.408 +05:30 [ERR] Unhandled exception occurred while processing request: /api/CampaignReport/generate/9999
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_CampaignReport_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:d7003627-2bf7-4802-b4b4-0d9dc4a7f634
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.CampaignReportRepository.AddAsync(CampaignReport report) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Infrastructure\Repositories\CampaignReportRepository.cs:line 32
+   at PromoPilot.Application.Services.CampaignReportService.GenerateReportAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\Services\CampaignReportService.cs:line 56
+   at PromoPilot.Application.UseCases.CampaignReports.GenerateCampaignReportUseCase.ExecuteAsync(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\UseCases\CampaignReports\GenerateCampaignReportUseCase.cs:line 19
+   at PromoPilot.API.Controllers.CampaignReportController.Generate(Int32 campaignId) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Controllers\CampaignReportController.cs:line 50
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 23
+2025-09-28 14:43:22.694 +05:30 [ERR] HTTP POST /api/CampaignReport/generate/9999 responded 500 in 1733.4499 ms
+2025-09-28 14:43:22.702 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - 500 null application/json 1756.639ms
+2025-09-28 14:43:33.166 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - null null
+2025-09-28 14:43:33.177 +05:30 [INF] Processing request: /api/CampaignReport/CompareByRegion
+2025-09-28 14:43:33.180 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 14:43:33.196 +05:30 [INF] Route matched with {action = "CompareByRegion", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompareByRegion() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 14:43:33.732 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI], [c0].[CampaignID], [c0].[EndDate], [c0].[Name], [c0].[StartDate], [c0].[StoreList], [c0].[TargetProducts]
+FROM [CampaignReport] AS [c]
+INNER JOIN [Campaign] AS [c0] ON [c].[CampaignID] = [c0].[CampaignID]
+2025-09-28 14:43:33.850 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectEnumerableIterator`2[[System.Linq.IGrouping`2[[<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PromoPilot.Application.DTOs.CampaignReportWithRegionDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Linq, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a],[PromoPilot.Application.DTOs.CampaignRegionPerformanceDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 14:43:33.898 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API) in 694.2112ms
+2025-09-28 14:43:33.905 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 14:43:33.923 +05:30 [INF] Request processed successfully.
+2025-09-28 14:43:33.928 +05:30 [INF] HTTP GET /api/CampaignReport/CompareByRegion responded 200 in 752.2294 ms
+2025-09-28 14:43:33.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - 200 null application/json; charset=utf-8 775.2147ms
+2025-09-28 15:03:05.832 +05:30 [INF] Now listening on: http://localhost:5145
+2025-09-28 15:03:06.061 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-28 15:03:06.065 +05:30 [INF] Hosting environment: Development
+2025-09-28 15:03:06.067 +05:30 [INF] Content root path: C:\Users\2436730\source\repos\PromoPilot\PromoPilot.API
+2025-09-28 15:03:07.358 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/index.html - null null
+2025-09-28 15:03:07.972 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 150.1179 ms
+2025-09-28 15:03:07.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-28 15:03:07.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-09-28 15:03:08.014 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/index.html - 200 null text/html;charset=utf-8 654.3712ms
+2025-09-28 15:03:08.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 51.9985ms
+2025-09-28 15:03:08.106 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.129ms
+2025-09-28 15:03:08.147 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-09-28 15:03:08.197 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 43.0190 ms
+2025-09-28 15:03:08.202 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.065ms
+2025-09-28 15:03:20.770 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - null null
+2025-09-28 15:03:20.786 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-28 15:03:20.820 +05:30 [INF] Processing request: /api/CampaignReport/CompareByRegion
+2025-09-28 15:03:20.833 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 15:03:20.877 +05:30 [INF] Route matched with {action = "CompareByRegion", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CompareByRegion() on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 15:03:25.492 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[ReportID], [c].[CampaignID], [c].[ConversionRate], [c].[GeneratedDate], [c].[Reach], [c].[ROI], [c0].[CampaignID], [c0].[EndDate], [c0].[Name], [c0].[StartDate], [c0].[StoreList], [c0].[TargetProducts]
+FROM [CampaignReport] AS [c]
+INNER JOIN [Campaign] AS [c0] ON [c].[CampaignID] = [c0].[CampaignID]
+2025-09-28 15:03:25.642 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Application.DTOs.CampaignRegionPerformanceDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-28 15:03:25.670 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API) in 4783.787ms
+2025-09-28 15:03:25.675 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.CompareByRegion (PromoPilot.API)'
+2025-09-28 15:03:25.678 +05:30 [INF] Request processed successfully.
+2025-09-28 15:03:25.681 +05:30 [INF] HTTP GET /api/CampaignReport/CompareByRegion responded 200 in 4900.5884 ms
+2025-09-28 15:03:25.696 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/CampaignReport/CompareByRegion - 200 null application/json; charset=utf-8 4925.434ms
+2025-09-28 15:03:54.304 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - null 0
+2025-09-28 15:03:54.316 +05:30 [INF] CORS policy execution successful.
+2025-09-28 15:03:54.326 +05:30 [INF] Processing request: /api/CampaignReport/generate/2
+2025-09-28 15:03:54.329 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:03:54.343 +05:30 [INF] Route matched with {action = "GenerateReport", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateReport(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 15:03:54.696 +05:30 [INF] Executed DbCommand (228ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-28 15:03:54.858 +05:30 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-28 15:03:54.867 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API) in 521.1692ms
+2025-09-28 15:03:54.871 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:03:54.874 +05:30 [INF] Request processed successfully.
+2025-09-28 15:03:54.876 +05:30 [INF] HTTP POST /api/CampaignReport/generate/2 responded 404 in 562.5526 ms
+2025-09-28 15:03:54.882 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/2 - 404 null application/json; charset=utf-8 578.4943ms
+2025-09-28 15:04:04.668 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/6 - null 0
+2025-09-28 15:04:04.681 +05:30 [INF] CORS policy execution successful.
+2025-09-28 15:04:04.683 +05:30 [INF] Processing request: /api/CampaignReport/generate/6
+2025-09-28 15:04:04.687 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:04:04.692 +05:30 [INF] Route matched with {action = "GenerateReport", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateReport(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 15:04:04.794 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-28 15:04:04.933 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CampaignReport] ([CampaignID], [ConversionRate], [GeneratedDate], [Reach], [ROI])
+OUTPUT INSERTED.[ReportID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-09-28 15:04:04.972 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignReportDto'.
+2025-09-28 15:04:04.989 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API) in 290.6731ms
+2025-09-28 15:04:04.993 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:04:04.996 +05:30 [INF] Request processed successfully.
+2025-09-28 15:04:04.999 +05:30 [INF] HTTP POST /api/CampaignReport/generate/6 responded 200 in 318.0501 ms
+2025-09-28 15:04:05.003 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/6 - 200 null application/json; charset=utf-8 335.9167ms
+2025-09-28 15:04:16.214 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - null 0
+2025-09-28 15:04:16.222 +05:30 [INF] CORS policy execution successful.
+2025-09-28 15:04:16.223 +05:30 [INF] Processing request: /api/CampaignReport/generate/9999
+2025-09-28 15:04:16.225 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:04:16.227 +05:30 [INF] Route matched with {action = "GenerateReport", controller = "CampaignReport"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateReport(Int32) on controller PromoPilot.API.Controllers.CampaignReportController (PromoPilot.API).
+2025-09-28 15:04:16.237 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-09-28 15:04:16.330 +05:30 [INF] Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-28 15:04:16.333 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API) in 101.8747ms
+2025-09-28 15:04:16.336 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignReportController.GenerateReport (PromoPilot.API)'
+2025-09-28 15:04:16.339 +05:30 [INF] Request processed successfully.
+2025-09-28 15:04:16.340 +05:30 [INF] HTTP POST /api/CampaignReport/generate/9999 responded 404 in 118.3682 ms
+2025-09-28 15:04:16.345 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/CampaignReport/generate/9999 - 404 null application/json; charset=utf-8 130.6016ms
