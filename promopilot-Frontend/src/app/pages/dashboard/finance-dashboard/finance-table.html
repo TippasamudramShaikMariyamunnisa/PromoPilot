@@ -1,0 +1,39 @@
+<div class="table-header">
+  <h4>Allocated Budgets</h4>
+</div>
+
+<table class="table table-bordered table-striped" *ngIf="budgets.length > 0">
+  <thead>
+    <tr>
+      <th>Budget ID</th>
+      <th>Campaign ID</th>
+      <th>Store ID</th>
+      <th>Allocated</th>
+      <th>Spent</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let budget of budgets">
+      <td>{{ budget.budgetID }}</td>
+      <td>{{ budget.campaignID }}</td>
+      <td>{{ budget.storeID }}</td>
+      <td>{{ budget.allocatedAmount | currency }}</td>
+      <td>{{ budget.spentAmount | currency }}</td>
+      <td class="actions-cell">
+        <button class="action-btn edit" (click)="editBudget(budget)">✏️ Edit</button>
+        <button class="action-btn cancel" (click)="deleteBudget(budget.budgetID)">❌ Delete</button>
+    </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pagination-controls">
+  <button class="page-btn" (click)="prevPage()" [disabled]="page === 1">⬅ Prev</button>
+  <span class="page-indicator">Page {{ page }}</span>
+  <button class="page-btn" (click)="nextPage()" [disabled]="page * pageSize >= totalCount">Next ➡</button>
+</div>
+
+<div *ngIf="budgets.length === 0 && !loading" class="text-muted mt-3">
+  No budgets found.
+</div>

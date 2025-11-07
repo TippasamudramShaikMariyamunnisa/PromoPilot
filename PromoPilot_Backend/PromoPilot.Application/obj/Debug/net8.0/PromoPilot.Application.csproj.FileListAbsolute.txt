@@ -1,0 +1,150 @@
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\OFL.txt
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Black.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-BlackItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Bold.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-BoldItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraBold.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraBoldItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraLight.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ExtraLightItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Italic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Light.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-LightItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Medium.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-MediumItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Regular.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-SemiBold.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-SemiBoldItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-Thin.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\Lato-ThinItalic.ttf
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\LatoFont\OFL.txt
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.deps.json
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.AssemblyReference.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfoInputs.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.AssemblyInfo.cs
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.sourcelink.json
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPil.D6D0595F.Up2Date
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\refint\PromoPilot.Application.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\PromoPilot.Application.pdb
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\obj\Debug\net8.0\ref\PromoPilot.Application.dll

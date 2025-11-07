@@ -1,0 +1,85 @@
+.dashboard-container {
+  display: flex;
+  min-height: 80vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url('/assets/background.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(to bottom, #ff9800, #3f51b5);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100vh;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.sidebar-buttons button {
+  padding: 12px 16px;
+  font-size: 16px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-buttons button:hover {
+  background-color: #3498db;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background: #fafafa;
+}
+
+.main-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  letter-spacing: 0.5px;
+  background-color: #ff9800;
+}
+
+.upload-input {
+  margin-top: 10px;
+}
+.table-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: -10px;
+}
+
+.table-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.table-actions button:hover {
+  background-color: #1976D2;
+}

@@ -1,0 +1,101 @@
+
+
+/* Card styling */
+.card {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Heading */
+h4 {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Orange button */
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+/* Register link styling */
+.register-link {
+  color: #FF6F00;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+  color: #e65c00;
+}
+
+/* Animated gradient background */
+body {
+  background: linear-gradient(-45deg, #007FFF, #FF6F00, #2b2f3a, #007FFF);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Card styling */
+.card {
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Heading */
+h4 {
+  font-weight: 500;
+  color: #FF6F00; /* Orange heading */
+}
+
+/* Orange button */
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+/* Register link styling */
+.register-link {
+  color: #FF6F00;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+  color: #e65c00;
+}
+.text-orange {
+  color: #FF6F00;
+}
+.card {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}

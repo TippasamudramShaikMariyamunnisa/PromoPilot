@@ -1,0 +1,40 @@
+<div class="engagement-table">
+  <h3>📋 All Engagements</h3>
+
+  <div *ngIf="loading">Loading engagements...</div>
+
+  <table *ngIf="!loading && engagements.length > 0" class="table">
+    <thead>
+      <tr>
+        <th (click)="toggleSort('CampaignId')">CampaignID</th>
+        <th (click)="toggleSort('CustomerId')">CustomerID</th>
+        <th (click)="toggleSort('RedemptionCount')">RedemptionCount</th>
+        <th (click)="toggleSort('PurchaseValue')">PurchaseValue</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let engagement of engagements">
+        <td>{{ engagement.campaignID }}</td>
+        <td>{{ engagement.customerID }}</td>
+        <td>{{ engagement.redemptionCount }}</td>
+        <td>{{ engagement.purchaseValue | currency }}</td>
+        <td class="actions-cell">
+          <button class="action-btn view" (click)="view(engagement.engagementID)">🔍 View</button>
+          <button class="action-btn edit" (click)="edit(engagement)">✏️ Edit</button>
+          <button class="action-btn cancel" (click)="delete(engagement.engagementID)">❌ Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination-controls" *ngIf="!loading && engagements.length > 0">
+    <button class="page-btn" (click)="prevPage()" [disabled]="page === 1">⬅ Prev</button>
+    <span class="page-indicator">Page {{ page }}</span>
+    <button class="page-btn" (click)="nextPage()" [disabled]="page * pageSize >= totalCount">Next ➡</button>
+  </div>
+
+  <div *ngIf="!loading && engagements.length === 0" class="empty-state">
+    <p>⚠️ No engagements found.</p>
+  </div>
+</div>

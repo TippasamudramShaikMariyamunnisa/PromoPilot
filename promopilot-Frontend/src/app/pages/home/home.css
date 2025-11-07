@@ -1,0 +1,354 @@
+.text-orange {
+  color: #FF6F00;
+}
+
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+.accordion-button {
+  font-weight: 500;
+}
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+img {
+  max-height: 400px;
+  object-fit: cover;
+}
+.text-orange {
+  color: #FF6F00;
+}
+
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+h1, h2 {
+  font-weight: 600;
+}
+
+.card {
+  border: none;
+  background-color: #f9f9f9;
+}
+
+
+.bg-secondary-subtle {
+  background-color: #f0f0f0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 1rem;
+}
+/* Section backgrounds – Richer tones */
+#home {
+  background-color: #e2e6ea; /* thicker light gray */
+}
+
+#about {
+  background-color: #f5f5f5; /* soft white with depth */
+}
+
+#features {
+  background-color: #dbe7ff; /* richer soft blue */
+}
+
+#pricing {
+  background-color: #ffe4cc; /* deeper soft orange tint */
+}
+
+#faq {
+  background-color: #e8e8e8; /* thicker neutral */
+}
+
+#contact {
+  background-color: #f5f5f5; /* consistent soft white */
+}
+
+
+/* Hover shadow effect */
+.card,
+.btn,
+img,
+.accordion-button,
+.feature-box {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover,
+.btn:hover,
+img:hover,
+.accordion-button:hover,
+.feature-box:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+/* Typography */
+h1, h2 { font-weight: 600; }
+/* Buttons */
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+/* Cards and images */
+.card {
+  border: none;
+  background-color: #f9f9f9;
+}
+img {
+  max-height: 400px;
+  object-fit: cover;
+}
+/* Hover effects */
+.card, .btn, img, .accordion-button, .feature-box {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card:hover, .btn:hover, img:hover, .accordion-button:hover, .feature-box:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+/* Pointer-following tilt effect */
+.pointer-shadow {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  will-change: transform;
+  perspective: 1000px;
+}
+.pointer-shadow:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+html {
+  scroll-behavior: smooth;
+}
+.section-divider {
+  height: 4px;
+  background: linear-gradient(to right, #FF6F00, #007FFF);
+  margin: 40px 0;
+  border-radius: 2px;
+}
+#contact .logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff6600, #ff9900);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+#contact h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+#contact .logo-text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff6600, #ff9900);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+#contact iframe {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact input,
+#contact textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+#contact .btn-orange {
+  background-color: #FF6F00;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#contact .btn-orange:hover {
+  background-color: #e65c00;
+}
+
+#successMessage {
+  font-weight: 500;
+  border-radius: 6px;
+}
+#testimonials .testimonial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#testimonials .testimonial-card:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.wave-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+#home {
+  min-height: 400px;
+}
+.hero-section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-dots-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.pricing-card {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.pricing-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+.testimonial-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border: 3px solid #FF6F00;
+}
+.testimonial-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+.flip-card {
+  perspective: 1000px;
+  height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+}
+
+.flip-card-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+#pricing {
+  min-height: 400px;
+}
+.flip-card-inner {
+  min-height: 250px; /* or match your tallest card */
+}
+.flip-card-front,
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+.flip-card {
+  perspective: 1000px;
+  height: 100%;
+  overflow: visible; /* ensures back side isn't clipped */
+}
+.col-md-4 {
+  display: flex;
+}
+.flip-card {
+  flex: 1;
+}
+.flip-card-inner {
+  min-height: 250px;
+  height: 100%;
+}

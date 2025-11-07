@@ -1,0 +1,930 @@
+2025-10-15 17:43:36.142 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Role] = N'Admin') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-15 17:43:36.341 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-15 17:43:36.487 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-15 17:43:37.045 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 17:43:37.049 +05:30 [INF] Hosting environment: Development
+2025-10-15 17:43:37.052 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-15 17:43:38.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-15 17:43:38.620 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-15 17:43:38.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 31.9975ms
+2025-10-15 17:43:38.740 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.412ms
+2025-10-15 17:43:38.793 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-15 17:43:38.834 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 29.3418 ms
+2025-10-15 17:43:38.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.7832ms
+2025-10-15 17:47:01.037 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 67
+2025-10-15 17:47:01.157 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-15 17:47:01.339 +05:30 [INF] CORS policy execution successful.
+2025-10-15 17:47:01.632 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-15 17:47:01.908 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 67
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 17:47:05.199 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:47:05.270 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-15 17:47:05.336 +05:30 [INF] RequestBody: {
+  "email": "r190170@rguktrkv.ac.in",
+  "password": "Mariya@123"
+}
+2025-10-15 17:47:06.283 +05:30 [INF] Executed DbCommand (337ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-15 17:47:07.221 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-15 17:47:07.282 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-15 17:47:07.322 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 17:47:07.348 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 2059.5155ms
+2025-10-15 17:47:07.358 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:47:07.371 +05:30 [INF] ResponseBody: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImZkODhlZjc4LTNhN2EtNGYzNi05ZTc5LTM1YzlmMGJkODZlOSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InIxOTAxNzBAcmd1a3Rya3YuYWMuaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJTdG9yZU1hbmFnZXIiLCJleHAiOjE3NjA1MzQyMjYsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.Ukwi-_567MWsGPKfrcjcqfC_SCNOD9MQWcQ54ZbOKgQ","refreshToken":"jrgcJca/r0gUVGMpIASLXAniF4vbp+nWKikYGYiYOslVNRPLfI1zn6zQm6LQRl2ORDGjReuFRF7EOOLAMYAzOg==","accessTokenExpiry":"2025-10-15T13:17:07.2642831Z","refreshTokenExpiry":"2025-10-22T12:17:06.8764226Z","role":"StoreManager","email":"r190170@rguktrkv.ac.in","username":"RiyaS"}
+2025-10-15 17:47:07.395 +05:30 [INF] Duration: 5497.8787ms
+2025-10-15 17:47:07.401 +05:30 [INF] Request processed successfully.
+2025-10-15 17:47:07.409 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 6361.9524 ms
+2025-10-15 17:47:07.427 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 6390.9204ms
+2025-10-15 17:53:28.341 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/ExecutionStatus/ViewAllExecutionStatuses?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-15 17:53:28.378 +05:30 [INF] Processing request: /api/ExecutionStatus/ViewAllExecutionStatuses
+2025-10-15 17:53:28.393 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/ExecutionStatus/ViewAllExecutionStatuses
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 17:53:28.604 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.ExecutionStatusController.ViewAllExecutionStatuses (PromoPilot.API)'
+2025-10-15 17:53:28.627 +05:30 [INF] Route matched with {action = "ViewAllExecutionStatuses", controller = "ExecutionStatus"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllExecutionStatuses(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.ExecutionStatusController (PromoPilot.API).
+2025-10-15 17:53:29.300 +05:30 [INF] Fetching all execution statuses.
+2025-10-15 17:53:29.973 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [ExecutionStatus] AS [e]
+2025-10-15 17:53:30.030 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[StatusID], [e].[CampaignID], [e].[Feedback], [e].[Status], [e].[StoreID]
+FROM [ExecutionStatus] AS [e]
+ORDER BY [e].[StatusID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 17:53:30.154 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[ExecutionStatusDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 17:53:30.219 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 17:53:30.223 +05:30 [INF] Executed action PromoPilot.API.Controllers.ExecutionStatusController.ViewAllExecutionStatuses (PromoPilot.API) in 1585.7214ms
+2025-10-15 17:53:30.229 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.ExecutionStatusController.ViewAllExecutionStatuses (PromoPilot.API)'
+2025-10-15 17:53:30.238 +05:30 [INF] ResponseBody: {"items":[{"statusID":9,"campaignID":7,"storeID":101,"status":"Completed","feedback":"Campaign executed successfully with great customer response."},{"statusID":10,"campaignID":6,"storeID":109,"status":"InProgress","feedback":"The Campaign is ongoing with great response"}],"totalCount":2,"pageNumber":1,"pageSize":5}
+2025-10-15 17:53:30.242 +05:30 [INF] Duration: 1849.3916ms
+2025-10-15 17:53:30.244 +05:30 [INF] Request processed successfully.
+2025-10-15 17:53:30.246 +05:30 [INF] HTTP GET /api/ExecutionStatus/ViewAllExecutionStatuses responded 200 in 1871.8005 ms
+2025-10-15 17:53:30.255 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/ExecutionStatus/ViewAllExecutionStatuses?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 1914.5899ms
+2025-10-15 17:58:00.771 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 62
+2025-10-15 17:58:00.805 +05:30 [INF] CORS policy execution successful.
+2025-10-15 17:58:00.813 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-15 17:58:00.822 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 62
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 17:58:00.838 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:58:00.846 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-15 17:58:00.872 +05:30 [INF] RequestBody: {
+  "email": "mariyaM@gmail.com",
+  "password": "Mariya@123"
+}
+2025-10-15 17:58:00.953 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-15 17:58:01.051 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0, [LockoutEndTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-10-15 17:58:01.566 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-15 17:58:01.587 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-15 17:58:01.595 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 735.2099ms
+2025-10-15 17:58:01.601 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:58:01.610 +05:30 [INF] ResponseBody: {"message":"Invalid credentials."}
+2025-10-15 17:58:01.613 +05:30 [INF] Duration: 791.2967ms
+2025-10-15 17:58:01.620 +05:30 [INF] Request processed successfully.
+2025-10-15 17:58:01.626 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 823.9827 ms
+2025-10-15 17:58:01.641 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 870.6914ms
+2025-10-15 17:59:03.731 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 58
+2025-10-15 17:59:03.765 +05:30 [INF] CORS policy execution successful.
+2025-10-15 17:59:03.768 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-15 17:59:03.773 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 58
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 17:59:03.780 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:59:03.785 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-15 17:59:03.798 +05:30 [INF] RequestBody: {
+  "email": "mar@gmail.com",
+  "password": "Mariya@123"
+}
+2025-10-15 17:59:03.879 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-15 17:59:03.985 +05:30 [INF] Executed DbCommand (92ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-15 17:59:04.295 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-15 17:59:04.305 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-15 17:59:04.311 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 517.3058ms
+2025-10-15 17:59:04.320 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:59:04.327 +05:30 [INF] ResponseBody: {"message":"Invalid credentials."}
+2025-10-15 17:59:04.333 +05:30 [INF] Duration: 559.9903ms
+2025-10-15 17:59:04.339 +05:30 [INF] Request processed successfully.
+2025-10-15 17:59:04.345 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 580.5257 ms
+2025-10-15 17:59:04.354 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 622.8002ms
+2025-10-15 17:59:32.290 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 61
+2025-10-15 17:59:32.329 +05:30 [INF] CORS policy execution successful.
+2025-10-15 17:59:32.333 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-15 17:59:32.336 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 17:59:32.343 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:59:32.350 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-15 17:59:32.365 +05:30 [INF] RequestBody: {
+  "email": "advika@gmail.com",
+  "password": "Advika@123"
+}
+2025-10-15 17:59:32.416 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-15 17:59:32.452 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-15 17:59:32.462 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-15 17:59:32.467 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 17:59:32.471 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 109.2032ms
+2025-10-15 17:59:32.476 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 17:59:32.481 +05:30 [INF] ResponseBody: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgxMzIxNDE4LTU5MzktNDBlMy1iNTkxLTIwNmIyNGY2NmI5MCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkdmlrYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYXJrZXRpbmciLCJleHAiOjE3NjA1MzQ5NzIsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.naXtiIDwFxTt2EuuuwwfRUeGxpi4mSMPoRGna0gmCR8","refreshToken":"oKtnsz4Um3flwjPUHOX7ccAYMQkwCmY/YtQWifG9Xk2RkO2gwoZuCYx4TR/g5ywaUXPxZLjlcAXWyyWiFUn+5g==","accessTokenExpiry":"2025-10-15T13:29:32.4622738Z","refreshTokenExpiry":"2025-10-22T12:29:32.4391362Z","role":"Marketing","email":"advika@gmail.com","username":"Advika"}
+2025-10-15 17:59:32.485 +05:30 [INF] Duration: 148.4863ms
+2025-10-15 17:59:32.488 +05:30 [INF] Request processed successfully.
+2025-10-15 17:59:32.491 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 161.8775 ms
+2025-10-15 17:59:32.499 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 209.5343ms
+2025-10-15 18:01:45.468 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - application/json 147
+2025-10-15 18:01:45.508 +05:30 [INF] CORS policy execution successful.
+2025-10-15 18:01:45.513 +05:30 [INF] Processing request: /api/Campaign/PlanCampaign
+2025-10-15 18:01:45.518 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Campaign/PlanCampaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 147
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:01:45.533 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-15 18:01:45.555 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:01:45.569 +05:30 [INF] RequestBody: {
+  "name": "Diwali",
+  "startDate": "2025-10-15",
+  "endDate": "2025-10-16",
+  "targetProducts": "clothing",
+  "storeList": "Hyderabad, Chennai"
+}
+2025-10-15 18:01:45.624 +05:30 [INF] Planning new campaign: Diwali
+2025-10-15 18:01:45.917 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__endDate_0='?' (DbType = DateTime2), @__startDate_1='?' (DbType = DateTime2), @__storeList_2='?' (Size = 4000), @__productList_3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Campaign] AS [c]
+        WHERE [c].[StartDate] <= @__endDate_0 AND [c].[EndDate] >= @__startDate_1 AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__storeList_2) WITH ([value] nvarchar(max) '$') AS [s]
+            WHERE [s].[value] IS NOT NULL AND (CHARINDEX([s].[value], [c].[StoreList]) > 0 OR [s].[value] LIKE N'')) AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__productList_3) WITH ([value] nvarchar(max) '$') AS [p]
+            WHERE [p].[value] IS NOT NULL AND (CHARINDEX([p].[value], [c].[TargetProducts]) > 0 OR [p].[value] LIKE N''))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-15 18:01:45.964 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__name_0='?' (Size = 4000), @__start_1='?' (DbType = DateTime2), @__end_2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[Name] = @__name_0 AND [c].[StartDate] = @__start_1 AND [c].[EndDate] = @__end_2
+2025-10-15 18:01:46.177 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Campaign] ([EndDate], [Name], [StartDate], [StoreList], [TargetProducts])
+OUTPUT INSERTED.[CampaignID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-15 18:01:46.342 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-15 18:01:46.389 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-10-15 18:01:46.466 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Campaign/GetCampaignById/27
+2025-10-15 18:01:46.472 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 910.1122ms
+2025-10-15 18:01:46.480 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-15 18:01:46.486 +05:30 [INF] ResponseBody: {"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Hyderabad, Chennai"}
+2025-10-15 18:01:46.491 +05:30 [INF] Duration: 973.1974ms
+2025-10-15 18:01:46.499 +05:30 [INF] Request processed successfully.
+2025-10-15 18:01:46.504 +05:30 [INF] HTTP POST /api/Campaign/PlanCampaign responded 201 in 996.0234 ms
+2025-10-15 18:01:46.515 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - 201 null application/json; charset=utf-8 1047.6604ms
+2025-10-15 18:03:55.185 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-15 18:03:55.217 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:03:55.230 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:03:55.266 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:03:55.288 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:03:55.316 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:03:55.358 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:03:55.400 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:03:55.425 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:03:55.436 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:03:55.439 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 140.9408ms
+2025-10-15 18:03:55.445 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:03:55.451 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"}],"totalCount":17,"pageNumber":1,"pageSize":5}
+2025-10-15 18:03:55.462 +05:30 [INF] Duration: 232.3258ms
+2025-10-15 18:03:55.467 +05:30 [INF] Request processed successfully.
+2025-10-15 18:03:55.470 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 253.4331 ms
+2025-10-15 18:03:55.474 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 292.4418ms
+2025-10-15 18:04:05.292 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=15&sortDesc=false - null null
+2025-10-15 18:04:05.299 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:04:05.302 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:04:05.310 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:04:05.315 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:04:05.346 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:04:05.358 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:04:05.386 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:04:05.409 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:04:05.418 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:04:05.423 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 95.1389ms
+2025-10-15 18:04:05.430 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:04:05.435 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"},{"campaignID":13,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi, Mumbai"},{"campaignID":14,"name":"Diwali Bonanza","startDate":"2025-09-25T16:41:29.31","endDate":"2025-09-25T16:41:29.31","targetProducts":"Home Appliances, Clothing","storeList":"Hyd, Chennai, Bnglr"},{"campaignID":15,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi,Mumbai"},{"campaignID":18,"name":"Chaturthi Offer","startDate":"2025-09-26T04:41:47.68","endDate":"2025-09-26T04:41:47.68","targetProducts":"Groceries","storeList":"Hyderabad"},{"campaignID":19,"name":"Diwali Mega Sale - Updated","startDate":"2025-10-15T00:00:00","endDate":"2025-10-30T00:00:00","targetProducts":"Electronics, Furniture","storeList":"Hyderabad, Bangalore, Chennai"},{"campaignID":20,"name":"Dussehra Sale","startDate":"2025-09-26T00:00:00","endDate":"2025-09-27T00:00:00","targetProducts":"Appliances, Furniture","storeList":"Hyd, Bnglr"},{"campaignID":21,"name":"Ugadi Offer","startDate":"2025-09-26T00:00:00","endDate":"2025-09-29T00:00:00","targetProducts":"Clothing","storeList":"Banglore, Chennai"},{"campaignID":22,"name":"Winter Sale","startDate":"2025-12-01T00:00:00","endDate":"2025-12-31T00:00:00","targetProducts":"P010,P011","storeList":"S010,S011"},{"campaignID":23,"name":"Diwali Offer","startDate":"2025-10-01T00:00:00","endDate":"2025-10-05T00:00:00","targetProducts":"Clothing","storeList":"Hyderabad"},{"campaignID":24,"name":"Diwali Sale","startDate":"2025-10-10T00:00:00","endDate":"2025-10-20T00:00:00","targetProducts":"P001,P002","storeList":"Hyderabad,Bangalore"}],"totalCount":17,"pageNumber":1,"pageSize":15}
+2025-10-15 18:04:05.441 +05:30 [INF] Duration: 139.7662ms
+2025-10-15 18:04:05.445 +05:30 [INF] Request processed successfully.
+2025-10-15 18:04:05.449 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 150.8660 ms
+2025-10-15 18:04:05.462 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=15&sortDesc=false - 200 null application/json; charset=utf-8 170.3592ms
+2025-10-15 18:04:16.065 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - null null
+2025-10-15 18:04:16.078 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:04:16.082 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:04:16.087 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:04:16.095 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:04:16.109 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:04:16.127 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:04:16.151 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:04:16.169 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:04:16.178 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:04:16.182 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 73.6738ms
+2025-10-15 18:04:16.189 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:04:16.195 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"},{"campaignID":13,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi, Mumbai"},{"campaignID":14,"name":"Diwali Bonanza","startDate":"2025-09-25T16:41:29.31","endDate":"2025-09-25T16:41:29.31","targetProducts":"Home Appliances, Clothing","storeList":"Hyd, Chennai, Bnglr"},{"campaignID":15,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi,Mumbai"},{"campaignID":18,"name":"Chaturthi Offer","startDate":"2025-09-26T04:41:47.68","endDate":"2025-09-26T04:41:47.68","targetProducts":"Groceries","storeList":"Hyderabad"},{"campaignID":19,"name":"Diwali Mega Sale - Updated","startDate":"2025-10-15T00:00:00","endDate":"2025-10-30T00:00:00","targetProducts":"Electronics, Furniture","storeList":"Hyderabad, Bangalore, Chennai"},{"campaignID":20,"name":"Dussehra Sale","startDate":"2025-09-26T00:00:00","endDate":"2025-09-27T00:00:00","targetProducts":"Appliances, Furniture","storeList":"Hyd, Bnglr"},{"campaignID":21,"name":"Ugadi Offer","startDate":"2025-09-26T00:00:00","endDate":"2025-09-29T00:00:00","targetProducts":"Clothing","storeList":"Banglore, Chennai"},{"campaignID":22,"name":"Winter Sale","startDate":"2025-12-01T00:00:00","endDate":"2025-12-31T00:00:00","targetProducts":"P010,P011","storeList":"S010,S011"},{"campaignID":23,"name":"Diwali Offer","startDate":"2025-10-01T00:00:00","endDate":"2025-10-05T00:00:00","targetProducts":"Clothing","storeList":"Hyderabad"},{"campaignID":24,"name":"Diwali Sale","startDate":"2025-10-10T00:00:00","endDate":"2025-10-20T00:00:00","targetProducts":"P001,P002","storeList":"Hyderabad,Bangalore"},{"campaignID":26,"name":"Holi","startDate":"2025-10-07T00:00:00","endDate":"2025-10-09T00:00:00","targetProducts":"Electronics","storeList":"Hyderabad, Bnglr"},{"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Hyderabad, Chennai"}],"totalCount":17,"pageNumber":1,"pageSize":20}
+2025-10-15 18:04:16.202 +05:30 [INF] Duration: 119.5019ms
+2025-10-15 18:04:16.208 +05:30 [INF] Request processed successfully.
+2025-10-15 18:04:16.214 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 136.2047 ms
+2025-10-15 18:04:16.224 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - 200 null application/json; charset=utf-8 159.6412ms
+2025-10-15 18:05:19.734 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/27 - application/json 18
+2025-10-15 18:05:19.763 +05:30 [INF] CORS policy execution successful.
+2025-10-15 18:05:19.767 +05:30 [INF] Processing request: /api/Campaign/ScheduleCampaign/27
+2025-10-15 18:05:19.771 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: PUT
+Scheme: http
+PathBase: 
+Path: /api/Campaign/ScheduleCampaign/27
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 18
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:05:19.780 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-15 18:05:19.806 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:05:19.815 +05:30 [INF] RequestBody: "Kerala, Banglore"
+2025-10-15 18:05:19.825 +05:30 [INF] Scheduling campaign ID: 27 for stores: Kerala, Banglore
+2025-10-15 18:05:19.907 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-10-15 18:05:19.961 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Campaign] SET [StoreList] = @p0
+OUTPUT 1
+WHERE [CampaignID] = @p1;
+2025-10-15 18:05:19.991 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-15 18:05:20.004 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-10-15 18:05:20.013 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:05:20.020 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 206.8798ms
+2025-10-15 18:05:20.028 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-15 18:05:20.032 +05:30 [INF] ResponseBody: {"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Kerala, Banglore"}
+2025-10-15 18:05:20.035 +05:30 [INF] Duration: 264.1346ms
+2025-10-15 18:05:20.040 +05:30 [INF] Request processed successfully.
+2025-10-15 18:05:20.044 +05:30 [INF] HTTP PUT /api/Campaign/ScheduleCampaign/27 responded 200 in 281.3532 ms
+2025-10-15 18:05:20.051 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/27 - 200 null application/json; charset=utf-8 317.9935ms
+2025-10-15 18:05:55.713 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - null null
+2025-10-15 18:05:55.739 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:05:55.745 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:05:55.753 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:05:55.759 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:05:55.769 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:05:55.789 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:05:55.832 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:05:55.847 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:05:55.852 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:05:55.856 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 87.1889ms
+2025-10-15 18:05:55.862 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:05:55.865 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"},{"campaignID":13,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi, Mumbai"},{"campaignID":14,"name":"Diwali Bonanza","startDate":"2025-09-25T16:41:29.31","endDate":"2025-09-25T16:41:29.31","targetProducts":"Home Appliances, Clothing","storeList":"Hyd, Chennai, Bnglr"},{"campaignID":15,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi,Mumbai"},{"campaignID":18,"name":"Chaturthi Offer","startDate":"2025-09-26T04:41:47.68","endDate":"2025-09-26T04:41:47.68","targetProducts":"Groceries","storeList":"Hyderabad"},{"campaignID":19,"name":"Diwali Mega Sale - Updated","startDate":"2025-10-15T00:00:00","endDate":"2025-10-30T00:00:00","targetProducts":"Electronics, Furniture","storeList":"Hyderabad, Bangalore, Chennai"},{"campaignID":20,"name":"Dussehra Sale","startDate":"2025-09-26T00:00:00","endDate":"2025-09-27T00:00:00","targetProducts":"Appliances, Furniture","storeList":"Hyd, Bnglr"},{"campaignID":21,"name":"Ugadi Offer","startDate":"2025-09-26T00:00:00","endDate":"2025-09-29T00:00:00","targetProducts":"Clothing","storeList":"Banglore, Chennai"},{"campaignID":22,"name":"Winter Sale","startDate":"2025-12-01T00:00:00","endDate":"2025-12-31T00:00:00","targetProducts":"P010,P011","storeList":"S010,S011"},{"campaignID":23,"name":"Diwali Offer","startDate":"2025-10-01T00:00:00","endDate":"2025-10-05T00:00:00","targetProducts":"Clothing","storeList":"Hyderabad"},{"campaignID":24,"name":"Diwali Sale","startDate":"2025-10-10T00:00:00","endDate":"2025-10-20T00:00:00","targetProducts":"P001,P002","storeList":"Hyderabad,Bangalore"},{"campaignID":26,"name":"Holi","startDate":"2025-10-07T00:00:00","endDate":"2025-10-09T00:00:00","targetProducts":"Electronics","storeList":"Hyderabad, Bnglr"},{"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Kerala, Banglore"}],"totalCount":17,"pageNumber":1,"pageSize":20}
+2025-10-15 18:05:55.872 +05:30 [INF] Duration: 126.8669ms
+2025-10-15 18:05:55.877 +05:30 [INF] Request processed successfully.
+2025-10-15 18:05:55.879 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 140.4803 ms
+2025-10-15 18:05:55.885 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - 200 null application/json; charset=utf-8 171.3254ms
+2025-10-15 18:20:59.252 +05:30 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Role] = N'Admin') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-15 18:20:59.910 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-15 18:21:00.442 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-15 18:21:00.951 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-15 18:21:00.950 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-15 18:21:01.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 201.8301ms
+2025-10-15 18:21:01.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 672.1374ms
+2025-10-15 18:21:01.593 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-15 18:21:01.743 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 18:21:01.748 +05:30 [INF] Hosting environment: Development
+2025-10-15 18:21:01.752 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-15 18:21:02.096 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 477.0267 ms
+2025-10-15 18:21:02.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 519.2798ms
+2025-10-15 18:21:25.914 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 61
+2025-10-15 18:21:26.001 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-15 18:21:26.010 +05:30 [INF] CORS policy execution successful.
+2025-10-15 18:21:26.025 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-15 18:21:26.187 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:21:28.901 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 18:21:29.011 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-15 18:21:29.098 +05:30 [INF] RequestBody: {
+  "email": "advika@gmail.com",
+  "password": "Advika@123"
+}
+2025-10-15 18:21:30.172 +05:30 [INF] Executed DbCommand (412ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-15 18:21:31.315 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-15 18:21:31.380 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-15 18:21:31.431 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:21:31.454 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 2423.9625ms
+2025-10-15 18:21:31.461 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-15 18:21:31.471 +05:30 [INF] ResponseBody: {"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgxMzIxNDE4LTU5MzktNDBlMy1iNTkxLTIwNmIyNGY2NmI5MCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkdmlrYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYXJrZXRpbmciLCJleHAiOjE3NjA1MzYyOTAsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.77WpmWPojxflxIgRJ5gSOSX8VGQERtEUg5QGe8B5uSo","refreshToken":"KNw4OCAc/DgP9RtniXCKekMLTwq3jNMZHcxG2Hn4LLYS5D1Ui25mI3QOLVJ3RfUQ4BBK5lPlZAiW9XI9tuLkpw==","accessTokenExpiry":"2025-10-15T13:51:31.3610485Z","refreshTokenExpiry":"2025-10-22T12:51:30.9868628Z","role":"Marketing","email":"advika@gmail.com","username":"Advika"}
+2025-10-15 18:21:31.485 +05:30 [INF] Duration: 5297.6792ms
+2025-10-15 18:21:31.490 +05:30 [INF] Request processed successfully.
+2025-10-15 18:21:31.498 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 5547.2794 ms
+2025-10-15 18:21:31.520 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 5606.4418ms
+2025-10-15 18:22:31.836 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-15 18:22:31.862 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:22:31.892 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:22:32.081 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:22:32.103 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:22:32.694 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:22:33.058 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:22:33.121 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:22:33.308 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:22:33.330 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:22:33.336 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 1199.624ms
+2025-10-15 18:22:33.347 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:22:33.353 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"}],"totalCount":17,"pageNumber":1,"pageSize":5}
+2025-10-15 18:22:33.360 +05:30 [INF] Duration: 1467.5043ms
+2025-10-15 18:22:33.368 +05:30 [INF] Request processed successfully.
+2025-10-15 18:22:33.374 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 1515.5507 ms
+2025-10-15 18:22:33.385 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 1548.8784ms
+2025-10-15 18:22:37.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - null null
+2025-10-15 18:22:37.300 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:22:37.310 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:22:37.333 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:22:37.339 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:22:37.356 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:22:37.381 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:22:37.409 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:22:37.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:22:37.442 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:22:37.447 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 96.0914ms
+2025-10-15 18:22:37.455 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:22:37.460 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"},{"campaignID":13,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi, Mumbai"},{"campaignID":14,"name":"Diwali Bonanza","startDate":"2025-09-25T16:41:29.31","endDate":"2025-09-25T16:41:29.31","targetProducts":"Home Appliances, Clothing","storeList":"Hyd, Chennai, Bnglr"},{"campaignID":15,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi,Mumbai"},{"campaignID":18,"name":"Chaturthi Offer","startDate":"2025-09-26T04:41:47.68","endDate":"2025-09-26T04:41:47.68","targetProducts":"Groceries","storeList":"Hyderabad"},{"campaignID":19,"name":"Diwali Mega Sale - Updated","startDate":"2025-10-15T00:00:00","endDate":"2025-10-30T00:00:00","targetProducts":"Electronics, Furniture","storeList":"Hyderabad, Bangalore, Chennai"},{"campaignID":20,"name":"Dussehra Sale","startDate":"2025-09-26T00:00:00","endDate":"2025-09-27T00:00:00","targetProducts":"Appliances, Furniture","storeList":"Hyd, Bnglr"},{"campaignID":21,"name":"Ugadi Offer","startDate":"2025-09-26T00:00:00","endDate":"2025-09-29T00:00:00","targetProducts":"Clothing","storeList":"Banglore, Chennai"},{"campaignID":22,"name":"Winter Sale","startDate":"2025-12-01T00:00:00","endDate":"2025-12-31T00:00:00","targetProducts":"P010,P011","storeList":"S010,S011"},{"campaignID":23,"name":"Diwali Offer","startDate":"2025-10-01T00:00:00","endDate":"2025-10-05T00:00:00","targetProducts":"Clothing","storeList":"Hyderabad"},{"campaignID":24,"name":"Diwali Sale","startDate":"2025-10-10T00:00:00","endDate":"2025-10-20T00:00:00","targetProducts":"P001,P002","storeList":"Hyderabad,Bangalore"},{"campaignID":26,"name":"Holi","startDate":"2025-10-07T00:00:00","endDate":"2025-10-09T00:00:00","targetProducts":"Electronics","storeList":"Hyderabad, Bnglr"},{"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Kerala, Banglore"}],"totalCount":17,"pageNumber":1,"pageSize":20}
+2025-10-15 18:22:37.468 +05:30 [INF] Duration: 157.5909ms
+2025-10-15 18:22:37.473 +05:30 [INF] Request processed successfully.
+2025-10-15 18:22:37.477 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 178.5271 ms
+2025-10-15 18:22:37.487 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - 200 null application/json; charset=utf-8 204.0911ms
+2025-10-15 18:23:02.757 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/27 - application/json 20
+2025-10-15 18:23:02.778 +05:30 [INF] CORS policy execution successful.
+2025-10-15 18:23:02.783 +05:30 [INF] Processing request: /api/Campaign/ScheduleCampaign/27
+2025-10-15 18:23:02.790 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: PUT
+Scheme: http
+PathBase: 
+Path: /api/Campaign/ScheduleCampaign/27
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 20
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:23:02.803 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-15 18:23:02.822 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:23:02.856 +05:30 [INF] RequestBody: "Hyderabad, Chennai"
+2025-10-15 18:23:02.868 +05:30 [INF] Scheduling campaign ID: 27 for stores: Hyderabad, Chennai
+2025-10-15 18:23:02.971 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-10-15 18:23:03.078 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Campaign] SET [StoreList] = @p0
+OUTPUT 1
+WHERE [CampaignID] = @p1;
+2025-10-15 18:23:03.270 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-15 18:23:03.339 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-10-15 18:23:03.350 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:23:03.358 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 523.671ms
+2025-10-15 18:23:03.377 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-15 18:23:03.385 +05:30 [INF] ResponseBody: {"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Kerala, Banglore,Hyderabad,Chennai"}
+2025-10-15 18:23:03.396 +05:30 [INF] Duration: 605.3553ms
+2025-10-15 18:23:03.401 +05:30 [INF] Request processed successfully.
+2025-10-15 18:23:03.404 +05:30 [INF] HTTP PUT /api/Campaign/ScheduleCampaign/27 responded 200 in 627.4090 ms
+2025-10-15 18:23:03.414 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/27 - 200 null application/json; charset=utf-8 659.1377ms
+2025-10-15 18:23:29.824 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - null null
+2025-10-15 18:23:29.849 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-15 18:23:29.857 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 18:23:29.867 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:23:29.874 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-15 18:23:29.888 +05:30 [INF] Fetching all campaigns.
+2025-10-15 18:23:29.912 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-15 18:23:29.937 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-15 18:23:29.950 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 18:23:29.957 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 18:23:29.960 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 73.2278ms
+2025-10-15 18:23:29.965 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-15 18:23:29.967 +05:30 [INF] ResponseBody: {"items":[{"campaignID":6,"name":"Diwali Dhamaka","startDate":"2025-10-20T00:00:00","endDate":"2025-11-10T00:00:00","targetProducts":"Electronics,Home Appliances","storeList":"Kerala"},{"campaignID":7,"name":"Onam Offer","startDate":"2025-10-11T00:00:00","endDate":"2025-10-14T00:00:00","targetProducts":"Clothing","storeList":"Kerala"},{"campaignID":8,"name":"string","startDate":"2025-09-23T11:55:01.833","endDate":"2025-09-23T11:55:01.833","targetProducts":"Clothing","storeList":"Delhi"},{"campaignID":9,"name":"Mariyam","startDate":"2025-09-24T06:44:06.236","endDate":"2025-09-24T06:44:06.236","targetProducts":"Groceries","storeList":"Banglore"},{"campaignID":10,"name":"sammy","startDate":"2025-09-24T12:19:22.877","endDate":"2025-09-24T12:19:22.877","targetProducts":"clothing","storeList":"mumbai"},{"campaignID":13,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi, Mumbai"},{"campaignID":14,"name":"Diwali Bonanza","startDate":"2025-09-25T16:41:29.31","endDate":"2025-09-25T16:41:29.31","targetProducts":"Home Appliances, Clothing","storeList":"Hyd, Chennai, Bnglr"},{"campaignID":15,"name":"Diwali Promo","startDate":"2025-10-15T00:00:00","endDate":"2025-11-05T00:00:00","targetProducts":"Electronics, Home Appliances","storeList":"Delhi,Mumbai"},{"campaignID":18,"name":"Chaturthi Offer","startDate":"2025-09-26T04:41:47.68","endDate":"2025-09-26T04:41:47.68","targetProducts":"Groceries","storeList":"Hyderabad"},{"campaignID":19,"name":"Diwali Mega Sale - Updated","startDate":"2025-10-15T00:00:00","endDate":"2025-10-30T00:00:00","targetProducts":"Electronics, Furniture","storeList":"Hyderabad, Bangalore, Chennai"},{"campaignID":20,"name":"Dussehra Sale","startDate":"2025-09-26T00:00:00","endDate":"2025-09-27T00:00:00","targetProducts":"Appliances, Furniture","storeList":"Hyd, Bnglr"},{"campaignID":21,"name":"Ugadi Offer","startDate":"2025-09-26T00:00:00","endDate":"2025-09-29T00:00:00","targetProducts":"Clothing","storeList":"Banglore, Chennai"},{"campaignID":22,"name":"Winter Sale","startDate":"2025-12-01T00:00:00","endDate":"2025-12-31T00:00:00","targetProducts":"P010,P011","storeList":"S010,S011"},{"campaignID":23,"name":"Diwali Offer","startDate":"2025-10-01T00:00:00","endDate":"2025-10-05T00:00:00","targetProducts":"Clothing","storeList":"Hyderabad"},{"campaignID":24,"name":"Diwali Sale","startDate":"2025-10-10T00:00:00","endDate":"2025-10-20T00:00:00","targetProducts":"P001,P002","storeList":"Hyderabad,Bangalore"},{"campaignID":26,"name":"Holi","startDate":"2025-10-07T00:00:00","endDate":"2025-10-09T00:00:00","targetProducts":"Electronics","storeList":"Hyderabad, Bnglr"},{"campaignID":27,"name":"Diwali","startDate":"2025-10-15T00:00:00","endDate":"2025-10-16T00:00:00","targetProducts":"clothing","storeList":"Kerala, Banglore,Hyderabad,Chennai"}],"totalCount":17,"pageNumber":1,"pageSize":20}
+2025-10-15 18:23:29.974 +05:30 [INF] Duration: 116.7332ms
+2025-10-15 18:23:29.976 +05:30 [INF] Request processed successfully.
+2025-10-15 18:23:29.979 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 130.9041 ms
+2025-10-15 18:23:29.989 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=20&sortDesc=false - 200 null application/json; charset=utf-8 165.4771ms
+2025-10-15 20:54:09.561 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Role] = N'Admin') THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-15 20:54:09.795 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-15 20:54:10.100 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-15 20:54:10.906 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-15 20:54:11.251 +05:30 [INF] Hosting environment: Development
+2025-10-15 20:54:11.309 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-15 20:54:16.921 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-15 20:54:16.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 29.5957ms
+2025-10-15 20:54:16.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-15 20:54:17.816 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 859.5796ms
+2025-10-15 20:54:18.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-15 20:54:18.121 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 40.8533 ms
+2025-10-15 20:54:18.132 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.9231ms
+2025-10-15 21:08:14.803 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/AuditLogs/GetAll - null null
+2025-10-15 21:08:14.843 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-15 21:08:14.849 +05:30 [INF] Processing request: /api/AuditLogs/GetAll
+2025-10-15 21:08:14.928 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/AuditLogs/GetAll
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-15 21:08:17.376 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API)'
+2025-10-15 21:08:17.418 +05:30 [INF] Route matched with {action = "GetAll", controller = "AuditLogs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller PromoPilot.API.Controllers.AuditLogsController (PromoPilot.API).
+2025-10-15 21:08:17.830 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[Changes], [a].[EntityId], [a].[EntityName], [a].[Timestamp], [a].[UserId]
+FROM [AuditLogs] AS [a]
+ORDER BY [a].[Timestamp] DESC
+2025-10-15 21:08:17.943 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[PromoPilot.Core.Entities.AuditLog, PromoPilot.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-15 21:08:17.967 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-15 21:08:17.979 +05:30 [INF] Executed action PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API) in 542.2725ms
+2025-10-15 21:08:17.989 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.AuditLogsController.GetAll (PromoPilot.API)'
+2025-10-15 21:08:17.999 +05:30 [INF] ResponseBody: [{"id":15,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Update","entityName":"Campaign","entityId":"27","changes":"{\"CampaignID\":27,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-15T00:00:00\",\"EndDate\":\"2025-10-16T00:00:00\",\"TargetProducts\":\"clothing\",\"StoreList\":\"Kerala, Banglore,Hyderabad,Chennai\"}","timestamp":"2025-10-15T12:53:03.123"},{"id":14,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Update","entityName":"Campaign","entityId":"27","changes":"{\"CampaignID\":27,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-15T00:00:00\",\"EndDate\":\"2025-10-16T00:00:00\",\"TargetProducts\":\"clothing\",\"StoreList\":\"Kerala, Banglore\"}","timestamp":"2025-10-15T12:35:19.973"},{"id":13,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Create","entityName":"Campaign","entityId":"27","changes":"{\"CampaignID\":0,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-15T00:00:00\",\"EndDate\":\"2025-10-16T00:00:00\",\"TargetProducts\":\"clothing\",\"StoreList\":\"Hyderabad, Chennai\"}","timestamp":"2025-10-15T12:31:46.247"},{"id":12,"userId":"670a0e93-3131-47d0-945f-b6196e2895e9","action":"Create","entityName":"ExecutionStatus","entityId":"10","changes":"{\"StatusId\":10,\"CampaignId\":6,\"StoreId\":109,\"Status\":\"InProgress\",\"Feedback\":\"The Campaign is ongoing with great response\",\"Campaign\":null}","timestamp":"2025-10-14T04:30:38.21"},{"id":11,"userId":"98161350-8942-42c2-a0eb-a0f41eb2a38f","action":"Create","entityName":"Budget","entityId":"44","changes":"{\"BudgetId\":44,\"CampaignId\":6,\"StoreId\":234,\"AllocatedAmount\":25000,\"SpentAmount\":20000,\"Campaign\":null}","timestamp":"2025-10-13T07:29:37.773"},{"id":10,"userId":"98161350-8942-42c2-a0eb-a0f41eb2a38f","action":"Create","entityName":"Budget","entityId":"41","changes":"{\"BudgetId\":41,\"CampaignId\":7,\"StoreId\":234,\"AllocatedAmount\":25000,\"SpentAmount\":20000,\"Campaign\":null}","timestamp":"2025-10-13T07:28:46.4"},{"id":9,"userId":"98161350-8942-42c2-a0eb-a0f41eb2a38f","action":"Create","entityName":"Budget","entityId":"40","changes":"{\"BudgetId\":40,\"CampaignId\":7,\"StoreId\":102,\"AllocatedAmount\":25000,\"SpentAmount\":20000,\"Campaign\":null}","timestamp":"2025-10-13T07:18:27.543"},{"id":8,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"6","changes":"{\"CampaignID\":6,\"Name\":\"Diwali Dhamaka\",\"StartDate\":\"2025-10-20T00:00:00\",\"EndDate\":\"2025-11-10T00:00:00\",\"TargetProducts\":\"Electronics,Home Appliances\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:12:08.89"},{"id":7,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Update","entityName":"Campaign","entityId":"7","changes":"{\"CampaignID\":7,\"Name\":\"Onam Offer\",\"StartDate\":\"2025-10-11T00:00:00\",\"EndDate\":\"2025-10-14T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Kerala\"}","timestamp":"2025-10-11T12:10:53.077"},{"id":6,"userId":"a5b41292-15df-44a8-b8e3-374ce9289197","action":"Create","entityName":"Engagement","entityId":"13","changes":"{\"EngagementId\":13,\"CampaignId\":6,\"CustomerId\":2,\"RedemptionCount\":2,\"PurchaseValue\":1500,\"Campaign\":null}","timestamp":"2025-10-10T11:58:44.89"},{"id":5,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Delete","entityName":"Campaign","entityId":"11","changes":"{\"Deleted\":true}","timestamp":"2025-10-08T03:42:35.577"},{"id":4,"userId":"81321418-5939-40e3-b591-206b24f66b90","action":"Create","entityName":"Campaign","entityId":"26","changes":"{\"CampaignID\":0,\"Name\":\"Holi\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-09T00:00:00\",\"TargetProducts\":\"Electronics\",\"StoreList\":\"Hyderabad, Bnglr\"}","timestamp":"2025-10-07T12:01:46.763"},{"id":3,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Delete","entityName":"Campaign","entityId":"25","changes":"{\"Deleted\":true}","timestamp":"2025-10-07T10:26:22.363"},{"id":2,"userId":"4119e134-c42f-4ca2-ab67-ed4e4a8e87b3","action":"Create","entityName":"Campaign","entityId":"25","changes":"{\"CampaignID\":0,\"Name\":\"Diwali\",\"StartDate\":\"2025-10-07T00:00:00\",\"EndDate\":\"2025-10-08T00:00:00\",\"TargetProducts\":\"Clothing\",\"StoreList\":\"Andhra Pradesh\"}","timestamp":"2025-10-07T10:25:49.623"},{"id":1,"userId":"16ad91c1-0a32-4430-b186-855298527e1f","action":"Create","entityName":"Campaign","entityId":"24","changes":"{\"CampaignID\":0,\"Name\":\"Diwali Sale\",\"StartDate\":\"2025-10-10T00:00:00\",\"EndDate\":\"2025-10-20T00:00:00\",\"TargetProducts\":\"P001,P002\",\"StoreList\":\"Hyderabad,Bangalore\"}","timestamp":"2025-10-02T17:10:34.47"}]
+2025-10-15 21:08:18.017 +05:30 [INF] Duration: 3088.7866ms
+2025-10-15 21:08:18.027 +05:30 [INF] Request processed successfully.
+2025-10-15 21:08:18.039 +05:30 [INF] HTTP GET /api/AuditLogs/GetAll responded 200 in 3228.0460 ms
+2025-10-15 21:08:18.062 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/AuditLogs/GetAll - 200 null application/json; charset=utf-8 3259.1918ms

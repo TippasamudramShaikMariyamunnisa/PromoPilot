@@ -1,0 +1,16 @@
+.engagement-tracker {
+  padding: 1rem;
+}
+
+.table th {
+  cursor: pointer;
+  user-select: none;
+}
+
+.table th:hover {
+  text-decoration: underline;
+}
+.sidebar-buttons button {
+  pointer-events: auto;
+  z-index: 1;
+}

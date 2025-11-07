@@ -1,0 +1,56 @@
+<div class="campaign-table">
+  <h3>📊 All Campaigns</h3>
+
+  <div *ngIf="loading">Loading campaigns...</div>
+
+  <table *ngIf="!loading && campaigns.length > 0" class="table">
+    <thead>
+      <tr>
+        <th>CampaignID</th>
+        <th>CampaignName</th>
+        <th (click)="toggleSort()">
+          StartDate
+          <span *ngIf="sortBy === 'StartDate'">
+            {{ sortDesc ? '🔽' : '🔼' }}
+          </span>
+        </th>
+        <th>EndDate</th>
+        <th>Products</th>
+        <th>Stores</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let campaign of campaigns">
+        <td>{{ campaign.campaignId }}</td>
+        <td>{{ campaign.name }}</td>
+        <td>{{ campaign.startDate | date }}</td>
+        <td>{{ campaign.endDate | date }}</td>
+        <td>{{ campaign.targetProducts }}</td>
+        <td>{{ campaign.storeList }}</td>
+        <td class="actions-cell">
+          <button class="action-btn view" (click)="viewCampaign(campaign.campaignId)">🔍 View</button>
+          <button class="action-btn edit" (click)="openEditModal(campaign)">✏️ Edit</button>
+          <button class="action-btn cancel" (click)="cancel(campaign.campaignId)">❌ Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination" *ngIf="!loading && campaigns.length > 0">
+    <button class="page-btn" (click)="prevPage()" [disabled]="page === 1">⬅ Prev</button>
+    <span class="page-indicator">Page {{ page }}</span>
+    <button class="page-btn" (click)="nextPage()" [disabled]="!hasMorePages">Next ➡</button>
+  </div>
+
+  <div *ngIf="!loading && campaigns.length === 0" class="empty-state">
+    <p>⚠️ No campaigns found. Try planning one or check your filters.</p>
+  </div>
+</div>
+
+<app-campaign-edit-modal
+  *ngIf="selectedCampaign"
+  [campaign]="selectedCampaign"
+  (updated)="handleUpdate($event)"
+  (closed)="closeModal()">
+</app-campaign-edit-modal>

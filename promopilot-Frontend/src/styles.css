@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import './styles.css'; 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  scroll-behavior: smooth;
+}
+/* 🌊 Global animated background */
+body {
+  background: linear-gradient(135deg, #007FFF, #FF6F00, #2b2f3a, #007FFF);
+  background-size: 300% 300%;
+  animation: gradientBG 8s ease-in-out infinite;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}

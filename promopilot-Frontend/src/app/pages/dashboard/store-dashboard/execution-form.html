@@ -1,0 +1,33 @@
+<div class="form-container">
+  <div class="form-header">
+    <h2>{{ status.statusID > 0 ? '✏️ Edit Execution Status' : '📘 Add Execution Status' }}</h2>
+  </div>
+
+  <div class="form-group">
+    <label>Campaign ID:</label>
+    <input type="number" [(ngModel)]="status.campaignID" />
+  </div>
+
+  <div class="form-group">
+    <label>Store ID:</label>
+    <input type="number" [(ngModel)]="status.storeID" />
+  </div>
+
+  <div class="form-group">
+    <label>Status:</label>
+    <select [(ngModel)]="status.status">
+      <option value="Pending">Pending</option>
+      <option value="Completed">Completed</option>
+      <option value="InProgress">In Progress</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Feedback (optional):</label>
+    <textarea [(ngModel)]="status.feedback"></textarea>
+  </div>
+
+  <button class="submit-btn" [disabled]="!isValid" (click)="submit()">
+    {{ status.statusID > 0 ? 'Update Status' : 'Submit Status' }}
+  </button>
+</div>

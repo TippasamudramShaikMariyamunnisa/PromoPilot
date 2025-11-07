@@ -1,0 +1,41 @@
+.card {
+  border-radius: 8px;
+}
+
+h4 {
+  font-weight: 500;
+  color: #FF6F00; /* Orange heading */
+}
+
+.text-orange {
+  color: #FF6F00;
+}
+
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}
+
+.login-link {
+  color: #FF6F00;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #e65c00;
+}
+.card {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}

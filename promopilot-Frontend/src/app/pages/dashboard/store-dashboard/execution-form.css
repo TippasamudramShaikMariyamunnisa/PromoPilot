@@ -1,0 +1,80 @@
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 1.5rem;
+  background: #fff8e1; /* Soft yellow */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🟧 Header styling */
+.form-header {
+  background-color: #2980b9;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-header h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* 📋 Form fields */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* 📘 Full-width submit button */
+.submit-btn {
+  width: 100%;
+  background-color: #2980b9; /* Azure blue */
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #138bdc;
+}
+
+.submit-btn:disabled {
+  background-color: #8fc9f0;
+  cursor: not-allowed;
+}

@@ -1,0 +1,23 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-buttons">
+      <button (click)="toggleView('form')">💰 Allocate Budget</button>
+      <button (click)="toggleView('table')">📊 View Budgets</button>
+      <button (click)="notifyTeams()">📧 Notify Teams</button>
+      <button (click)="onLogout()">🚪 Logout</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h2>Finance Dashboard</h2>
+
+    <app-budget-form *ngIf="showForm" [initialData]="selectedBudget" (budgetCreated)="onBudgetCreated()"></app-budget-form>
+
+    <div class="table-actions" *ngIf="showTable">
+        <button (click)="table?.export('csv')">📄 Export CSV</button>
+        <button (click)="downloadExcel()">📈 Export Excel</button>
+    </div>
+    <app-finance-table *ngIf="showTable" #table (budgetSelected)="onBudgetSelected($event)"></app-finance-table>
+
+  </main>
+</div>

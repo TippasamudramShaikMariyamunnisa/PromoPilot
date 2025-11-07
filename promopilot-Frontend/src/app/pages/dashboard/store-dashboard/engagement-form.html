@@ -1,0 +1,29 @@
+<div class="form-container">
+  <div class="form-header">
+    <h2>{{ engagement.engagementID > 0 ? '✏️ Edit Engagement' : '🧾 Record Engagement' }}</h2>
+  </div>
+
+  <div class="form-group">
+    <label>Campaign ID:</label>
+    <input type="number" [(ngModel)]="engagement.campaignID" />
+  </div>
+
+  <div class="form-group">
+    <label>Customer ID:</label>
+    <input type="number" [(ngModel)]="engagement.customerID" />
+  </div>
+
+  <div class="form-group">
+    <label>Redemption Count:</label>
+    <input type="number" [(ngModel)]="engagement.redemptionCount" />
+  </div>
+
+  <div class="form-group">
+    <label>Purchase Value (₹):</label>
+    <input type="number" step="0.01" [(ngModel)]="engagement.purchaseValue" />
+  </div>
+
+  <button class="submit-btn" [disabled]="!isValid" (click)="track()">
+    {{ engagement.engagementID > 0 ? 'Update Engagement' : 'Record Engagement' }}
+  </button>
+</div>

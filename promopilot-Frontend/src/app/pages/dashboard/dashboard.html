@@ -1,0 +1,28 @@
+<div class="container py-4">
+  <!-- <ng-container *ngIf="isMarketing">
+    <app-marketing-dashboard></app-marketing-dashboard>
+  </ng-container>
+
+  <ng-container *ngIf="isFinance">
+    <app-finance-dashboard></app-finance-dashboard>
+  </ng-container>
+
+  <ng-container *ngIf="isStoreManager">
+    <app-store-dashboard></app-store-dashboard>
+  </ng-container>
+
+  <div *ngIf="!isMarketing && !isFinance && !isStoreManager" class="text-center mt-5">
+    <h4>Unknown role. Please contact support.</h4>
+  </div> -->
+
+  <button (click)="onRefreshToken()" class="btn btn-outline-primary me-2">
+  <i class="fas fa-sync-alt me-1"></i>Refresh Token
+</button>
+
+  <div class="text-end mb-3">
+  <button (click)="onLogout()" class="btn btn-outline-danger">
+    <i class="fas fa-sign-out-alt me-2"></i>Logout
+  </button>
+</div>
+  
+</div>

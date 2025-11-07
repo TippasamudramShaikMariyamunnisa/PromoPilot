@@ -1,0 +1,1158 @@
+2025-10-26 20:21:49.309 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-26 20:21:49.778 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-26 20:21:50.499 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 20:21:50.503 +05:30 [INF] Hosting environment: Development
+2025-10-26 20:21:50.506 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-26 20:21:55.313 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-26 20:21:55.314 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-26 20:21:55.335 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 33.9485ms
+2025-10-26 20:21:55.560 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 260.0215ms
+2025-10-26 20:21:55.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-26 20:21:55.691 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 68.9514 ms
+2025-10-26 20:21:55.699 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 100.9512ms
+2025-10-26 20:22:26.053 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 61
+2025-10-26 20:22:26.106 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-26 20:22:26.110 +05:30 [INF] CORS policy execution failed.
+2025-10-26 20:22:26.112 +05:30 [INF] Request origin http://localhost:5145 does not have permission to access the resource.
+2025-10-26 20:22:26.120 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 20:22:26.209 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 61
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 20:22:27.863 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 20:22:27.913 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 20:22:29.329 +05:30 [INF] RequestBody: {
+  "email": "advika@gmail.com",
+  "password": "Advika@123"
+}
+2025-10-26 20:22:33.553 +05:30 [INF] Executed DbCommand (386ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 20:22:34.274 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-26 20:22:34.292 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-26 20:22:34.305 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-26 20:22:34.317 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 6391.8224ms
+2025-10-26 20:22:34.323 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 20:22:34.326 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgxMzIxNDE4LTU5MzktNDBlMy1iNTkxLTIwNmIyNGY2NmI5MCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkdmlrYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYXJrZXRpbmciLCJleHAiOjE3NjE0OTM5NTMsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.PzXI0OfbK5bWGpZREHk931xcMUJQNG9evmuTEZPtBXM",
+  "refreshToken": "pPwAPuar3FNY1mqD0pqSbSa+rNmXEARUwT17+GUVXvPrv4fMr+zZdJ02TUxLnYm0dq1hhQ58mM+Yg+E60H5BDA==",
+  "accessTokenExpiry": "2025-10-26T15:52:34.2883929Z",
+  "refreshTokenExpiry": "2025-11-02T14:52:34.0897146Z",
+  "role": "Marketing",
+  "email": "advika@gmail.com",
+  "username": "Advika"
+}
+2025-10-26 20:22:34.333 +05:30 [INF] Duration: 8123.9707ms
+2025-10-26 20:22:34.335 +05:30 [INF] Request processed successfully.
+2025-10-26 20:22:34.339 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 8278.5909 ms
+2025-10-26 20:22:34.353 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 8299.5448ms
+2025-10-26 22:13:53.679 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-26 22:13:54.515 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-26 22:13:55.955 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 22:13:55.959 +05:30 [INF] Hosting environment: Development
+2025-10-26 22:13:55.962 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-26 22:13:56.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-26 22:13:56.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-26 22:13:56.648 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 80.0118ms
+2025-10-26 22:13:57.084 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 519.5117ms
+2025-10-26 22:13:57.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-26 22:13:57.471 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 186.2976 ms
+2025-10-26 22:13:57.488 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.8666ms
+2025-10-26 22:14:04.558 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:14:04.634 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-26 22:14:04.641 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:14:04.654 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 72.6802 ms
+2025-10-26 22:14:04.666 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 106.4971ms
+2025-10-26 22:14:04.687 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 52
+2025-10-26 22:14:04.710 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:14:04.735 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:14:04.890 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 52
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:14:08.314 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:14:08.417 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:14:10.598 +05:30 [INF] RequestBody: {"email":"advika@gmail.com","password":"Advika@123"}
+2025-10-26 22:14:20.707 +05:30 [INF] Executed DbCommand (931ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:14:21.960 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-26 22:14:22.053 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-26 22:14:22.125 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:14:22.161 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 13716.8034ms
+2025-10-26 22:14:22.171 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:14:22.186 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjgxMzIxNDE4LTU5MzktNDBlMy1iNTkxLTIwNmIyNGY2NmI5MCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6ImFkdmlrYUBnbWFpbC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJNYXJrZXRpbmciLCJleHAiOjE3NjE1MDA2NjEsImlzcyI6IlByb21vUGlsb3RJc3N1ZXIiLCJhdWQiOiJQcm9tb1BpbG90QXVkaWVuY2UifQ.VbsFNSOeA4U6WKnNJRRroDWEJjI1vu4KfvbZ2-AZbiU",
+  "refreshToken": "mQYaPsPmRuVf0gcHsJegr8LI63X48EEMCLR772QSS64Wp2+XU2nB6O0gMkca3o4YJ2n/rXk3fKBwhzLeCszbOA==",
+  "accessTokenExpiry": "2025-10-26T17:44:22.017976Z",
+  "refreshTokenExpiry": "2025-11-02T16:44:21.5739362Z",
+  "role": "Marketing",
+  "email": "advika@gmail.com",
+  "username": "Advika"
+}
+2025-10-26 22:14:22.210 +05:30 [INF] Duration: 17320.1109ms
+2025-10-26 22:14:22.219 +05:30 [INF] Request processed successfully.
+2025-10-26 22:14:22.230 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 17521.7362 ms
+2025-10-26 22:14:22.276 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 17588.7553ms
+2025-10-26 22:17:39.298 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:17:39.317 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:17:39.323 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 7.6801 ms
+2025-10-26 22:17:39.336 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 45.2322ms
+2025-10-26 22:17:39.384 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 54
+2025-10-26 22:17:39.409 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:17:39.418 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:17:39.439 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 54
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:17:39.452 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:17:39.458 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:17:39.483 +05:30 [INF] RequestBody: {"email":"shalini@gmail.com","password":"Shalini@123"}
+2025-10-26 22:17:39.673 +05:30 [INF] Executed DbCommand (91ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:17:39.729 +05:30 [INF] Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-26 22:17:39.745 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-26 22:17:39.754 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:17:39.761 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 291.071ms
+2025-10-26 22:17:39.769 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:17:39.777 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6ImIyNWI4M2EzLTM1YjAtNDMyMi1iNGEzLTBkNTUwNzYyZTE0MCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InNoYWxpbmlAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRmluYW5jZSIsImV4cCI6MTc2MTUwMDg1OSwiaXNzIjoiUHJvbW9QaWxvdElzc3VlciIsImF1ZCI6IlByb21vUGlsb3RBdWRpZW5jZSJ9.BhWU9QX8ThTqflr_OJCjNxwm_ZeR_XVO2VgNmnzMGRw",
+  "refreshToken": "tC0O5wYt+vvlfSsC8vvuugdGTdAASmUwcKBgoMm1hFgv+1V8bJrm8rMkFlj3YoVIn2yMKUtr1jrR6AzePd5W2w==",
+  "accessTokenExpiry": "2025-10-26T17:47:39.7435299Z",
+  "refreshTokenExpiry": "2025-11-02T16:47:39.6993367Z",
+  "role": "Finance",
+  "email": "shalini@gmail.com",
+  "username": "Shalini"
+}
+2025-10-26 22:17:39.787 +05:30 [INF] Duration: 348.2661ms
+2025-10-26 22:17:39.798 +05:30 [INF] Request processed successfully.
+2025-10-26 22:17:39.803 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 394.4546 ms
+2025-10-26 22:17:39.820 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 436.1908ms
+2025-10-26 22:18:21.308 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:18:21.343 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:21.349 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 5.7047 ms
+2025-10-26 22:18:21.362 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 53.6864ms
+2025-10-26 22:18:21.397 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 50
+2025-10-26 22:18:21.407 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:21.410 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:18:21.412 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 50
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:18:21.423 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:21.428 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:18:21.449 +05:30 [INF] RequestBody: {"email":"riya@gmail.com","password":"Mariya@123"}
+2025-10-26 22:18:21.706 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:18:21.765 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:18:22.236 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:18:22.253 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:18:22.261 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 824.7158ms
+2025-10-26 22:18:22.271 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:22.277 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:18:22.285 +05:30 [INF] Duration: 872.1983ms
+2025-10-26 22:18:22.291 +05:30 [INF] Request processed successfully.
+2025-10-26 22:18:22.296 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 888.5380 ms
+2025-10-26 22:18:22.309 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 912.1212ms
+2025-10-26 22:18:33.252 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:18:33.272 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:33.283 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 11.0859 ms
+2025-10-26 22:18:33.302 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 49.4864ms
+2025-10-26 22:18:33.330 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 48
+2025-10-26 22:18:33.347 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:33.358 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:18:33.365 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 48
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:18:33.378 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:33.388 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:18:33.401 +05:30 [INF] RequestBody: {"email":"riya@gmail.com","password":"Riya@123"}
+2025-10-26 22:18:33.443 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:18:33.490 +05:30 [INF] Executed DbCommand (24ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:18:33.741 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:18:33.756 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:18:33.764 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 365.6665ms
+2025-10-26 22:18:33.772 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:33.781 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:18:33.788 +05:30 [INF] Duration: 422.9922ms
+2025-10-26 22:18:33.799 +05:30 [INF] Request processed successfully.
+2025-10-26 22:18:33.805 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 458.5578 ms
+2025-10-26 22:18:33.817 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 488.5916ms
+2025-10-26 22:18:45.742 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:18:45.756 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:45.759 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 3.5373 ms
+2025-10-26 22:18:45.767 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 24.279ms
+2025-10-26 22:18:45.784 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 51
+2025-10-26 22:18:45.797 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:18:45.801 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:18:45.807 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 51
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:18:45.819 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:45.824 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:18:45.838 +05:30 [INF] RequestBody: {"email":"riya@gmail.com","password":"mariyaM@123"}
+2025-10-26 22:18:45.869 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:18:45.931 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0, [LockoutEndTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-10-26 22:18:46.170 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:18:46.181 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:18:46.188 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 352.2504ms
+2025-10-26 22:18:46.198 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:18:46.206 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:18:46.214 +05:30 [INF] Duration: 408.0538ms
+2025-10-26 22:18:46.222 +05:30 [INF] Request processed successfully.
+2025-10-26 22:18:46.227 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 430.2600 ms
+2025-10-26 22:18:46.243 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 458.8657ms
+2025-10-26 22:19:15.522 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:19:15.543 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:15.549 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 6.1207 ms
+2025-10-26 22:19:15.568 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 46.6647ms
+2025-10-26 22:19:15.593 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 55
+2025-10-26 22:19:15.614 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:15.620 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:19:15.628 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 55
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:19:15.639 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:15.646 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:19:15.659 +05:30 [INF] RequestBody: {"email":"sreemukhi@gmail.com","password":"Mariya@123"}
+2025-10-26 22:19:15.687 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:19:15.743 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:19:16.029 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:19:16.041 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:19:16.054 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 397.6802ms
+2025-10-26 22:19:16.069 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:16.079 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:19:16.089 +05:30 [INF] Duration: 461.7402ms
+2025-10-26 22:19:16.101 +05:30 [INF] Request processed successfully.
+2025-10-26 22:19:16.108 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 493.5747 ms
+2025-10-26 22:19:16.126 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 532.3302ms
+2025-10-26 22:19:19.967 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 55
+2025-10-26 22:19:19.981 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:19.985 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:19:19.990 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 55
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:19:20.000 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:20.005 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:19:20.015 +05:30 [INF] RequestBody: {"email":"sreemukhi@gmail.com","password":"Mariya@123"}
+2025-10-26 22:19:20.030 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:19:20.056 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:19:20.268 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:19:20.278 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:19:20.286 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 272.3144ms
+2025-10-26 22:19:20.296 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:20.305 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:19:20.316 +05:30 [INF] Duration: 326.2682ms
+2025-10-26 22:19:20.326 +05:30 [INF] Request processed successfully.
+2025-10-26 22:19:20.331 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 350.0159 ms
+2025-10-26 22:19:20.348 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 380.7863ms
+2025-10-26 22:19:40.130 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:19:40.156 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:40.164 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 8.4558 ms
+2025-10-26 22:19:40.182 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 51.4286ms
+2025-10-26 22:19:40.227 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 60
+2025-10-26 22:19:40.247 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:40.253 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:19:40.259 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:19:40.268 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:40.274 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:19:40.284 +05:30 [INF] RequestBody: {"email":"advikatanneru0@gmail.com","password":"Mariya@123"}
+2025-10-26 22:19:40.296 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:19:40.347 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:19:40.619 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:19:40.632 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:19:40.641 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 358.2099ms
+2025-10-26 22:19:40.653 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:40.658 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:19:40.669 +05:30 [INF] Duration: 410.6411ms
+2025-10-26 22:19:40.674 +05:30 [INF] Request processed successfully.
+2025-10-26 22:19:40.684 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 437.6894 ms
+2025-10-26 22:19:40.700 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 472.7158ms
+2025-10-26 22:19:50.672 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:19:50.687 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:50.690 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 3.8991 ms
+2025-10-26 22:19:50.700 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 27.9217ms
+2025-10-26 22:19:50.709 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 60
+2025-10-26 22:19:50.719 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:19:50.722 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:19:50.725 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:19:50.735 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:50.739 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:19:50.750 +05:30 [INF] RequestBody: {"email":"advikatanneru0@gmail.com","password":"Advika@123"}
+2025-10-26 22:19:50.764 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:19:50.783 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:19:51.008 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:19:51.030 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:19:51.038 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 291.1333ms
+2025-10-26 22:19:51.052 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:19:51.064 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:19:51.073 +05:30 [INF] Duration: 348.8126ms
+2025-10-26 22:19:51.083 +05:30 [INF] Request processed successfully.
+2025-10-26 22:19:51.089 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 370.3912 ms
+2025-10-26 22:19:51.107 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 398.7368ms
+2025-10-26 22:20:01.718 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:20:01.740 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:01.750 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 10.3723 ms
+2025-10-26 22:20:01.770 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 52.4516ms
+2025-10-26 22:20:01.800 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 60
+2025-10-26 22:20:01.816 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:01.823 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:20:01.831 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:20:01.848 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:20:01.854 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:20:01.872 +05:30 [INF] RequestBody: {"email":"advikatanneru0@gmail.com","password":"Advika@123"}
+2025-10-26 22:20:01.902 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:20:01.935 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p2='?' (DbType = Guid), @p0='?' (DbType = Int32), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0, [LockoutEndTime] = @p1
+OUTPUT 1
+WHERE [Id] = @p2;
+2025-10-26 22:20:02.202 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:20:02.212 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:20:02.221 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 351.4243ms
+2025-10-26 22:20:02.234 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:20:02.240 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:20:02.251 +05:30 [INF] Duration: 419.5039ms
+2025-10-26 22:20:02.256 +05:30 [INF] Request processed successfully.
+2025-10-26 22:20:02.262 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 447.9237 ms
+2025-10-26 22:20:02.273 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 473.3708ms
+2025-10-26 22:20:12.889 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:20:12.917 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:12.925 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 8.3516 ms
+2025-10-26 22:20:12.945 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 56.9192ms
+2025-10-26 22:20:12.979 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 60
+2025-10-26 22:20:12.997 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:13.002 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:20:13.005 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 60
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:20:13.017 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:20:13.022 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:20:13.034 +05:30 [INF] RequestBody: {"email":"advikatanneru0@gmail.com","password":"Mariya@123"}
+2025-10-26 22:20:13.043 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:20:13.253 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:20:13.262 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:20:13.270 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 236.8063ms
+2025-10-26 22:20:13.282 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:20:13.289 +05:30 [INF] ResponseBody: {
+  "message": "Account is locked. Try again later."
+}
+2025-10-26 22:20:13.298 +05:30 [INF] Duration: 292.7881ms
+2025-10-26 22:20:13.308 +05:30 [INF] Request processed successfully.
+2025-10-26 22:20:13.314 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 317.0828 ms
+2025-10-26 22:20:13.329 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 350.7772ms
+2025-10-26 22:20:55.891 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - null null
+2025-10-26 22:20:55.909 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:55.917 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 8.0004 ms
+2025-10-26 22:20:55.935 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - 204 null null 45.6402ms
+2025-10-26 22:20:55.967 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 101
+2025-10-26 22:20:55.980 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:55.983 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-26 22:20:55.989 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 101
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:20:55.996 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:20:56.016 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:20:56.031 +05:30 [INF] RequestBody: {"username":"Mariyam","email":"r190170@rguktrkv.ac.in","password":"Mariya@123","role":"StoreManager"}
+2025-10-26 22:20:56.113 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-26 22:20:56.310 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:20:56.319 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:20:56.322 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 295.333ms
+2025-10-26 22:20:56.328 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:20:56.333 +05:30 [INF] ResponseBody: {
+  "message": "An unexpected error occurred.",
+  "details": "This email is already registered."
+}
+2025-10-26 22:20:56.337 +05:30 [INF] Duration: 347.5589ms
+2025-10-26 22:20:56.341 +05:30 [INF] Request processed successfully.
+2025-10-26 22:20:56.348 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 368.6455 ms
+2025-10-26 22:20:56.356 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 388.7888ms
+2025-10-26 22:20:59.971 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 101
+2025-10-26 22:20:59.987 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:20:59.990 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-26 22:20:59.998 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 101
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:21:00.006 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:00.034 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:21:00.052 +05:30 [INF] RequestBody: {"username":"Mariyam","email":"r190170@rguktrkv.ac.in","password":"Mariya@123","role":"StoreManager"}
+2025-10-26 22:21:00.081 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-26 22:21:00.264 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:21:00.271 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:21:00.276 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 227.1542ms
+2025-10-26 22:21:00.283 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:00.293 +05:30 [INF] ResponseBody: {
+  "message": "An unexpected error occurred.",
+  "details": "This email is already registered."
+}
+2025-10-26 22:21:00.299 +05:30 [INF] Duration: 301.9693ms
+2025-10-26 22:21:00.307 +05:30 [INF] Request processed successfully.
+2025-10-26 22:21:00.311 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 323.9158 ms
+2025-10-26 22:21:00.322 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 351.3367ms
+2025-10-26 22:21:11.032 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - null null
+2025-10-26 22:21:11.038 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:21:11.044 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 5.7396 ms
+2025-10-26 22:21:11.050 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - 204 null null 18.336ms
+2025-10-26 22:21:11.080 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 102
+2025-10-26 22:21:11.091 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:21:11.094 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-26 22:21:11.098 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 102
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:21:11.107 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:11.113 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:21:11.126 +05:30 [INF] RequestBody: {"username":"Mariyam","email":"r190170@rguktrkv.ac.in","password":"Mariya@1234","role":"StoreManager"}
+2025-10-26 22:21:11.149 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-26 22:21:11.382 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:21:11.389 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:21:11.397 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 273.4728ms
+2025-10-26 22:21:11.405 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:11.415 +05:30 [INF] ResponseBody: {
+  "message": "An unexpected error occurred.",
+  "details": "This email is already registered."
+}
+2025-10-26 22:21:11.421 +05:30 [INF] Duration: 323.6121ms
+2025-10-26 22:21:11.430 +05:30 [INF] Request processed successfully.
+2025-10-26 22:21:11.436 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 345.5508 ms
+2025-10-26 22:21:11.452 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 371.8548ms
+2025-10-26 22:21:33.135 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - null null
+2025-10-26 22:21:33.165 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:21:33.168 +05:30 [INF] HTTP OPTIONS /api/Auth/Register responded 204 in 3.5331 ms
+2025-10-26 22:21:33.178 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Register - 204 null null 43.2532ms
+2025-10-26 22:21:33.205 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 101
+2025-10-26 22:21:33.220 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:21:33.228 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-26 22:21:33.234 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 101
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:21:33.240 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:33.247 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:21:33.262 +05:30 [INF] RequestBody: {"username":"Mariyam","email":"r19017@rguktrkv.ac.in","password":"Mariya@1234","role":"StoreManager"}
+2025-10-26 22:21:33.279 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-26 22:21:48.094 +05:30 [INF] Executed DbCommand (59ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-26 22:21:48.118 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:21:48.131 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:21:48.136 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 14878.9398ms
+2025-10-26 22:21:48.147 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-26 22:21:48.156 +05:30 [INF] ResponseBody: {
+  "message": "User registered successfully with role 'StoreManager'. A confirmation email has been sent to r19017@rguktrkv.ac.in."
+}
+2025-10-26 22:21:48.161 +05:30 [INF] Duration: 14927.039ms
+2025-10-26 22:21:48.165 +05:30 [INF] Request processed successfully.
+2025-10-26 22:21:48.168 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 14948.6365 ms
+2025-10-26 22:21:48.182 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 14976.4481ms
+2025-10-26 22:22:05.879 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:22:05.894 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:05.898 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 3.4672 ms
+2025-10-26 22:22:05.909 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 29.5887ms
+2025-10-26 22:22:05.943 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 57
+2025-10-26 22:22:05.958 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:05.962 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:22:05.968 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 57
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:22:05.980 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:05.987 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:22:06.001 +05:30 [INF] RequestBody: {"email":"r19017@rguktrkv.ac.in","password":"Mariya@123"}
+2025-10-26 22:22:06.023 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:22:06.049 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:22:06.257 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:22:06.268 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:22:06.272 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 273.6917ms
+2025-10-26 22:22:06.278 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:06.282 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:22:06.286 +05:30 [INF] Duration: 317.7233ms
+2025-10-26 22:22:06.292 +05:30 [INF] Request processed successfully.
+2025-10-26 22:22:06.295 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 337.2499 ms
+2025-10-26 22:22:06.303 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 360.037ms
+2025-10-26 22:22:19.786 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:22:19.798 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:19.804 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 6.5790 ms
+2025-10-26 22:22:19.815 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 29.629ms
+2025-10-26 22:22:19.830 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 57
+2025-10-26 22:22:19.844 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:19.848 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:22:19.853 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 57
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:22:19.867 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:19.874 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:22:19.883 +05:30 [INF] RequestBody: {"email":"r19017@rguktrkv.ac.in","password":"Mariya@123"}
+2025-10-26 22:22:19.903 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:22:19.924 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:22:20.139 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:22:20.149 +05:30 [INF] Response:
+StatusCode: 401
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:22:20.155 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 272.9498ms
+2025-10-26 22:22:20.164 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:20.169 +05:30 [INF] ResponseBody: {
+  "message": "Invalid credentials."
+}
+2025-10-26 22:22:20.177 +05:30 [INF] Duration: 324.0503ms
+2025-10-26 22:22:20.183 +05:30 [INF] Request processed successfully.
+2025-10-26 22:22:20.188 +05:30 [INF] HTTP POST /api/Auth/Login responded 401 in 344.0595 ms
+2025-10-26 22:22:20.201 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 401 null application/json; charset=utf-8 370.2038ms
+2025-10-26 22:22:49.658 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - null null
+2025-10-26 22:22:49.681 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:49.687 +05:30 [INF] HTTP OPTIONS /api/Auth/Login responded 204 in 6.2246 ms
+2025-10-26 22:22:49.698 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5145/api/Auth/Login - 204 null null 40.355ms
+2025-10-26 22:22:49.732 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 58
+2025-10-26 22:22:49.750 +05:30 [INF] CORS policy execution successful.
+2025-10-26 22:22:49.757 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-26 22:22:49.764 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: application/json, text/plain, */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,en-IN;q=0.8
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 58
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-26 22:22:49.779 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:49.785 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-26 22:22:49.802 +05:30 [INF] RequestBody: {"email":"r19017@rguktrkv.ac.in","password":"Mariya@1234"}
+2025-10-26 22:22:49.834 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-26 22:22:49.862 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p1='?' (DbType = Guid), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [FailedLoginAttempts] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-10-26 22:22:49.888 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-26 22:22:49.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-26 22:22:49.912 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-26 22:22:49.916 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 117.1908ms
+2025-10-26 22:22:49.923 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-26 22:22:49.932 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjUzNmQ3OWJiLWFkZWItNDE4OC1iNWRkLTRkY2JiMzg0MWFlNiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6InIxOTAxN0ByZ3VrdHJrdi5hYy5pbiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlN0b3JlTWFuYWdlciIsImV4cCI6MTc2MTUwMTE2OSwiaXNzIjoiUHJvbW9QaWxvdElzc3VlciIsImF1ZCI6IlByb21vUGlsb3RBdWRpZW5jZSJ9.pm-N-80_BZx-kbBSh4HXCtlkgNp8LYqo1bXYIfVlRIg",
+  "refreshToken": "h5qUFwyjzfp9xvZYaLl3p9pWwpEmBt1ERCwm7slbtHLUgvvQzQxeTpXvFXbBcZyb5nlyujvWcz1p3QkHsSM8EA==",
+  "accessTokenExpiry": "2025-10-26T17:52:49.9022018Z",
+  "refreshTokenExpiry": "2025-11-02T16:52:49.8760858Z",
+  "role": "StoreManager",
+  "email": "r19017@rguktrkv.ac.in",
+  "username": "Mariyam"
+}
+2025-10-26 22:22:49.938 +05:30 [INF] Duration: 173.2688ms
+2025-10-26 22:22:49.945 +05:30 [INF] Request processed successfully.
+2025-10-26 22:22:49.950 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 199.5281 ms
+2025-10-26 22:22:49.966 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 233.3888ms

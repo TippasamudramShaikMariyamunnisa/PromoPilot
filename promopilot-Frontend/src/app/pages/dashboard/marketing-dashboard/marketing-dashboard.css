@@ -1,0 +1,160 @@
+/* 🌐 Layout Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+  flex: 0 0 240px;
+  background: linear-gradient(to bottom, #ff9800, #3f51b5);
+  color: white;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sidebar-buttons button {
+  padding: 12px 16px;
+  font-size: 15px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-buttons button:hover {
+  background-color: #3498db;
+}
+
+/* 🧾 Main Content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-x: auto;
+  background-color: #fafafa;
+}
+
+/* 📊 Dashboard Header */
+.main-content h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0.75rem 1rem;
+  background-color: #ff9800;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* 📄 Download Button */
+.download-btn {
+  background-color: #343a40;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #23272b;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.download-btn:active {
+  background-color: #1d2124;
+}
+
+.download-btn .icon {
+  font-size: 18px;
+  color: #00bcd4;
+}
+
+/* 📦 Table Actions */
+.table-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.table-actions button {
+  padding: 6px 12px;
+  font-size: 14px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.table-actions button:hover {
+  background-color: #1976D2;
+}
+
+/* 📁 Upload Input */
+.upload-input {
+  margin-top: 10px;
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .sidebar-buttons button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+
+  .main-content h2 {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+}
+

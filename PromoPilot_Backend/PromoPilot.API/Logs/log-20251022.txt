@@ -1,0 +1,1693 @@
+2025-10-22 09:49:07.448 +05:30 [INF] User profile is available. Using 'C:\Users\2436730\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-22 09:49:07.784 +05:30 [INF] Now listening on: http://localhost:5145
+2025-10-22 09:49:08.433 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-22 09:49:08.434 +05:30 [INF] Hosting environment: Development
+2025-10-22 09:49:08.436 +05:30 [INF] Content root path: C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API
+2025-10-22 09:49:10.216 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-22 09:49:10.217 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/_vs/browserLink - null null
+2025-10-22 09:49:10.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 42.0604ms
+2025-10-22 09:49:10.460 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/_vs/browserLink - 200 null text/javascript; charset=UTF-8 263.1948ms
+2025-10-22 09:49:10.506 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - null null
+2025-10-22 09:49:10.572 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 46.1709 ms
+2025-10-22 09:49:10.581 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.6461ms
+2025-10-22 11:10:53.826 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 117
+2025-10-22 11:10:53.936 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-22 11:10:53.950 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:10:53.966 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-22 11:10:54.204 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 117
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:10:57.130 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:10:57.246 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:10:59.277 +05:30 [INF] RequestBody: {
+  "username": "Mariyam",
+  "email": "mariyam630480@gmail.com",
+  "password": "Mariyam@123",
+  "role": "Marketing"
+}
+2025-10-22 11:11:06.342 +05:30 [INF] Executed DbCommand (448ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:11:15.983 +05:30 [INF] Executed DbCommand (60ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-22 11:11:16.061 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-22 11:11:16.097 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:11:16.129 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 18861.9271ms
+2025-10-22 11:11:16.137 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:11:16.147 +05:30 [INF] ResponseBody: {
+  "message": "User registered successfully with role 'Marketing'. A confirmation email has been sent to mariyam630480@gmail.com."
+}
+2025-10-22 11:11:16.163 +05:30 [INF] Duration: 21958.9222ms
+2025-10-22 11:11:16.170 +05:30 [INF] Request processed successfully.
+2025-10-22 11:11:16.178 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 22324.6337 ms
+2025-10-22 11:11:16.209 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 22385.2297ms
+2025-10-22 11:14:02.113 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 69
+2025-10-22 11:14:02.141 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:14:02.179 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-22 11:14:02.195 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 69
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:14:02.210 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-22 11:14:02.257 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:14:02.285 +05:30 [INF] RequestBody: {
+  "email": "mariyam630480@gmail.com",
+  "password": "Mariyam@123"
+}
+2025-10-22 11:14:03.083 +05:30 [INF] Executed DbCommand (92ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-22 11:14:03.657 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-22 11:14:03.677 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-22 11:14:03.722 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:14:03.727 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 1455.6352ms
+2025-10-22 11:14:03.734 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-22 11:14:03.741 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjU1MjY0ZjhmLTYxMTItNDU0Ny1hYTZiLWVhYjA0ZDdmZWI0MyIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1hcml5YW02MzA0ODBAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiTWFya2V0aW5nIiwiZXhwIjoxNzYxMTE1NDQzLCJpc3MiOiJQcm9tb1BpbG90SXNzdWVyIiwiYXVkIjoiUHJvbW9QaWxvdEF1ZGllbmNlIn0.xY0Y1gUhQs4a91xlAZIV_jpWrKVLa6gREGCrVRPkzPo",
+  "refreshToken": "L9yWfRx9l5AodjtPAkavDMbCdAFfTd0JiTYaIrFZOxgua9rCaPNB7N26RfwucoXUcj3PWPlGF3DceCFS9O2Dkw==",
+  "accessTokenExpiry": "2025-10-22T06:44:03.6733966Z",
+  "refreshTokenExpiry": "2025-10-29T05:44:03.4867069Z",
+  "role": "Marketing",
+  "email": "mariyam630480@gmail.com",
+  "username": "Mariyam"
+}
+2025-10-22 11:14:03.750 +05:30 [INF] Duration: 1554.4042ms
+2025-10-22 11:14:03.756 +05:30 [INF] Request processed successfully.
+2025-10-22 11:14:03.761 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 1622.3772 ms
+2025-10-22 11:14:03.774 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 1699.0434ms
+2025-10-22 11:16:18.961 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - application/json 173
+2025-10-22 11:16:18.999 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:16:19.005 +05:30 [INF] Processing request: /api/Campaign/PlanCampaign
+2025-10-22 11:16:19.015 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Campaign/PlanCampaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 173
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:16:19.302 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:16:19.330 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:16:20.135 +05:30 [INF] RequestBody: {
+  "campaignID": 0,
+  "name": "Dussehra Offer",
+  "startDate": "2025-10-22",
+  "endDate": "2025-10-27",
+  "targetProducts": "Clothing",
+  "storeList": "Hyderabad,Chennai"
+}
+2025-10-22 11:16:20.199 +05:30 [INF] Planning new campaign: Dussehra Offer
+2025-10-22 11:16:21.027 +05:30 [INF] Executed DbCommand (169ms) [Parameters=[@__endDate_0='?' (DbType = DateTime2), @__startDate_1='?' (DbType = DateTime2), @__storeList_2='?' (Size = 4000), @__productList_3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Campaign] AS [c]
+        WHERE [c].[StartDate] <= @__endDate_0 AND [c].[EndDate] >= @__startDate_1 AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__storeList_2) WITH ([value] nvarchar(max) '$') AS [s]
+            WHERE [s].[value] IS NOT NULL AND (CHARINDEX([s].[value], [c].[StoreList]) > 0 OR [s].[value] LIKE N'')) AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__productList_3) WITH ([value] nvarchar(max) '$') AS [p]
+            WHERE [p].[value] IS NOT NULL AND (CHARINDEX([p].[value], [c].[TargetProducts]) > 0 OR [p].[value] LIKE N''))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:16:21.723 +05:30 [WRN] Business rule violation during campaign planning.
+System.InvalidOperationException: Overlapping campaign exists for the selected products and stores.
+   at PromoPilot.Application.Services.CampaignService.AddAsync(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignService.cs:line 53
+   at PromoPilot.Application.Services.CampaignModule.PlanCampaignAsync(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignModule.cs:line 36
+   at PromoPilot.API.Controllers.CampaignController.PlanCampaign(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\CampaignController.cs:line 40
+2025-10-22 11:16:21.803 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-10-22 11:16:21.934 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:16:21.949 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 2585.6963ms
+2025-10-22 11:16:21.958 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:16:21.968 +05:30 [INF] ResponseBody: {
+  "type": "https://promopilot.com/errors/business-rule",
+  "title": "Campaign Planning Failed",
+  "status": 400,
+  "detail": "Overlapping campaign exists for the selected products and stores.",
+  "instance": "/api/Campaign/PlanCampaign",
+  "traceId": "00-6d4723a3cc65d962b16c63ca440f42a5-2a47ccb392b42447-00"
+}
+2025-10-22 11:16:21.977 +05:30 [INF] Duration: 2961.8579ms
+2025-10-22 11:16:21.990 +05:30 [INF] Request processed successfully.
+2025-10-22 11:16:22.011 +05:30 [INF] HTTP POST /api/Campaign/PlanCampaign responded 400 in 3014.6727 ms
+2025-10-22 11:16:22.024 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - 400 null application/json; charset=utf-8 3066.44ms
+2025-10-22 11:16:54.161 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - application/json 186
+2025-10-22 11:16:54.191 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:16:54.195 +05:30 [INF] Processing request: /api/Campaign/PlanCampaign
+2025-10-22 11:16:54.205 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Campaign/PlanCampaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 186
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:16:54.218 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:16:54.222 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:16:54.236 +05:30 [INF] RequestBody: {
+  "campaignID": 0,
+  "name": "Dussehra Offers",
+  "startDate": "2025-10-22",
+  "endDate": "2025-10-27",
+  "targetProducts": "Clothing, Appliances",
+  "storeList": "Hyderabad,Chennai"
+}
+2025-10-22 11:16:54.246 +05:30 [INF] Planning new campaign: Dussehra Offers
+2025-10-22 11:16:54.299 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__endDate_0='?' (DbType = DateTime2), @__startDate_1='?' (DbType = DateTime2), @__storeList_2='?' (Size = 4000), @__productList_3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Campaign] AS [c]
+        WHERE [c].[StartDate] <= @__endDate_0 AND [c].[EndDate] >= @__startDate_1 AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__storeList_2) WITH ([value] nvarchar(max) '$') AS [s]
+            WHERE [s].[value] IS NOT NULL AND (CHARINDEX([s].[value], [c].[StoreList]) > 0 OR [s].[value] LIKE N'')) AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__productList_3) WITH ([value] nvarchar(max) '$') AS [p]
+            WHERE [p].[value] IS NOT NULL AND (CHARINDEX([p].[value], [c].[TargetProducts]) > 0 OR [p].[value] LIKE N''))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:16:54.641 +05:30 [WRN] Business rule violation during campaign planning.
+System.InvalidOperationException: Overlapping campaign exists for the selected products and stores.
+   at PromoPilot.Application.Services.CampaignService.AddAsync(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignService.cs:line 53
+   at PromoPilot.Application.Services.CampaignModule.PlanCampaignAsync(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignModule.cs:line 36
+   at PromoPilot.API.Controllers.CampaignController.PlanCampaign(CampaignDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\CampaignController.cs:line 40
+2025-10-22 11:16:54.651 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-10-22 11:16:54.658 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:16:54.663 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 432.2728ms
+2025-10-22 11:16:54.708 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:16:54.720 +05:30 [INF] ResponseBody: {
+  "type": "https://promopilot.com/errors/business-rule",
+  "title": "Campaign Planning Failed",
+  "status": 400,
+  "detail": "Overlapping campaign exists for the selected products and stores.",
+  "instance": "/api/Campaign/PlanCampaign",
+  "traceId": "00-cfc6b507a8e88d28d442dee317bab92f-545d21e33c12be90-00"
+}
+2025-10-22 11:16:54.724 +05:30 [INF] Duration: 519.0346ms
+2025-10-22 11:16:54.732 +05:30 [INF] Request processed successfully.
+2025-10-22 11:16:54.736 +05:30 [INF] HTTP POST /api/Campaign/PlanCampaign responded 400 in 545.3058 ms
+2025-10-22 11:16:54.750 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - 400 null application/json; charset=utf-8 589.1106ms
+2025-10-22 11:17:28.659 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - application/json 171
+2025-10-22 11:17:28.688 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:17:28.696 +05:30 [INF] Processing request: /api/Campaign/PlanCampaign
+2025-10-22 11:17:28.700 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Campaign/PlanCampaign
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 171
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:17:28.720 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:17:28.729 +05:30 [INF] Route matched with {action = "PlanCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PlanCampaign(PromoPilot.Application.DTOs.CampaignDto) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:17:28.754 +05:30 [INF] RequestBody: {
+  "campaignID": 0,
+  "name": "Dussehra Offers",
+  "startDate": "2025-10-22",
+  "endDate": "2025-10-27",
+  "targetProducts": "Home Appliances",
+  "storeList": "Chennai"
+}
+2025-10-22 11:17:28.758 +05:30 [INF] Planning new campaign: Dussehra Offers
+2025-10-22 11:17:28.845 +05:30 [INF] Executed DbCommand (78ms) [Parameters=[@__endDate_0='?' (DbType = DateTime2), @__startDate_1='?' (DbType = DateTime2), @__storeList_2='?' (Size = 4000), @__productList_3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Campaign] AS [c]
+        WHERE [c].[StartDate] <= @__endDate_0 AND [c].[EndDate] >= @__startDate_1 AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__storeList_2) WITH ([value] nvarchar(max) '$') AS [s]
+            WHERE [s].[value] IS NOT NULL AND (CHARINDEX([s].[value], [c].[StoreList]) > 0 OR [s].[value] LIKE N'')) AND EXISTS (
+            SELECT 1
+            FROM OPENJSON(@__productList_3) WITH ([value] nvarchar(max) '$') AS [p]
+            WHERE [p].[value] IS NOT NULL AND (CHARINDEX([p].[value], [c].[TargetProducts]) > 0 OR [p].[value] LIKE N''))) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:17:28.893 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__name_0='?' (Size = 4000), @__start_1='?' (DbType = DateTime2), @__end_2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[Name] = @__name_0 AND [c].[StartDate] = @__start_1 AND [c].[EndDate] = @__end_2
+2025-10-22 11:17:29.188 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Campaign] ([EndDate], [Name], [StartDate], [StoreList], [TargetProducts])
+OUTPUT INSERTED.[CampaignID]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-22 11:17:29.354 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-22 11:17:29.402 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-10-22 11:17:29.479 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Campaign/GetCampaignById/35
+2025-10-22 11:17:29.488 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API) in 750.8348ms
+2025-10-22 11:17:29.497 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.PlanCampaign (PromoPilot.API)'
+2025-10-22 11:17:29.504 +05:30 [INF] ResponseBody: {
+  "campaignID": 35,
+  "name": "Dussehra Offers",
+  "startDate": "2025-10-22T00:00:00",
+  "endDate": "2025-10-27T00:00:00",
+  "targetProducts": "Home Appliances",
+  "storeList": "Chennai"
+}
+2025-10-22 11:17:29.509 +05:30 [INF] Duration: 808.9116ms
+2025-10-22 11:17:29.516 +05:30 [INF] Request processed successfully.
+2025-10-22 11:17:29.521 +05:30 [INF] HTTP POST /api/Campaign/PlanCampaign responded 201 in 832.9494 ms
+2025-10-22 11:17:29.531 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Campaign/PlanCampaign - 201 null application/json; charset=utf-8 872.2126ms
+2025-10-22 11:17:51.901 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - null null
+2025-10-22 11:17:51.935 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:17:51.939 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:17:51.945 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:17:51.967 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:17:52.008 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:17:52.124 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-22 11:17:52.185 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-22 11:17:52.242 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 11:17:52.253 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:17:52.258 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 277.2836ms
+2025-10-22 11:17:52.264 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:17:52.268 +05:30 [INF] ResponseBody: {
+  "items": [
+    {
+      "campaignID": 6,
+      "name": "Diwali Dhamaka",
+      "startDate": "2025-10-20T00:00:00",
+      "endDate": "2025-11-10T00:00:00",
+      "targetProducts": "Electronics,Home Appliances",
+      "storeList": "Hyderabad,Bnglr"
+    },
+    {
+      "campaignID": 7,
+      "name": "Onam Offer",
+      "startDate": "2025-10-11T00:00:00",
+      "endDate": "2025-10-14T00:00:00",
+      "targetProducts": "Clothing",
+      "storeList": "Kerala"
+    },
+    {
+      "campaignID": 9,
+      "name": "Mariyam",
+      "startDate": "2025-09-24T06:44:06.236",
+      "endDate": "2025-09-24T06:44:06.236",
+      "targetProducts": "Groceries",
+      "storeList": "Banglore"
+    },
+    {
+      "campaignID": 10,
+      "name": "Sri Rama Navami",
+      "startDate": "2025-10-17T00:00:00",
+      "endDate": "2025-10-19T00:00:00",
+      "targetProducts": "clothing",
+      "storeList": "bnglr"
+    },
+    {
+      "campaignID": 13,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi, Mumbai"
+    },
+    {
+      "campaignID": 14,
+      "name": "Diwali Bonanza",
+      "startDate": "2025-09-25T16:41:29.31",
+      "endDate": "2025-09-25T16:41:29.31",
+      "targetProducts": "Home Appliances, Clothing",
+      "storeList": "Hyd, Chennai, Bnglr"
+    },
+    {
+      "campaignID": 15,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi,Mumbai"
+    },
+    {
+      "campaignID": 18,
+      "name": "Chaturthi Offer",
+      "startDate": "2025-09-26T04:41:47.68",
+      "endDate": "2025-09-26T04:41:47.68",
+      "targetProducts": "Groceries",
+      "storeList": "Hyderabad"
+    },
+    {
+      "campaignID": 19,
+      "name": "Diwali Mega Sale - Updated",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-10-30T00:00:00",
+      "targetProducts": "Electronics, Furniture",
+      "storeList": "Hyderabad, Bangalore, Chennai"
+    },
+    {
+      "campaignID": 20,
+      "name": "Dussehra Sale",
+      "startDate": "2025-09-26T00:00:00",
+      "endDate": "2025-09-27T00:00:00",
+      "targetProducts": "Appliances, Furniture",
+      "storeList": "Hyd, Bnglr"
+    }
+  ],
+  "totalCount": 22,
+  "pageNumber": 1,
+  "pageSize": 10
+}
+2025-10-22 11:17:52.280 +05:30 [INF] Duration: 340.7093ms
+2025-10-22 11:17:52.285 +05:30 [INF] Request processed successfully.
+2025-10-22 11:17:52.291 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 359.0629 ms
+2025-10-22 11:17:52.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - 200 null application/json; charset=utf-8 402.1071ms
+2025-10-22 11:18:26.783 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - null null
+2025-10-22 11:18:26.794 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:18:26.798 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:18:26.804 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:18:26.809 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:18:26.817 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:18:26.870 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-22 11:18:26.910 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-22 11:18:26.922 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 11:18:26.930 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:18:26.934 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 118.0982ms
+2025-10-22 11:18:26.940 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:18:26.947 +05:30 [INF] ResponseBody: {
+  "items": [
+    {
+      "campaignID": 6,
+      "name": "Diwali Dhamaka",
+      "startDate": "2025-10-20T00:00:00",
+      "endDate": "2025-11-10T00:00:00",
+      "targetProducts": "Electronics,Home Appliances",
+      "storeList": "Hyderabad,Bnglr"
+    },
+    {
+      "campaignID": 7,
+      "name": "Onam Offer",
+      "startDate": "2025-10-11T00:00:00",
+      "endDate": "2025-10-14T00:00:00",
+      "targetProducts": "Clothing",
+      "storeList": "Kerala"
+    },
+    {
+      "campaignID": 9,
+      "name": "Mariyam",
+      "startDate": "2025-09-24T06:44:06.236",
+      "endDate": "2025-09-24T06:44:06.236",
+      "targetProducts": "Groceries",
+      "storeList": "Banglore"
+    },
+    {
+      "campaignID": 10,
+      "name": "Sri Rama Navami",
+      "startDate": "2025-10-17T00:00:00",
+      "endDate": "2025-10-19T00:00:00",
+      "targetProducts": "clothing",
+      "storeList": "bnglr"
+    },
+    {
+      "campaignID": 13,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi, Mumbai"
+    },
+    {
+      "campaignID": 14,
+      "name": "Diwali Bonanza",
+      "startDate": "2025-09-25T16:41:29.31",
+      "endDate": "2025-09-25T16:41:29.31",
+      "targetProducts": "Home Appliances, Clothing",
+      "storeList": "Hyd, Chennai, Bnglr"
+    },
+    {
+      "campaignID": 15,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi,Mumbai"
+    },
+    {
+      "campaignID": 18,
+      "name": "Chaturthi Offer",
+      "startDate": "2025-09-26T04:41:47.68",
+      "endDate": "2025-09-26T04:41:47.68",
+      "targetProducts": "Groceries",
+      "storeList": "Hyderabad"
+    },
+    {
+      "campaignID": 19,
+      "name": "Diwali Mega Sale - Updated",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-10-30T00:00:00",
+      "targetProducts": "Electronics, Furniture",
+      "storeList": "Hyderabad, Bangalore, Chennai"
+    },
+    {
+      "campaignID": 20,
+      "name": "Dussehra Sale",
+      "startDate": "2025-09-26T00:00:00",
+      "endDate": "2025-09-27T00:00:00",
+      "targetProducts": "Appliances, Furniture",
+      "storeList": "Hyd, Bnglr"
+    }
+  ],
+  "totalCount": 22,
+  "pageNumber": 1,
+  "pageSize": 10
+}
+2025-10-22 11:18:26.956 +05:30 [INF] Duration: 158.46ms
+2025-10-22 11:18:26.962 +05:30 [INF] Request processed successfully.
+2025-10-22 11:18:26.966 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 171.6361 ms
+2025-10-22 11:18:26.976 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - 200 null application/json; charset=utf-8 198.2399ms
+2025-10-22 11:19:03.420 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortBy=store&sortDesc=false - null null
+2025-10-22 11:19:03.444 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:19:03.450 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:19:03.457 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:19:03.462 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:19:03.474 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:19:04.199 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 726.3102ms
+2025-10-22 11:19:04.211 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:19:04.218 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-22 11:19:04.221 +05:30 [INF] Duration: 771.2503ms
+2025-10-22 11:19:04.292 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Campaign/GetAllCampaigns
+System.ArgumentException: Invalid sort field: store. Allowed fields are: CampaignId, Name, StartDate, EndDate, TargetProducts, StoreList, Budgets, CampaignReports, Engagements, ExecutionStatuses, Sales
+   at PromoPilot.Application.Services.CampaignService.GetPagedAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignService.cs:line 109
+   at PromoPilot.Application.Services.CampaignModule.GetPagedCampaignsAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignModule.cs:line 93
+   at PromoPilot.API.Controllers.CampaignController.GetAllCampaigns(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\CampaignController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-22 11:19:04.327 +05:30 [ERR] HTTP GET /api/Campaign/GetAllCampaigns responded 500 in 882.7811 ms
+2025-10-22 11:19:04.335 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortBy=store&sortDesc=false - 500 null application/problem+json 915.0045ms
+2025-10-22 11:20:37.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-22 11:20:37.436 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-22 11:20:37.444 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:20:37.456 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Finance)
+2025-10-22 11:20:37.475 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2025-10-22 11:20:37.483 +05:30 [INF] Response:
+StatusCode: 403
+2025-10-22 11:20:37.488 +05:30 [INF] Duration: 44.3882ms
+2025-10-22 11:20:37.492 +05:30 [INF] Request processed successfully.
+2025-10-22 11:20:37.494 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 403 in 59.1085 ms
+2025-10-22 11:20:37.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - 403 0 null 113.7161ms
+2025-10-22 11:22:52.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortBy=store&sortDesc=false - null null
+2025-10-22 11:22:52.560 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:22:52.564 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:22:52.570 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:22:52.577 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:22:52.590 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:22:52.908 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 318.6535ms
+2025-10-22 11:22:52.914 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:22:52.920 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-22 11:22:52.923 +05:30 [INF] Duration: 358.9012ms
+2025-10-22 11:22:52.995 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Campaign/GetAllCampaigns
+System.ArgumentException: Invalid sort field: store. Allowed fields are: CampaignId, Name, StartDate, EndDate, TargetProducts, StoreList, Budgets, CampaignReports, Engagements, ExecutionStatuses, Sales
+   at PromoPilot.Application.Services.CampaignService.GetPagedAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignService.cs:line 109
+   at PromoPilot.Application.Services.CampaignModule.GetPagedCampaignsAsync(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\CampaignModule.cs:line 93
+   at PromoPilot.API.Controllers.CampaignController.GetAllCampaigns(Int32 pageNumber, Int32 pageSize, String sortBy, Boolean sortDesc) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\CampaignController.cs:line 65
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-22 11:22:53.024 +05:30 [ERR] HTTP GET /api/Campaign/GetAllCampaigns responded 500 in 465.3090 ms
+2025-10-22 11:22:53.037 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortBy=store&sortDesc=false - 500 null application/problem+json 498.5616ms
+2025-10-22 11:22:59.378 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - null null
+2025-10-22 11:22:59.409 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:22:59.416 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:22:59.424 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:22:59.430 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:22:59.445 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:22:59.489 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-22 11:22:59.511 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-22 11:22:59.527 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 11:22:59.537 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:22:59.542 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 98.0785ms
+2025-10-22 11:22:59.550 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:22:59.556 +05:30 [INF] ResponseBody: {
+  "items": [
+    {
+      "campaignID": 6,
+      "name": "Diwali Dhamaka",
+      "startDate": "2025-10-20T00:00:00",
+      "endDate": "2025-11-10T00:00:00",
+      "targetProducts": "Electronics,Home Appliances",
+      "storeList": "Hyderabad,Bnglr"
+    },
+    {
+      "campaignID": 7,
+      "name": "Onam Offer",
+      "startDate": "2025-10-11T00:00:00",
+      "endDate": "2025-10-14T00:00:00",
+      "targetProducts": "Clothing",
+      "storeList": "Kerala"
+    },
+    {
+      "campaignID": 9,
+      "name": "Mariyam",
+      "startDate": "2025-09-24T06:44:06.236",
+      "endDate": "2025-09-24T06:44:06.236",
+      "targetProducts": "Groceries",
+      "storeList": "Banglore"
+    },
+    {
+      "campaignID": 10,
+      "name": "Sri Rama Navami",
+      "startDate": "2025-10-17T00:00:00",
+      "endDate": "2025-10-19T00:00:00",
+      "targetProducts": "clothing",
+      "storeList": "bnglr"
+    },
+    {
+      "campaignID": 13,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi, Mumbai"
+    },
+    {
+      "campaignID": 14,
+      "name": "Diwali Bonanza",
+      "startDate": "2025-09-25T16:41:29.31",
+      "endDate": "2025-09-25T16:41:29.31",
+      "targetProducts": "Home Appliances, Clothing",
+      "storeList": "Hyd, Chennai, Bnglr"
+    },
+    {
+      "campaignID": 15,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi,Mumbai"
+    },
+    {
+      "campaignID": 18,
+      "name": "Chaturthi Offer",
+      "startDate": "2025-09-26T04:41:47.68",
+      "endDate": "2025-09-26T04:41:47.68",
+      "targetProducts": "Groceries",
+      "storeList": "Hyderabad"
+    },
+    {
+      "campaignID": 19,
+      "name": "Diwali Mega Sale - Updated",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-10-30T00:00:00",
+      "targetProducts": "Electronics, Furniture",
+      "storeList": "Hyderabad, Bangalore, Chennai"
+    },
+    {
+      "campaignID": 20,
+      "name": "Dussehra Sale",
+      "startDate": "2025-09-26T00:00:00",
+      "endDate": "2025-09-27T00:00:00",
+      "targetProducts": "Appliances, Furniture",
+      "storeList": "Hyd, Bnglr"
+    }
+  ],
+  "totalCount": 22,
+  "pageNumber": 1,
+  "pageSize": 10
+}
+2025-10-22 11:22:59.571 +05:30 [INF] Duration: 155.1852ms
+2025-10-22 11:22:59.577 +05:30 [INF] Request processed successfully.
+2025-10-22 11:22:59.587 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 179.1488 ms
+2025-10-22 11:22:59.604 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - 200 null application/json; charset=utf-8 225.8439ms
+2025-10-22 11:23:25.757 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/7 - application/json 9
+2025-10-22 11:23:25.779 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:23:25.783 +05:30 [INF] Processing request: /api/Campaign/ScheduleCampaign/7
+2025-10-22 11:23:25.786 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: PUT
+Scheme: http
+PathBase: 
+Path: /api/Campaign/ScheduleCampaign/7
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 9
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:23:25.790 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-22 11:23:25.800 +05:30 [INF] Route matched with {action = "ScheduleCampaign", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ScheduleCampaign(Int32, System.String) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:23:25.809 +05:30 [INF] RequestBody: "Chennai"
+2025-10-22 11:23:25.843 +05:30 [INF] Scheduling campaign ID: 7 for stores: Chennai
+2025-10-22 11:23:25.925 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+WHERE [c].[CampaignID] = @__p_0
+2025-10-22 11:23:26.025 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Campaign] SET [StoreList] = @p0
+OUTPUT 1
+WHERE [CampaignID] = @p1;
+2025-10-22 11:23:26.069 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-22 11:23:26.080 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.CampaignDto'.
+2025-10-22 11:23:26.086 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:23:26.089 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API) in 281.6367ms
+2025-10-22 11:23:26.093 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ScheduleCampaign (PromoPilot.API)'
+2025-10-22 11:23:26.098 +05:30 [INF] ResponseBody: {
+  "campaignID": 7,
+  "name": "Onam Offer",
+  "startDate": "2025-10-11T00:00:00",
+  "endDate": "2025-10-14T00:00:00",
+  "targetProducts": "Clothing",
+  "storeList": "Kerala,Chennai"
+}
+2025-10-22 11:23:26.101 +05:30 [INF] Duration: 315.2914ms
+2025-10-22 11:23:26.105 +05:30 [INF] Request processed successfully.
+2025-10-22 11:23:26.108 +05:30 [INF] HTTP PUT /api/Campaign/ScheduleCampaign/7 responded 200 in 329.3980 ms
+2025-10-22 11:23:26.116 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5145/api/Campaign/ScheduleCampaign/7 - 200 null application/json; charset=utf-8 359.1073ms
+2025-10-22 11:23:37.479 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - null null
+2025-10-22 11:23:37.505 +05:30 [INF] Processing request: /api/Campaign/GetAllCampaigns
+2025-10-22 11:23:37.512 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/GetAllCampaigns
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:23:37.520 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:23:37.527 +05:30 [INF] Route matched with {action = "GetAllCampaigns", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCampaigns(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:23:37.541 +05:30 [INF] Fetching all campaigns.
+2025-10-22 11:23:37.559 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Campaign] AS [c]
+2025-10-22 11:23:37.589 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+ORDER BY [c].[CampaignID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-22 11:23:37.598 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.CampaignDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 11:23:37.603 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:23:37.606 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API) in 65.6031ms
+2025-10-22 11:23:37.612 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.GetAllCampaigns (PromoPilot.API)'
+2025-10-22 11:23:37.617 +05:30 [INF] ResponseBody: {
+  "items": [
+    {
+      "campaignID": 6,
+      "name": "Diwali Dhamaka",
+      "startDate": "2025-10-20T00:00:00",
+      "endDate": "2025-11-10T00:00:00",
+      "targetProducts": "Electronics,Home Appliances",
+      "storeList": "Hyderabad,Bnglr"
+    },
+    {
+      "campaignID": 7,
+      "name": "Onam Offer",
+      "startDate": "2025-10-11T00:00:00",
+      "endDate": "2025-10-14T00:00:00",
+      "targetProducts": "Clothing",
+      "storeList": "Kerala,Chennai"
+    },
+    {
+      "campaignID": 9,
+      "name": "Mariyam",
+      "startDate": "2025-09-24T06:44:06.236",
+      "endDate": "2025-09-24T06:44:06.236",
+      "targetProducts": "Groceries",
+      "storeList": "Banglore"
+    },
+    {
+      "campaignID": 10,
+      "name": "Sri Rama Navami",
+      "startDate": "2025-10-17T00:00:00",
+      "endDate": "2025-10-19T00:00:00",
+      "targetProducts": "clothing",
+      "storeList": "bnglr"
+    },
+    {
+      "campaignID": 13,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi, Mumbai"
+    },
+    {
+      "campaignID": 14,
+      "name": "Diwali Bonanza",
+      "startDate": "2025-09-25T16:41:29.31",
+      "endDate": "2025-09-25T16:41:29.31",
+      "targetProducts": "Home Appliances, Clothing",
+      "storeList": "Hyd, Chennai, Bnglr"
+    },
+    {
+      "campaignID": 15,
+      "name": "Diwali Promo",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-11-05T00:00:00",
+      "targetProducts": "Electronics, Home Appliances",
+      "storeList": "Delhi,Mumbai"
+    },
+    {
+      "campaignID": 18,
+      "name": "Chaturthi Offer",
+      "startDate": "2025-09-26T04:41:47.68",
+      "endDate": "2025-09-26T04:41:47.68",
+      "targetProducts": "Groceries",
+      "storeList": "Hyderabad"
+    },
+    {
+      "campaignID": 19,
+      "name": "Diwali Mega Sale - Updated",
+      "startDate": "2025-10-15T00:00:00",
+      "endDate": "2025-10-30T00:00:00",
+      "targetProducts": "Electronics, Furniture",
+      "storeList": "Hyderabad, Bangalore, Chennai"
+    },
+    {
+      "campaignID": 20,
+      "name": "Dussehra Sale",
+      "startDate": "2025-09-26T00:00:00",
+      "endDate": "2025-09-27T00:00:00",
+      "targetProducts": "Appliances, Furniture",
+      "storeList": "Hyd, Bnglr"
+    }
+  ],
+  "totalCount": 22,
+  "pageNumber": 1,
+  "pageSize": 10
+}
+2025-10-22 11:23:37.624 +05:30 [INF] Duration: 112.1774ms
+2025-10-22 11:23:37.631 +05:30 [INF] Request processed successfully.
+2025-10-22 11:23:37.637 +05:30 [INF] HTTP GET /api/Campaign/GetAllCampaigns responded 200 in 132.1610 ms
+2025-10-22 11:23:37.647 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/GetAllCampaigns?pageNumber=1&pageSize=10&sortDesc=false - 200 null application/json; charset=utf-8 167.37ms
+2025-10-22 11:24:23.597 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Campaign/export/pdf - null null
+2025-10-22 11:24:23.605 +05:30 [INF] Processing request: /api/Campaign/export/pdf
+2025-10-22 11:24:23.611 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Campaign/export/pdf
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:24:23.626 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.CampaignController.ExportCampaignsAsPdf (PromoPilot.API)'
+2025-10-22 11:24:23.643 +05:30 [INF] Route matched with {action = "ExportCampaignsAsPdf", controller = "Campaign"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ExportCampaignsAsPdf() on controller PromoPilot.API.Controllers.CampaignController (PromoPilot.API).
+2025-10-22 11:24:23.682 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CampaignID], [c].[EndDate], [c].[Name], [c].[StartDate], [c].[StoreList], [c].[TargetProducts]
+FROM [Campaign] AS [c]
+2025-10-22 11:24:26.118 +05:30 [INF] Executing FileContentResult, sending file with download name 'CampaignReport.pdf' ...
+2025-10-22 11:24:26.142 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/pdf
+Content-Length: 31935
+Content-Disposition: attachment; filename=CampaignReport.pdf; filename*=UTF-8''CampaignReport.pdf
+2025-10-22 11:24:26.153 +05:30 [INF] Executed action PromoPilot.API.Controllers.CampaignController.ExportCampaignsAsPdf (PromoPilot.API) in 2498.8868ms
+2025-10-22 11:24:26.162 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.CampaignController.ExportCampaignsAsPdf (PromoPilot.API)'
+2025-10-22 11:24:26.168 +05:30 [INF] Duration: 2557.457ms
+2025-10-22 11:24:26.182 +05:30 [INF] Request processed successfully.
+2025-10-22 11:24:26.185 +05:30 [INF] HTTP GET /api/Campaign/export/pdf responded 200 in 2580.6386 ms
+2025-10-22 11:24:26.194 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Campaign/export/pdf - 200 31935 application/pdf 2597.0239ms
+2025-10-22 11:28:30.215 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 107
+2025-10-22 11:28:30.260 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:28:30.266 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-22 11:28:30.273 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 107
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:28:30.281 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:28:30.290 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:28:30.311 +05:30 [INF] RequestBody: {
+  "username": "Mariya",
+  "email": "mariyam@gmail.com",
+  "password": "Mariya@123",
+  "role": "Finance"
+}
+2025-10-22 11:28:30.319 +05:30 [INF] Executing BadRequestObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-22 11:28:30.327 +05:30 [INF] Response:
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:28:30.333 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 29.7871ms
+2025-10-22 11:28:30.355 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:28:30.362 +05:30 [INF] ResponseBody: {
+  "message": "You are already logged in. Log out to register a new account."
+}
+2025-10-22 11:28:30.369 +05:30 [INF] Duration: 95.7958ms
+2025-10-22 11:28:30.375 +05:30 [INF] Request processed successfully.
+2025-10-22 11:28:30.381 +05:30 [INF] HTTP POST /api/Auth/Register responded 400 in 120.6064 ms
+2025-10-22 11:28:30.394 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 400 null application/json; charset=utf-8 178.9992ms
+2025-10-22 11:28:40.429 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 107
+2025-10-22 11:28:40.438 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:28:40.445 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-22 11:28:40.451 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 107
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:28:40.461 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:28:40.470 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:28:40.492 +05:30 [INF] RequestBody: {
+  "username": "Mariya",
+  "email": "mariyam@gmail.com",
+  "password": "Mariya@123",
+  "role": "Finance"
+}
+2025-10-22 11:28:40.563 +05:30 [INF] Executed DbCommand (61ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:28:40.844 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType1`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-22 11:28:40.855 +05:30 [INF] Response:
+StatusCode: 500
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:28:40.860 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 370.1338ms
+2025-10-22 11:28:40.866 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:28:40.870 +05:30 [INF] ResponseBody: {
+  "message": "An unexpected error occurred.",
+  "details": "This email is already registered."
+}
+2025-10-22 11:28:40.874 +05:30 [INF] Duration: 423.9896ms
+2025-10-22 11:28:40.879 +05:30 [INF] Request processed successfully.
+2025-10-22 11:28:40.882 +05:30 [ERR] HTTP POST /api/Auth/Register responded 500 in 443.8780 ms
+2025-10-22 11:28:40.894 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 500 null application/json; charset=utf-8 464.3643ms
+2025-10-22 11:28:54.772 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Register - application/json 110
+2025-10-22 11:28:54.783 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:28:54.785 +05:30 [INF] Processing request: /api/Auth/Register
+2025-10-22 11:28:54.789 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Register
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 110
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:28:54.796 +05:30 [INF] Executing endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:28:54.801 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(PromoPilot.Application.DTOs.RegisterRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:28:54.813 +05:30 [INF] RequestBody: {
+  "username": "Mariya",
+  "email": "mariyariya@gmail.com",
+  "password": "Mariya@123",
+  "role": "Finance"
+}
+2025-10-22 11:28:54.841 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__dto_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-10-22 11:29:02.717 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime2), @p4='?' (Size = 8000) (DbType = Binary), @p5='?' (Size = 8000) (DbType = Binary), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Id], [Email], [FailedLoginAttempts], [LockoutEndTime], [PasswordHash], [PasswordSalt], [Role], [Username])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2025-10-22 11:29:02.732 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-22 11:29:02.740 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:29:02.746 +05:30 [INF] Executed action AuthController.Register (PromoPilot.API) in 7935.4476ms
+2025-10-22 11:29:02.758 +05:30 [INF] Executed endpoint 'AuthController.Register (PromoPilot.API)'
+2025-10-22 11:29:02.766 +05:30 [INF] ResponseBody: {
+  "message": "User registered successfully with role 'Finance'. A confirmation email has been sent to mariyariya@gmail.com."
+}
+2025-10-22 11:29:02.773 +05:30 [INF] Duration: 7984.5402ms
+2025-10-22 11:29:02.782 +05:30 [INF] Request processed successfully.
+2025-10-22 11:29:02.788 +05:30 [INF] HTTP POST /api/Auth/Register responded 200 in 8004.9690 ms
+2025-10-22 11:29:02.799 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Register - 200 null application/json; charset=utf-8 8027.387ms
+2025-10-22 11:29:31.205 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Auth/Login - application/json 65
+2025-10-22 11:29:31.232 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:29:31.237 +05:30 [INF] Processing request: /api/Auth/Login
+2025-10-22 11:29:31.242 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Auth/Login
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 65
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:29:31.251 +05:30 [INF] Executing endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-22 11:29:31.258 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(PromoPilot.Application.DTOs.LoginRequest) on controller AuthController (PromoPilot.API).
+2025-10-22 11:29:31.272 +05:30 [INF] RequestBody: {
+  "email": "mariyariya@gmail.com",
+  "password": "Mariya@123"
+}
+2025-10-22 11:29:31.342 +05:30 [INF] Executed DbCommand (57ms) [Parameters=[@__dto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Email], [t].[FailedLoginAttempts], [t].[LockoutEndTime], [t].[PasswordHash], [t].[PasswordSalt], [t].[Role], [t].[Username], [r].[Id], [r].[Expires], [r].[IsRevoked], [r].[Token], [r].[UserId]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[Email], [u].[FailedLoginAttempts], [u].[LockoutEndTime], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__dto_Email_0
+) AS [t]
+LEFT JOIN [RefreshToken] AS [r] ON [t].[Id] = [r].[UserId]
+ORDER BY [t].[Id]
+2025-10-22 11:29:31.384 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshToken] ([Id], [Expires], [IsRevoked], [Token], [UserId])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-10-22 11:29:31.394 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.AuthResponse'.
+2025-10-22 11:29:31.399 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:29:31.402 +05:30 [INF] Executed action AuthController.Login (PromoPilot.API) in 132.3556ms
+2025-10-22 11:29:31.412 +05:30 [INF] Executed endpoint 'AuthController.Login (PromoPilot.API)'
+2025-10-22 11:29:31.420 +05:30 [INF] ResponseBody: {
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjI5YTkxMDdkLTZlYTAtNDM5NC04ZDg5LTRhYzMyYzRkYTYwZiIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Im1hcml5YXJpeWFAZ21haWwuY29tIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiRmluYW5jZSIsImV4cCI6MTc2MTExNjM3MSwiaXNzIjoiUHJvbW9QaWxvdElzc3VlciIsImF1ZCI6IlByb21vUGlsb3RBdWRpZW5jZSJ9.8ceUNIiQ2MaAoC1UNhrwsCZO2td2bInh8WJBw_tIu-8",
+  "refreshToken": "SbfmtN7R/tirEw23N6PlLc18ULmajaN8IE1aXpSfsdSR6JXT6ayFtbd5i5CElD5Rv2GrJgeXgGH+zVn/w3q7iQ==",
+  "accessTokenExpiry": "2025-10-22T06:59:31.3946552Z",
+  "refreshTokenExpiry": "2025-10-29T05:59:31.3703117Z",
+  "role": "Finance",
+  "email": "mariyariya@gmail.com",
+  "username": "Mariya"
+}
+2025-10-22 11:29:31.428 +05:30 [INF] Duration: 185.7906ms
+2025-10-22 11:29:31.434 +05:30 [INF] Request processed successfully.
+2025-10-22 11:29:31.437 +05:30 [INF] HTTP POST /api/Auth/Login responded 200 in 204.8847 ms
+2025-10-22 11:29:31.444 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Auth/Login - 200 null application/json; charset=utf-8 239.2369ms
+2025-10-22 11:29:51.144 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - null null
+2025-10-22 11:29:51.156 +05:30 [INF] Processing request: /api/Budget/ViewAllBudgets
+2025-10-22 11:29:51.175 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /api/Budget/ViewAllBudgets
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Referer: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:29:51.183 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-22 11:29:51.198 +05:30 [INF] Route matched with {action = "ViewAllBudgets", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewAllBudgets(Int32, Int32, System.String, Boolean) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-22 11:29:51.219 +05:30 [INF] Fetching all budgets.
+2025-10-22 11:29:51.290 +05:30 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Budget] AS [b]
+2025-10-22 11:29:51.331 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BudgetID], [b].[AllocatedAmount], [b].[CampaignID], [b].[SpentAmount], [b].[StoreID]
+FROM [Budget] AS [b]
+ORDER BY [b].[BudgetID]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2025-10-22 11:29:51.388 +05:30 [INF] Executing OkObjectResult, writing value of type 'PromoPilot.Application.DTOs.PagedResultDto`1[[PromoPilot.Application.DTOs.BudgetDto, PromoPilot.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-22 11:29:51.412 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+2025-10-22 11:29:51.415 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API) in 201.355ms
+2025-10-22 11:29:51.418 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.ViewAllBudgets (PromoPilot.API)'
+2025-10-22 11:29:51.421 +05:30 [INF] ResponseBody: {
+  "items": [
+    {
+      "budgetID": 12,
+      "campaignID": 7,
+      "storeID": 102,
+      "allocatedAmount": 2000.00,
+      "spentAmount": 1500.00
+    },
+    {
+      "budgetID": 13,
+      "campaignID": 9,
+      "storeID": 102,
+      "allocatedAmount": 45000.00,
+      "spentAmount": 34000.00
+    },
+    {
+      "budgetID": 33,
+      "campaignID": 22,
+      "storeID": 102,
+      "allocatedAmount": 30000.00,
+      "spentAmount": 40000.00
+    },
+    {
+      "budgetID": 34,
+      "campaignID": 22,
+      "storeID": 102,
+      "allocatedAmount": 40000.00,
+      "spentAmount": 50000.00
+    },
+    {
+      "budgetID": 37,
+      "campaignID": 7,
+      "storeID": 101,
+      "allocatedAmount": 1000.00,
+      "spentAmount": 800.00
+    }
+  ],
+  "totalCount": 12,
+  "pageNumber": 1,
+  "pageSize": 5
+}
+2025-10-22 11:29:51.425 +05:30 [INF] Duration: 250.7616ms
+2025-10-22 11:29:51.429 +05:30 [INF] Request processed successfully.
+2025-10-22 11:29:51.432 +05:30 [INF] HTTP GET /api/Budget/ViewAllBudgets responded 200 in 276.3333 ms
+2025-10-22 11:29:51.437 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5145/api/Budget/ViewAllBudgets?pageNumber=1&pageSize=5&sortDesc=false - 200 null application/json; charset=utf-8 293.8311ms
+2025-10-22 11:30:25.152 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 107
+2025-10-22 11:30:25.162 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:30:25.165 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-22 11:30:25.169 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 107
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:30:25.175 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-22 11:30:25.196 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-22 11:30:25.217 +05:30 [INF] RequestBody: {
+  "budgetID": 0,
+  "campaignID": 2,
+  "storeID": 102,
+  "allocatedAmount": 10000,
+  "spentAmount": 5000
+}
+2025-10-22 11:30:25.290 +05:30 [INF] Allocating new budget.
+2025-10-22 11:30:25.310 +05:30 [INF] Allocating budget for CampaignID: 2, StoreID: 102
+2025-10-22 11:30:25.433 +05:30 [INF] Executed DbCommand (63ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-22 11:30:25.519 +05:30 [ERR] An exception occurred in the database while saving changes for context type 'PromoPilot.Infrastructure.Data.PromoPilotDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a9bc30d6-b69b-44fa-8481-27f26545445f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a9bc30d6-b69b-44fa-8481-27f26545445f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-10-22 11:30:26.157 +05:30 [ERR] Unexpected error during budget allocation.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a9bc30d6-b69b-44fa-8481-27f26545445f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+2025-10-22 11:30:26.377 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 1169.7648ms
+2025-10-22 11:30:26.384 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-22 11:30:26.392 +05:30 [INF] Response:
+StatusCode: 200
+2025-10-22 11:30:26.396 +05:30 [INF] Duration: 1227.1939ms
+2025-10-22 11:30:26.737 +05:30 [ERR] Unhandled exception occurred while processing request: /api/Budget/AllocateBudget
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Budget_Campaign_CampaignID". The conflict occurred in database "PromoPilotDB", table "dbo.Campaign", column 'CampaignID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:a9bc30d6-b69b-44fa-8481-27f26545445f
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at PromoPilot.Infrastructure.Repositories.BudgetRepository.AddAsync(Budget budget) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Infrastructure\Repositories\BudgetRepository.cs:line 31
+   at PromoPilot.Application.Services.BudgetService.AllocateBudgetAsync(Budget budget) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetService.cs:line 55
+   at PromoPilot.Application.Services.BudgetModule.CreateBudgetAsync(BudgetDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Application\Services\BudgetModule.cs:line 22
+   at PromoPilot.API.Controllers.BudgetController.AllocateBudget(BudgetDto dto) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Controllers\BudgetController.cs:line 90
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.API\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2025-10-22 11:30:26.796 +05:30 [ERR] HTTP POST /api/Budget/AllocateBudget responded 500 in 1634.4866 ms
+2025-10-22 11:30:26.802 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 500 null application/problem+json 1650.8663ms
+2025-10-22 11:30:36.251 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - application/json 107
+2025-10-22 11:30:36.261 +05:30 [INF] CORS policy execution successful.
+2025-10-22 11:30:36.264 +05:30 [INF] Processing request: /api/Budget/AllocateBudget
+2025-10-22 11:30:36.269 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: http
+PathBase: 
+Path: /api/Budget/AllocateBudget
+Accept: */*
+Connection: keep-alive
+Host: localhost:5145
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9
+Authorization: [Redacted]
+Content-Type: application/json
+Origin: [Redacted]
+Referer: [Redacted]
+Content-Length: 107
+sec-ch-ua-platform: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+Sec-Fetch-Site: [Redacted]
+Sec-Fetch-Mode: [Redacted]
+Sec-Fetch-Dest: [Redacted]
+2025-10-22 11:30:36.274 +05:30 [INF] Executing endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-22 11:30:36.279 +05:30 [INF] Route matched with {action = "AllocateBudget", controller = "Budget"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AllocateBudget(PromoPilot.Application.DTOs.BudgetDto) on controller PromoPilot.API.Controllers.BudgetController (PromoPilot.API).
+2025-10-22 11:30:36.298 +05:30 [INF] RequestBody: {
+  "budgetID": 0,
+  "campaignID": 6,
+  "storeID": 102,
+  "allocatedAmount": 10000,
+  "spentAmount": 5000
+}
+2025-10-22 11:30:36.302 +05:30 [INF] Allocating new budget.
+2025-10-22 11:30:36.306 +05:30 [INF] Allocating budget for CampaignID: 6, StoreID: 102
+2025-10-22 11:30:36.365 +05:30 [INF] Executed DbCommand (52ms) [Parameters=[@p0='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p1='?' (DbType = Int32), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Budget] ([AllocatedAmount], [CampaignID], [SpentAmount], [StoreID])
+OUTPUT INSERTED.[BudgetID]
+VALUES (@p0, @p1, @p2, @p3);
+2025-10-22 11:30:36.416 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Changes], [EntityId], [EntityName], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-22 11:30:36.435 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'PromoPilot.Application.DTOs.BudgetDto'.
+2025-10-22 11:30:36.447 +05:30 [INF] Response:
+StatusCode: 201
+Content-Type: application/json; charset=utf-8
+Location: http://localhost:5145/api/Budget/ViewBudgetById/53
+2025-10-22 11:30:36.453 +05:30 [INF] Executed action PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API) in 164.2969ms
+2025-10-22 11:30:36.462 +05:30 [INF] Executed endpoint 'PromoPilot.API.Controllers.BudgetController.AllocateBudget (PromoPilot.API)'
+2025-10-22 11:30:36.469 +05:30 [INF] ResponseBody: {
+  "budgetID": 53,
+  "campaignID": 6,
+  "storeID": 102,
+  "allocatedAmount": 10000,
+  "spentAmount": 5000
+}
+2025-10-22 11:30:36.474 +05:30 [INF] Duration: 204.7869ms
+2025-10-22 11:30:36.479 +05:30 [INF] Request processed successfully.
+2025-10-22 11:30:36.483 +05:30 [INF] HTTP POST /api/Budget/AllocateBudget responded 201 in 222.1887 ms
+2025-10-22 11:30:36.493 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5145/api/Budget/AllocateBudget - 201 null application/json; charset=utf-8 241.1857ms

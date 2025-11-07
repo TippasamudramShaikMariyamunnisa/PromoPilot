@@ -1,0 +1,65 @@
+@import '../../../styles.css'; /* optional if already globally included */
+
+/* Sticky navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+}
+/* Navbar brand logo */
+.navbar-brand img {
+  height: 32px;
+}
+
+/* Nav links */
+.navbar-nav {
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  padding: 0 10px;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff6b00;
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn.btn-primary {
+  background-color: #ff6b00;
+  border-color: #ff6b00;
+  color: white;
+}
+
+.btn.btn-primary:hover {
+  background-color: #e65c00 !important;
+  border-color: #e65c00 !important;
+  color: white !important;
+}
+
+.btn-primary {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ff6600, #ff9900);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,105 @@
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\source\repos\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\OneDrive - Cognizant\Desktop\PromoPilot\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_auditlogging\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_content_negotiation\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\Downloads\Training\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\Music\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.deps.json
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.runtimeconfig.json
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\bin\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.AssemblyReference.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfoInputs.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.AssemblyInfo.cs
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.csproj.CoreCompileInputs.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.sourcelink.json
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\refint\PromoPilot.Core.dll
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.pdb
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\PromoPilot.Core.genruntimeconfig.cache
+C:\Users\2436730\Videos\PromoPilot_upto_xUnit\PromoPilot.Core\obj\Debug\net8.0\ref\PromoPilot.Core.dll

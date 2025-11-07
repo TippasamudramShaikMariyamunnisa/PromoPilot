@@ -1,0 +1,51 @@
+.form-wrapper {
+  background: #fff8e1;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-title {
+  color: #FF6F00;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+input.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.btn-orange {
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-orange:hover {
+  background-color: #e65c00;
+}

@@ -1,0 +1,45 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-buttons">
+      <button (click)="activeView = 'engagementForm'">🟠 Record Engagement</button>
+      <button (click)="activeView = 'engagementTable'">📋 View Engagements</button>
+      <button (click)="activeView = 'executionForm'">🔵 Add Execution Status</button>
+      <button (click)="activeView = 'executionTable'">📊 View Execution Statuses</button>
+      <button (click)="notifyTeams()">📧 Notify Teams</button>
+      <button (click)="logout()">🚪 Logout</button>
+  </div>
+  </aside>
+
+  <main class="main-content">
+  <h2>Store Dashboard</h2>
+  <app-engagement-form
+  *ngIf="activeView === 'engagementForm'"
+  [editEngagement]="editEngagement"
+  (engagementTracked)="handleEngagementTracked($event)"
+  (engagementUpdated)="handleEngagementUpdated($event)">
+</app-engagement-form>
+
+<div class="table-actions" *ngIf="engagementTable">
+  <button (click)="exportEngagements('csv')">📤 CSV Report</button>
+  <button (click)="downloadExcel()">📈 Excel Report</button>
+</div>
+
+<app-engagement-table
+  *ngIf="activeView === 'engagementTable'"
+  (engagementSelected)="startEditingEngagement($event)">
+</app-engagement-table>
+
+<app-execution-table
+  *ngIf="activeView === 'executionTable'"
+  (statusSelected)="startEditingStatus($event)">
+</app-execution-table>
+
+<app-execution-form
+  *ngIf="activeView === 'executionForm'"
+  [editStatus]="editStatus"
+  (statusAdded)="handleStatusAdded($event)"
+  (statusUpdated)="handleStatusUpdated($event)">
+</app-execution-form>
+
+</main>
+</div>

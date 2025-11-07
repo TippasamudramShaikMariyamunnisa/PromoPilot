@@ -1,0 +1,70 @@
+<div class="form-wrapper">
+  <h3 class="form-title">📦 Plan a New Campaign</h3>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <!-- Campaign Name -->
+    <div class="form-group">
+      <label>Campaign Name</label>
+      <input type="text" formControlName="name" class="form-control" placeholder="Summer Promo 2025" />
+      <div class="error" *ngIf="submitted && form.controls['name'].errors?.['required']">
+        Campaign name is required.
+      </div>
+      <div class="error" *ngIf="submitted && form.controls['name'].errors?.['maxlength']">
+        Name must be under 100 characters.
+      </div>
+    </div>
+
+    <!-- Start Date -->
+    <div class="form-group">
+      <label>Start Date</label>
+      <input type="date" formControlName="startDate" class="form-control" />
+      <div class="error" *ngIf="submitted && form.controls['startDate'].errors?.['required']">
+        Start date is required.
+      </div>
+      <div class="error" *ngIf="submitted && form.controls['startDate'].errors?.['startDatePast']">
+        Start date must be today or later.
+      </div>
+    </div>
+
+    <!-- End Date -->
+    <div class="form-group">
+      <label>End Date</label>
+      <input type="date" formControlName="endDate" class="form-control" />
+      <div class="error" *ngIf="submitted && form.controls['endDate'].errors?.['required']">
+        End date is required.
+      </div>
+      <div class="error" *ngIf="submitted && form.errors?.['endBeforeStart']">
+        End date must be after start date.
+      </div>
+    </div>
+
+    <!-- Target Products -->
+    <div class="form-group">
+      <label>Target Products</label>
+      <input type="text" formControlName="targetProducts" class="form-control" placeholder="Shoes, Bags, Accessories" />
+      <div class="error" *ngIf="submitted && form.controls['targetProducts'].errors?.['required']">
+        Target products are required.
+      </div>
+      <div class="error" *ngIf="submitted && form.controls['targetProducts'].errors?.['minlength']">
+        Must be at least 3 characters.
+      </div>
+    </div>
+
+    <!-- Store List -->
+    <div class="form-group">
+      <label>Store List</label>
+      <input type="text" formControlName="storeList" class="form-control" placeholder="Hyderabad, Mumbai, Delhi" />
+      <div class="error" *ngIf="submitted && form.controls['storeList'].errors?.['required']">
+        Store list is required.
+      </div>
+      <div class="error" *ngIf="submitted && form.controls['storeList'].errors?.['minlength']">
+        Must be at least 3 characters.
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-orange w-100 mt-3" [disabled]="loading">
+      {{ loading ? '⏳ Planning...' : '🚀 Plan Campaign' }}
+    </button>
+  </form>
+</div>

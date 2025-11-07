@@ -1,0 +1,42 @@
+<div class="execution-table">
+  <h3>📊 Execution Statuses</h3>
+
+  <div *ngIf="loading">Loading statuses...</div>
+
+  <table *ngIf="!loading && statuses.length > 0" class="table">
+    <thead>
+      <tr>
+        <th (click)="toggleSort('StatusId')">StatusID</th>
+        <th (click)="toggleSort('CampaignId')">CampaignID</th>
+        <th (click)="toggleSort('StoreId')">StoreID</th>
+        <th (click)="toggleSort('Status')">Status</th>
+        <th>Feedback</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let status of statuses">
+        <td>{{ status.statusID }}</td>
+        <td>{{ status.campaignID }}</td>
+        <td>{{ status.storeID }}</td>
+        <td>{{ status.status }}</td>
+        <td>{{ status.feedback || '—' }}</td>
+        <td class="actions-cell">
+          <button class="action-btn view" (click)="view(status.statusID)">🔍 View</button>
+          <button class="action-btn edit" (click)="edit(status)">✏️ Edit</button>
+          <button class="action-btn cancel" (click)="delete(status.statusID)">❌ Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination-controls" *ngIf="!loading && statuses.length > 0">
+    <button class="page-btn" (click)="prevPage()" [disabled]="page === 1">⬅ Prev</button>
+    <span class="page-indicator">Page {{ page }}</span>
+    <button class="page-btn" (click)="nextPage()" [disabled]="page * pageSize >= totalCount">Next ➡</button>
+  </div>
+
+  <div *ngIf="!loading && statuses.length === 0" class="empty-state">
+    <p>⚠️ No execution statuses found.</p>
+  </div>
+</div>

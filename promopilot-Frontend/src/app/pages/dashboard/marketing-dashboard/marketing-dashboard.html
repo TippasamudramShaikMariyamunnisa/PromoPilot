@@ -1,0 +1,17 @@
+<div class="dashboard-container">
+  <aside class="sidebar">
+    <div class="sidebar-buttons">
+      <button (click)="toggleView('form')">🟠 Plan Campaign</button>
+      <button (click)="toggleView('table')">🔵 View Campaigns</button>
+      <button (click)="downloadPdf()">📘 Download All Campaigns</button>
+      <button (click)="notifyTeams()">📧 Notify Teams</button>
+      <button (click)="onLogout()">🚪 Logout</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <h2>Marketing Dashboard</h2>
+    <app-campaign-form *ngIf="showForm" (campaignCreated)="onCampaignCreated()"></app-campaign-form>
+    <app-campaign-table *ngIf="showTable"></app-campaign-table>
+  </main>
+</div>
